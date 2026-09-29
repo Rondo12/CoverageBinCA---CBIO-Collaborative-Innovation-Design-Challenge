@@ -1,0 +1,5 @@
+# Tools for working on the project on a laptop (not needed in Colab).
+-r requirements-fetch.txt
+jupyter>=1.0       # run notebooks locally
+nbformat>=5.9      # read/write .ipynb files from Python
+matplotlib>=3.8    # quick static plots for checking shapes

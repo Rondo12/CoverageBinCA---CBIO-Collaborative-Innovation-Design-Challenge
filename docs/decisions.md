@@ -20,3 +20,7 @@ Newest at the bottom.
 | 2026-09-28 | The 7 unnamed buildings on the north edge that were cut out with the farm stay OUT. | They sit on farm land (likely farm-unit buildings). |
 | 2026-09-28 | The farmyard enclosed by campus south of Barstow, west of Chestnut (`way/1216348399`, `landuse=farmyard`, no name in OSM, ~61,000 m²) stays OUT for now. Eric will check it on campus. The small enclosed vineyard at Barstow (`way/1216348392`, ~7,200 m²) is also out. | Unsure what they are on the ground. Either can be added back by putting its id in `ADD_BACK` in `binopt/config.py`. |
 | 2026-09-28 | `ADD_BACK` list in `binopt/config.py` (empty) for farm-tagged areas that should count as campus. | Makes boundary corrections a one-line, documented change. |
+| 2026-09-28 | Coverage radii 30 / 50 / 75 m (default 50), p = 20 stations, distances kept up to 200 m. All PLACEHOLDER, in `binopt/config.py`. | Assumptions until Facilities gives a station budget. Three radii let the model show how sensitive the answer is. |
+| 2026-09-28 | A demand point covered by two chosen sites is credited only to the nearest one. | Per-site coverage then adds up to the total, with no double counting. |
+| 2026-09-28 | Example dataset in `data/example/` (8 made-up points, 5 sites) with hand-worked answers for p = 2. | Ronnie can build and check his model before touching real data. |
+| 2026-09-28 | From Colab, `chosen_sites.csv` reaches GitHub by download, then upload on github.com. | Colab's "Save a copy in GitHub" saves only the notebook, not files it writes. |

@@ -37,3 +37,22 @@ STRIP_WIDTH_M = 20
 #   2. rerun notebooks/01_campus_data.ipynb     (rebuilds demand, candidates, distances, map)
 #   Then note the change and the reason in docs/decisions.md.
 ADD_BACK = []
+
+# ---------------------------------------------------------------------------
+# Coverage settings (read by the model notebook, 02_model.ipynb, and by the map)
+# ---------------------------------------------------------------------------
+
+# A demand point counts as "covered" if a chosen bin site is within this many meters
+# (straight line). Three values so the model can run a sensitivity check:
+# "how much does the answer change if people will walk less, or more, to a bin?"
+# PLACEHOLDER: 30 / 50 / 75 m are assumptions, not measured walking behavior.
+COVERAGE_RADII_M = [30, 50, 75]
+DEFAULT_RADIUS_M = 50  # PLACEHOLDER: the middle value; the one the map shows first
+
+# How many bin stations the model may place (the "p" in the model).
+# PLACEHOLDER until Facilities tells us how many stations they could add or move.
+N_SITES = 20
+
+# distances.csv only lists demand-to-site pairs up to this far apart (meters).
+# Must be at least the largest coverage radius. Keeps the file small.
+MAX_DISTANCE_M = 200
