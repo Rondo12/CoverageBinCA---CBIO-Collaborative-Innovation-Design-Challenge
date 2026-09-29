@@ -1,0 +1,16 @@
+# Simple: this file turns the binopt/ folder into an installable package, so any notebook
+# or test can write `import binopt`.
+# Technical: `pip install -e .` does an "editable" install. Python imports straight from
+# this folder, so code changes take effect without reinstalling.
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "binopt"
+version = "0.1.0"
+description = "Fresno State bin-placement pilot: campus data, maps, and the coverage model's inputs"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["binopt"]

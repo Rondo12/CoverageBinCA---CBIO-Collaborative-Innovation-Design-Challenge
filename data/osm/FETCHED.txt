@@ -1,0 +1,2 @@
+OpenStreetMap snapshot fetched 2026-09-28 via Overpass API (osmnx).
+Data (c) OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright

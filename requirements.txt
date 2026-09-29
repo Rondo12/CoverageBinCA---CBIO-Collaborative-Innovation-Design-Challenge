@@ -1,0 +1,13 @@
+# Libraries the project needs to run (locally and in Google Colab).
+# Simple: a shopping list. `pip install -r requirements.txt` installs everything on it.
+# Technical: ">=" sets a minimum version; pip picks the newest compatible release.
+
+pandas>=2.0        # tables (CSV files) in Python
+numpy>=1.24        # fast math on lists of numbers
+shapely>=2.0       # geometry: points, lines, polygons (e.g. "is this point inside a building?")
+pyproj>=3.5        # converts between coordinate systems (lat/lon degrees <-> meters)
+geopandas>=0.14    # pandas tables where one column is a shape
+folium>=0.15       # interactive web maps (Leaflet) from Python
+pulp>=2.7          # linear optimization; Ronnie's model uses it
+openpyxl>=3.1      # lets pandas read .xlsx files (in case Facilities sends Excel)
+pytest>=7.0        # runs the automated tests in tests/

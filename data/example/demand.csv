@@ -1,0 +1,9 @@
+demand_id,lat,lon,weight,source,use_type,name
+D1,36.812657,-119.746414,50,building,dining,Example dining hall
+D2,36.812829,-119.746756,20,food_drink,cafe,Example cafe
+D3,36.812773,-119.745297,30,building,classroom,Example classroom building
+D4,36.812884,-119.744405,40,building,library,Example library
+D5,36.813743,-119.745444,10,building,office,Example office
+D6,36.813267,-119.74341,35,food_drink,fast_food,Example snack bar
+D7,36.812804,-119.743953,15,food_drink,vending_machine,Example vending machine
+D8,36.813053,-119.744859,25,parking,parking,Example parking lot
