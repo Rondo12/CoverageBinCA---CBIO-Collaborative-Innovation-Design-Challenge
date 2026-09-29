@@ -1,0 +1,31 @@
+.claude/settings.local.json
+
+# --- What is this file? ---
+# Simple: a list of files git should pretend don't exist, so they never get uploaded.
+# Technical: each line is a pattern; matching untracked paths are skipped by `git add`.
+# A line starting with "!" is an exception: "track this one even though a rule above ignores it".
+
+# Python virtual environment (your personal copy of the libraries; big, and different per computer)
+.venv/
+
+# Files Python and Jupyter create automatically
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# macOS folder metadata
+.DS_Store
+
+# PRIVATE DATA: anything Facilities sends stays on our computers until they say sharing is OK.
+# The repo is public, so this rule matters.
+data/private/*
+!data/private/README.md
+
+# Generated outputs: ignored, except the two files the team shares on purpose.
+# chosen_sites.csv = Ronnie's model output (the map reads it); map.html = the shareable map.
+outputs/*
+!outputs/.gitkeep
+!outputs/chosen_sites.csv
+!outputs/map.html

@@ -1,0 +1,6 @@
+# Only needed to REFRESH the OpenStreetMap snapshots in data/osm/ (scripts/fetch_osm.py).
+# The notebooks don't need these: they read the saved snapshots, so the project
+# still runs if the OpenStreetMap servers (Overpass API) are down.
+-r requirements.txt
+osmnx>=1.9
+requests>=2.31
