@@ -1,0 +1,1368 @@
+site_id,lat,lon,kind,near,accessible
+S0001,36.81706,-119.737804,walkway,Graduate Lab,unknown
+S0002,36.816939,-119.737797,walkway,Graduate Lab,unknown
+S0003,36.816833,-119.73785,walkway,Graduate Lab,unknown
+S0004,36.816327,-119.748017,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0005,36.816326,-119.747854,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0006,36.816324,-119.747691,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0007,36.816276,-119.7409,walkway,"Print, Mail, Warehouse",unknown
+S0008,36.816246,-119.74065,near_building,Jordan Agricultural Research Center,unknown
+S0009,36.81623,-119.747695,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0010,36.816183,-119.747578,near_building,Vincent E. Petrucci Viticulture Building,unknown
+S0011,36.816154,-119.741346,walkway,"Print, Mail, Warehouse",unknown
+S0012,36.816151,-119.741088,walkway,"Print, Mail, Warehouse",unknown
+S0013,36.816117,-119.737431,near_building,Graduate Lab,unknown
+S0014,36.816115,-119.737615,near_building,Graduate Lab,unknown
+S0015,36.816034,-119.754024,walkway,,unknown
+S0016,36.815972,-119.753828,walkway,,unknown
+S0017,36.81597,-119.75357,walkway,,unknown
+S0018,36.815968,-119.753312,walkway,,unknown
+S0019,36.815965,-119.753055,walkway,,unknown
+S0020,36.815963,-119.752797,walkway,,unknown
+S0021,36.815961,-119.752539,walkway,,unknown
+S0022,36.81596,-119.747763,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0023,36.815959,-119.752282,walkway,,unknown
+S0024,36.815959,-119.747564,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0025,36.815958,-119.747365,near_building,Vincent E. Petrucci Viticulture Building,unknown
+S0026,36.815956,-119.752024,walkway,Industrial Technology Building,unknown
+S0027,36.815954,-119.751766,walkway,Industrial Technology Building,unknown
+S0028,36.815953,-119.751509,walkway,Industrial Technology Building,unknown
+S0029,36.815953,-119.748929,walkway,Industrial Technology Building,unknown
+S0030,36.815953,-119.748803,walkway,Police and Parking,unknown
+S0031,36.815952,-119.751251,walkway,Industrial Technology Building,unknown
+S0032,36.815952,-119.749199,walkway,Industrial Technology Building,unknown
+S0033,36.815951,-119.750993,walkway,Industrial Technology Building,unknown
+S0034,36.815951,-119.749738,walkway,Industrial Technology Building,unknown
+S0035,36.815951,-119.749468,walkway,Industrial Technology Building,unknown
+S0036,36.81595,-119.750007,walkway,Industrial Technology Building,unknown
+S0037,36.81595,-119.748556,walkway,Police and Parking,unknown
+S0038,36.815949,-119.750277,walkway,Industrial Technology Building,unknown
+S0039,36.815948,-119.750546,walkway,Industrial Technology Building,unknown
+S0040,36.815948,-119.748309,walkway,Police and Parking,unknown
+S0041,36.815947,-119.750816,walkway,Industrial Technology Building,unknown
+S0042,36.815945,-119.748062,walkway,Police and Parking,unknown
+S0043,36.81594,-119.74713,near_building,Vincent E. Petrucci Viticulture Building,unknown
+S0044,36.815939,-119.746974,walkway,Vincent E. Petrucci Viticulture Building,unknown
+S0045,36.815939,-119.74679,near_building,Ag Operations,unknown
+S0046,36.815938,-119.746499,walkway,Ag Operations,unknown
+S0047,36.815937,-119.746262,walkway,Ag Operations,unknown
+S0048,36.815936,-119.746137,walkway,Ag Operations,unknown
+S0049,36.815935,-119.745873,walkway,Ag Operations,unknown
+S0050,36.815934,-119.745609,walkway,Ag Operations,unknown
+S0051,36.815933,-119.745346,walkway,Ag Operations,unknown
+S0052,36.815832,-119.739877,walkway,Jordan Agricultural Research Center,unknown
+S0053,36.815772,-119.750678,walkway,Industrial Technology Building,unknown
+S0054,36.815771,-119.750424,walkway,Industrial Technology Building,unknown
+S0055,36.81577,-119.751563,walkway,Industrial Technology Building,unknown
+S0056,36.81577,-119.75017,walkway,Industrial Technology Building,unknown
+S0057,36.81577,-119.740872,walkway,Jordan Agricultural Research Center,unknown
+S0058,36.815769,-119.751416,walkway,Industrial Technology Building,unknown
+S0059,36.815768,-119.751144,walkway,Industrial Technology Building,unknown
+S0060,36.815768,-119.749916,walkway,Industrial Technology Building,unknown
+S0061,36.815768,-119.747767,walkway,Police and Parking,unknown
+S0062,36.815767,-119.749662,walkway,Industrial Technology Building,unknown
+S0063,36.815767,-119.748453,walkway,Police and Parking,unknown
+S0064,36.815767,-119.747955,walkway,Police and Parking,unknown
+S0065,36.815766,-119.749408,walkway,Industrial Technology Building,unknown
+S0066,36.815766,-119.748226,near_building,Police and Parking,unknown
+S0067,36.815766,-119.74762,walkway,Police and Parking,unknown
+S0068,36.815765,-119.749169,walkway,Industrial Technology Building,unknown
+S0069,36.815765,-119.747347,near_building,Ag Operations,unknown
+S0070,36.815764,-119.748973,walkway,Industrial Technology Building,unknown
+S0071,36.815764,-119.748728,walkway,Police and Parking,unknown
+S0072,36.815764,-119.747079,walkway,Ag Operations,unknown
+S0073,36.815763,-119.746809,walkway,Ag Operations,unknown
+S0074,36.815762,-119.746538,walkway,Ag Operations,unknown
+S0075,36.815761,-119.746268,walkway,Ag Operations,unknown
+S0076,36.815761,-119.746144,walkway,Ag Operations,unknown
+S0077,36.815759,-119.745884,walkway,Ag Operations,unknown
+S0078,36.815758,-119.745625,walkway,Ag Operations,unknown
+S0079,36.815756,-119.745365,walkway,Ag Operations,unknown
+S0080,36.815747,-119.736709,near_building,California Agricultural Technical Institute,unknown
+S0081,36.815746,-119.737324,walkway,California Agricultural Technical Institute,unknown
+S0082,36.815745,-119.754479,walkway,,unknown
+S0083,36.815745,-119.753794,walkway,,unknown
+S0084,36.815744,-119.736939,walkway,California Agricultural Technical Institute,unknown
+S0085,36.815739,-119.736545,walkway,California Agricultural Technical Institute,unknown
+S0086,36.815737,-119.753523,walkway,,unknown
+S0087,36.815736,-119.740608,walkway,Jordan Agricultural Research Center,unknown
+S0088,36.815736,-119.740365,walkway,Jordan Agricultural Research Center,unknown
+S0089,36.815735,-119.753252,walkway,,unknown
+S0090,36.815735,-119.74514,walkway,Ag Operations,unknown
+S0091,36.815735,-119.740121,walkway,Jordan Agricultural Research Center,unknown
+S0092,36.815735,-119.739878,walkway,Jordan Agricultural Research Center,unknown
+S0093,36.815735,-119.73968,walkway,Jordan Agricultural Research Center,unknown
+S0094,36.815734,-119.755546,walkway,,unknown
+S0095,36.815734,-119.739483,walkway,Jordan Agricultural Research Center,unknown
+S0096,36.815733,-119.752981,walkway,,unknown
+S0097,36.815732,-119.754021,walkway,,unknown
+S0098,36.815731,-119.75271,walkway,,unknown
+S0099,36.815729,-119.752439,walkway,,unknown
+S0100,36.815728,-119.752207,walkway,Industrial Technology Building,unknown
+S0101,36.815727,-119.758991,walkway,Valley Children's Stadium,unknown
+S0102,36.815726,-119.751974,walkway,Industrial Technology Building,unknown
+S0103,36.815721,-119.73526,walkway,Post Harvest Laboratory,unknown
+S0104,36.81572,-119.735537,walkway,Post Harvest Laboratory,unknown
+S0105,36.815718,-119.756616,walkway,Valley Children's Stadium,unknown
+S0106,36.815716,-119.756881,walkway,Valley Children's Stadium,unknown
+S0107,36.815716,-119.751743,walkway,Industrial Technology Building,unknown
+S0108,36.815716,-119.735708,near_building,Post Harvest Laboratory,unknown
+S0109,36.815715,-119.758213,walkway,Valley Children's Stadium,unknown
+S0110,36.815715,-119.757404,walkway,Valley Children's Stadium,unknown
+S0111,36.815713,-119.760318,walkway,Valley Children's Stadium,unknown
+S0112,36.815709,-119.737136,near_building,California Agricultural Technical Institute,unknown
+S0113,36.815708,-119.741039,walkway,"Print, Mail, Warehouse",unknown
+S0114,36.815698,-119.760837,walkway,,unknown
+S0115,36.815694,-119.756344,walkway,Valley Children's Stadium,unknown
+S0116,36.81569,-119.755804,walkway,Valley Children's Stadium,unknown
+S0117,36.81569,-119.75528,walkway,,unknown
+S0118,36.815686,-119.754736,walkway,,unknown
+S0119,36.815683,-119.760582,walkway,,unknown
+S0120,36.815679,-119.755007,walkway,,unknown
+S0121,36.815679,-119.750816,walkway,Industrial Technology Building,unknown
+S0122,36.815679,-119.745005,walkway,Ag Operations,unknown
+S0123,36.815677,-119.757945,walkway,Valley Children's Stadium,unknown
+S0124,36.815676,-119.759798,walkway,Valley Children's Stadium,unknown
+S0125,36.815676,-119.757002,near_building,Valley Children's Stadium,unknown
+S0126,36.815674,-119.757672,walkway,Valley Children's Stadium,unknown
+S0127,36.815673,-119.758464,walkway,Valley Children's Stadium,unknown
+S0128,36.815671,-119.750971,walkway,Industrial Technology Building,unknown
+S0129,36.81567,-119.756073,walkway,Valley Children's Stadium,unknown
+S0130,36.815668,-119.759525,walkway,Valley Children's Stadium,unknown
+S0131,36.815665,-119.759252,walkway,Valley Children's Stadium,unknown
+S0132,36.81566,-119.758735,walkway,Valley Children's Stadium,unknown
+S0133,36.81566,-119.757143,walkway,Valley Children's Stadium,unknown
+S0134,36.81566,-119.751521,walkway,Industrial Technology Building,unknown
+S0135,36.81566,-119.736385,walkway,Post Harvest Laboratory,unknown
+S0136,36.815657,-119.760059,walkway,Valley Children's Stadium,unknown
+S0137,36.815652,-119.749019,walkway,Industrial Technology Building,unknown
+S0138,36.815651,-119.735992,walkway,Post Harvest Laboratory,unknown
+S0139,36.815649,-119.749408,walkway,Industrial Technology Building,unknown
+S0140,36.815621,-119.754341,walkway,,unknown
+S0141,36.815605,-119.748807,walkway,Police and Parking,unknown
+S0142,36.815589,-119.749278,walkway,Industrial Technology Building,unknown
+S0143,36.815571,-119.745118,walkway,Ag Operations,unknown
+S0144,36.815561,-119.745348,walkway,Ag Operations,unknown
+S0145,36.815537,-119.74104,near_building,"Print, Mail, Warehouse",unknown
+S0146,36.815525,-119.740851,walkway,Jordan Agricultural Research Center,unknown
+S0147,36.815521,-119.736319,walkway,Post Harvest Laboratory,unknown
+S0148,36.815516,-119.752509,walkway,,unknown
+S0149,36.815514,-119.754022,walkway,,unknown
+S0150,36.815513,-119.758075,walkway,Valley Children's Stadium,unknown
+S0151,36.815506,-119.736089,walkway,Post Harvest Laboratory,unknown
+S0152,36.815497,-119.75166,walkway,Industrial Technology Building,unknown
+S0153,36.815492,-119.749277,walkway,Industrial Technology Building,unknown
+S0154,36.815484,-119.749014,walkway,Industrial Technology Building,unknown
+S0155,36.815483,-119.757772,walkway,Valley Children's Stadium,unknown
+S0156,36.815475,-119.750818,walkway,Industrial Technology Building,unknown
+S0157,36.815469,-119.737128,walkway,California Agricultural Technical Institute,unknown
+S0158,36.815467,-119.740698,near_building,Jordan Agricultural Research Center,unknown
+S0159,36.815452,-119.750969,walkway,Industrial Technology Building,unknown
+S0160,36.815413,-119.750672,walkway,Industrial Technology Building,unknown
+S0161,36.815401,-119.75434,walkway,,unknown
+S0162,36.815385,-119.748808,walkway,Police and Parking,unknown
+S0163,36.815371,-119.757813,walkway,Valley Children's Stadium,unknown
+S0164,36.815365,-119.750289,walkway,Industrial Technology Building,unknown
+S0165,36.81536,-119.736367,walkway,Post Harvest Laboratory,unknown
+S0166,36.815357,-119.74512,walkway,Ag Operations,unknown
+S0167,36.815353,-119.745349,walkway,Ag Operations,unknown
+S0168,36.81535,-119.758077,walkway,Valley Children's Stadium,unknown
+S0169,36.815346,-119.736052,walkway,Post Harvest Laboratory,unknown
+S0170,36.815341,-119.741989,walkway,"Print, Mail, Warehouse",unknown
+S0171,36.81533,-119.748928,near_building,Industrial Technology Building,unknown
+S0172,36.815314,-119.740851,walkway,Jordan Agricultural Research Center,unknown
+S0173,36.815313,-119.740698,walkway,Jordan Agricultural Research Center,unknown
+S0174,36.815313,-119.740457,walkway,Jordan Agricultural Research Center,unknown
+S0175,36.815313,-119.740215,walkway,Jordan Agricultural Research Center,unknown
+S0176,36.815309,-119.741041,walkway,"Print, Mail, Warehouse",unknown
+S0177,36.815304,-119.752578,walkway,North Gym Annex,unknown
+S0178,36.8153,-119.751663,walkway,Industrial Technology Building,unknown
+S0179,36.815296,-119.754023,walkway,,unknown
+S0180,36.815273,-119.750477,walkway,Industrial Technology Building,unknown
+S0181,36.815271,-119.75082,walkway,Industrial Technology Building,unknown
+S0182,36.815269,-119.750673,walkway,Industrial Technology Building,unknown
+S0183,36.81526,-119.757832,walkway,Valley Children's Stadium,unknown
+S0184,36.815247,-119.757625,walkway,Valley Children's Stadium,unknown
+S0185,36.81524,-119.741988,walkway,DOJ Lab,unknown
+S0186,36.815233,-119.750969,walkway,Industrial Technology Building,unknown
+S0187,36.815197,-119.740853,walkway,Jordan Agricultural Research Center,unknown
+S0188,36.815187,-119.758078,walkway,Valley Children's Stadium,unknown
+S0189,36.815187,-119.736048,walkway,Post Harvest Laboratory,unknown
+S0190,36.815181,-119.754341,walkway,,unknown
+S0191,36.815167,-119.73638,walkway,Post Harvest Laboratory,unknown
+S0192,36.815164,-119.74881,walkway,Police and Parking,unknown
+S0193,36.815162,-119.75738,near_building,Valley Children's Stadium,unknown
+S0194,36.815144,-119.745349,walkway,Ag Mechanics,unknown
+S0195,36.815143,-119.74893,walkway,Industrial Technology Building,unknown
+S0196,36.815142,-119.745122,walkway,Downing Planetarium,unknown
+S0197,36.815123,-119.743864,walkway,Science II,unknown
+S0198,36.815116,-119.751619,walkway,Industrial Technology Building,unknown
+S0199,36.81511,-119.741042,walkway,DOJ Lab,unknown
+S0200,36.815099,-119.750478,walkway,Industrial Technology Building,unknown
+S0201,36.815086,-119.752615,walkway,North Gym Annex,unknown
+S0202,36.815078,-119.754024,walkway,,unknown
+S0203,36.815074,-119.741931,near_building,DOJ Lab,unknown
+S0204,36.815028,-119.73606,walkway,Post Harvest Laboratory,unknown
+S0205,36.815015,-119.750969,walkway,Industrial Technology Building,unknown
+S0206,36.814997,-119.740855,walkway,DOJ Lab,unknown
+S0207,36.814995,-119.757022,near_building,Valley Children's Stadium,unknown
+S0208,36.814973,-119.74893,walkway,Industrial Technology Building,unknown
+S0209,36.814972,-119.736385,walkway,Post Harvest Laboratory,unknown
+S0210,36.814965,-119.757145,walkway,Valley Children's Stadium,unknown
+S0211,36.814961,-119.754341,walkway,,unknown
+S0212,36.814943,-119.748811,walkway,Industrial Technology Building,unknown
+S0213,36.814938,-119.743941,walkway,Science II,unknown
+S0214,36.814935,-119.745349,walkway,Ag Mechanics,unknown
+S0215,36.814928,-119.745125,walkway,Downing Planetarium,unknown
+S0216,36.814924,-119.750479,walkway,Industrial Technology Building,unknown
+S0217,36.81491,-119.741045,walkway,DOJ Lab,unknown
+S0218,36.814897,-119.751616,near_building,North Gym Annex,unknown
+S0219,36.814881,-119.740856,walkway,DOJ Lab,unknown
+S0220,36.814868,-119.752651,walkway,North Gym Annex,unknown
+S0221,36.814867,-119.741988,walkway,DOJ Lab,unknown
+S0222,36.81486,-119.754025,walkway,,unknown
+S0223,36.814806,-119.749158,walkway,Industrial Technology Building,unknown
+S0224,36.814803,-119.74893,walkway,Industrial Technology Building,unknown
+S0225,36.814796,-119.75097,walkway,Engineering West Building,unknown
+S0226,36.814777,-119.736389,walkway,Post Harvest Laboratory,unknown
+S0227,36.814754,-119.744018,walkway,Science II,unknown
+S0228,36.814751,-119.750284,near_building,Industrial Technology Building,unknown
+S0229,36.814751,-119.750127,walkway,Industrial Technology Building,unknown
+S0230,36.81475,-119.750481,walkway,Engineering West Building,unknown
+S0231,36.814741,-119.754341,walkway,,unknown
+S0232,36.814726,-119.74535,walkway,Ag Mechanics,unknown
+S0233,36.814722,-119.751616,walkway,North Gym Annex,unknown
+S0234,36.814722,-119.748813,walkway,Engineering East Building,unknown
+S0235,36.81472,-119.748572,walkway,Engineering East Building,unknown
+S0236,36.814718,-119.748332,walkway,Engineering East Building,unknown
+S0237,36.814716,-119.748092,walkway,Engineering East Building,unknown
+S0238,36.814713,-119.745127,walkway,Downing Planetarium,unknown
+S0239,36.814711,-119.741033,walkway,DOJ Lab,unknown
+S0240,36.814689,-119.752801,walkway,North Gym Annex,unknown
+S0241,36.814687,-119.747336,near_building,Engineering East Building,unknown
+S0242,36.814659,-119.741988,walkway,DOJ Lab,unknown
+S0243,36.814658,-119.742919,walkway,Science II,unknown
+S0244,36.814642,-119.754025,walkway,,unknown
+S0245,36.814618,-119.753328,walkway,North Gymnasium,unknown
+S0246,36.814618,-119.753055,walkway,North Gym Annex,unknown
+S0247,36.81459,-119.750481,walkway,Engineering West Building,unknown
+S0248,36.814582,-119.736392,walkway,Gibson Farm Market,unknown
+S0249,36.814578,-119.748936,walkway,Engineering East Building,unknown
+S0250,36.814577,-119.75097,walkway,Engineering West Building,unknown
+S0251,36.814569,-119.744094,walkway,Science II,unknown
+S0252,36.814524,-119.751616,walkway,North Gym Annex,unknown
+S0253,36.814524,-119.74095,walkway,DOJ Lab,unknown
+S0254,36.814521,-119.754341,walkway,,unknown
+S0255,36.81452,-119.74475,walkway,Downing Planetarium,unknown
+S0256,36.814518,-119.74535,walkway,Ag Mechanics,unknown
+S0257,36.814514,-119.744557,walkway,Downing Planetarium,unknown
+S0258,36.814513,-119.74914,walkway,Engineering West Building,unknown
+S0259,36.814512,-119.74552,walkway,Ag Mechanics,unknown
+S0260,36.814504,-119.742733,walkway,Science II,unknown
+S0261,36.814499,-119.74513,walkway,Downing Planetarium,unknown
+S0262,36.814452,-119.741988,walkway,DOJ Lab,unknown
+S0263,36.814439,-119.746102,walkway,Ag Mechanics,unknown
+S0264,36.814439,-119.744394,near_building,Downing Planetarium,unknown
+S0265,36.814437,-119.747384,walkway,Engineering East Building,unknown
+S0266,36.814429,-119.750482,walkway,Engineering West Building,unknown
+S0267,36.814427,-119.743353,walkway,Science II,unknown
+S0268,36.814424,-119.754026,walkway,,unknown
+S0269,36.814412,-119.745857,walkway,Ag Mechanics,unknown
+S0270,36.814405,-119.747019,near_building,Ag Mechanics,unknown
+S0271,36.814395,-119.74883,walkway,Engineering East Building,unknown
+S0272,36.814385,-119.745612,walkway,Ag Mechanics,unknown
+S0273,36.814385,-119.744171,walkway,Science II,unknown
+S0274,36.814358,-119.750971,walkway,Social Science,unknown
+S0275,36.814355,-119.749176,near_building,Engineering West Building,unknown
+S0276,36.814354,-119.748936,walkway,Engineering East Building,unknown
+S0277,36.814327,-119.751616,walkway,North Gym Annex,unknown
+S0278,36.814319,-119.743908,near_building,Science II,unknown
+S0279,36.814316,-119.742614,walkway,Science II,unknown
+S0280,36.814309,-119.745351,walkway,Ag Mechanics,unknown
+S0281,36.814302,-119.754342,walkway,,unknown
+S0282,36.814287,-119.740847,near_building,DOJ Lab,unknown
+S0283,36.814285,-119.745132,walkway,Satellite Student Union,unknown
+S0284,36.814278,-119.744452,walkway,Downing Planetarium,unknown
+S0285,36.814278,-119.743266,walkway,Science II,unknown
+S0286,36.814271,-119.750672,walkway,Social Science,unknown
+S0287,36.814269,-119.750482,walkway,Engineering West Building,unknown
+S0288,36.814268,-119.751441,walkway,North Gym Annex,unknown
+S0289,36.814267,-119.751309,walkway,North Gym Annex,unknown
+S0290,36.814267,-119.748653,walkway,Engineering East Building,unknown
+S0291,36.814262,-119.751035,walkway,North Gym Annex,unknown
+S0292,36.814262,-119.750884,walkway,Social Science,unknown
+S0293,36.814256,-119.747816,near_building,Engineering East Building,unknown
+S0294,36.814255,-119.748047,walkway,Engineering East Building,unknown
+S0295,36.814255,-119.74577,walkway,Ag Mechanics,unknown
+S0296,36.814254,-119.747539,walkway,Engineering East Building,unknown
+S0297,36.814253,-119.747407,walkway,Engineering East Building,unknown
+S0298,36.814251,-119.744226,walkway,Science II,unknown
+S0299,36.814249,-119.752006,walkway,North Gym Annex,unknown
+S0300,36.814247,-119.743632,walkway,Science II,unknown
+S0301,36.814244,-119.741988,walkway,DOJ Lab,unknown
+S0302,36.814242,-119.740971,walkway,DOJ Lab,unknown
+S0303,36.814239,-119.748828,walkway,Engineering East Building,unknown
+S0304,36.814213,-119.747018,near_building,Ag Mechanics,unknown
+S0305,36.814213,-119.746839,walkway,Ag Mechanics,unknown
+S0306,36.81421,-119.752191,near_building,North Gym Annex,unknown
+S0307,36.814206,-119.754027,walkway,,unknown
+S0308,36.814191,-119.750246,walkway,Engineering West Building,unknown
+S0309,36.81419,-119.74997,walkway,Engineering West Building,unknown
+S0310,36.814188,-119.749694,walkway,Engineering West Building,unknown
+S0311,36.814186,-119.749418,walkway,Engineering West Building,unknown
+S0312,36.814184,-119.749143,walkway,Engineering West Building,unknown
+S0313,36.814184,-119.748935,walkway,Engineering West Building,unknown
+S0314,36.814168,-119.751721,walkway,North Gym Annex,unknown
+S0315,36.814167,-119.751442,walkway,North Gym Annex,unknown
+S0316,36.814162,-119.747382,walkway,Engineering East Building,unknown
+S0317,36.814148,-119.746918,walkway,Ag Mechanics,unknown
+S0318,36.814132,-119.750843,walkway,Social Science,unknown
+S0319,36.814129,-119.743179,walkway,Science II,unknown
+S0320,36.814128,-119.742913,walkway,Science II,unknown
+S0321,36.814127,-119.742646,walkway,Science II,unknown
+S0322,36.814126,-119.745404,walkway,Satellite Student Union,unknown
+S0323,36.814124,-119.745663,walkway,Agricultural Sciences,unknown
+S0324,36.814122,-119.746174,walkway,Agricultural Sciences,unknown
+S0325,36.814122,-119.745923,walkway,Agricultural Sciences,unknown
+S0326,36.814121,-119.746424,walkway,Agricultural Sciences,unknown
+S0327,36.81412,-119.746675,walkway,Agricultural Sciences,unknown
+S0328,36.814118,-119.745047,walkway,Satellite Student Union,unknown
+S0329,36.814118,-119.74478,walkway,Science I,unknown
+S0330,36.814117,-119.744514,walkway,Science I,unknown
+S0331,36.814117,-119.74428,walkway,Science II,unknown
+S0332,36.814115,-119.744108,walkway,Science II,unknown
+S0333,36.814114,-119.743936,walkway,Science II,unknown
+S0334,36.814113,-119.743683,walkway,Science II,unknown
+S0335,36.814113,-119.74343,walkway,Science II,unknown
+S0336,36.814109,-119.752,near_building,North Gym Annex,unknown
+S0337,36.814093,-119.750971,walkway,Social Science,unknown
+S0338,36.814085,-119.747695,walkway,Engineering East Building,unknown
+S0339,36.814082,-119.754342,walkway,,unknown
+S0340,36.814082,-119.748825,walkway,KcKee Fiske Building,unknown
+S0341,36.814073,-119.751311,walkway,North Gym Annex,unknown
+S0342,36.814073,-119.748044,walkway,Engineering East Building,unknown
+S0343,36.814072,-119.747442,walkway,Engineering East Building,unknown
+S0344,36.814068,-119.747173,walkway,Engineering East Building,unknown
+S0345,36.814068,-119.747015,walkway,Agricultural Sciences,unknown
+S0346,36.814066,-119.748654,walkway,Engineering East Building,unknown
+S0347,36.814063,-119.73608,walkway,Gibson Farm Market,unknown
+S0348,36.814054,-119.748247,walkway,Engineering East Building,unknown
+S0349,36.814052,-119.748451,walkway,Engineering East Building,unknown
+S0350,36.814051,-119.736401,walkway,Gibson Farm Market,unknown
+S0351,36.814032,-119.746797,walkway,Agricultural Sciences,unknown
+S0352,36.81403,-119.746539,walkway,Agricultural Sciences,unknown
+S0353,36.81403,-119.742616,walkway,DOJ Lab,unknown
+S0354,36.814028,-119.746102,walkway,Agricultural Sciences,unknown
+S0355,36.814028,-119.745545,walkway,Satellite Student Union,unknown
+S0356,36.814028,-119.745356,walkway,Satellite Student Union,unknown
+S0357,36.814027,-119.745733,walkway,Agricultural Sciences,unknown
+S0358,36.814026,-119.745921,walkway,Agricultural Sciences,unknown
+S0359,36.814024,-119.751443,walkway,North Gym Annex,unknown
+S0360,36.814019,-119.745174,walkway,Satellite Student Union,unknown
+S0361,36.814015,-119.74447,walkway,Science I,unknown
+S0362,36.814013,-119.746282,near_building,Agricultural Sciences,unknown
+S0363,36.813996,-119.750862,walkway,Social Science,unknown
+S0364,36.813995,-119.750694,walkway,Social Science,unknown
+S0365,36.813994,-119.750451,walkway,Social Science,unknown
+S0366,36.813992,-119.750208,walkway,Social Science,unknown
+S0367,36.813992,-119.744955,walkway,Satellite Student Union,unknown
+S0368,36.813991,-119.749964,walkway,Social Science,unknown
+S0369,36.813991,-119.749697,walkway,KcKee Fiske Building,unknown
+S0370,36.813991,-119.744732,walkway,Science I,unknown
+S0371,36.81399,-119.74943,walkway,KcKee Fiske Building,unknown
+S0372,36.81399,-119.749163,walkway,KcKee Fiske Building,unknown
+S0373,36.81399,-119.748895,walkway,KcKee Fiske Building,unknown
+S0374,36.813988,-119.754028,walkway,,unknown
+S0375,36.813968,-119.736082,near_building,Gibson Farm Market,unknown
+S0376,36.813967,-119.744211,walkway,Science I,unknown
+S0377,36.813959,-119.743489,walkway,Science I,unknown
+S0378,36.813959,-119.743226,walkway,Science I,unknown
+S0379,36.813958,-119.747866,walkway,McLane Hall,unknown
+S0380,36.813935,-119.752237,walkway,North Gymnasium,unknown
+S0381,36.813931,-119.752494,walkway,North Gymnasium,unknown
+S0382,36.813922,-119.742582,walkway,Science I,unknown
+S0383,36.813919,-119.747016,walkway,Agricultural Sciences,unknown
+S0384,36.813889,-119.751999,walkway,North Gym Annex,unknown
+S0385,36.813879,-119.751313,walkway,North Gymnasium,unknown
+S0386,36.813874,-119.751726,walkway,North Gymnasium,unknown
+S0387,36.813874,-119.751457,walkway,North Gymnasium,unknown
+S0388,36.813874,-119.751135,walkway,North Gymnasium,unknown
+S0389,36.813874,-119.750702,near_building,Social Science,unknown
+S0390,36.813873,-119.751848,near_building,North Gymnasium,unknown
+S0391,36.813873,-119.750971,walkway,North Gymnasium,unknown
+S0392,36.813864,-119.743726,walkway,Science I,unknown
+S0393,36.813862,-119.754342,walkway,,unknown
+S0394,36.813854,-119.743988,walkway,Science I,unknown
+S0395,36.813843,-119.743007,walkway,Science I,unknown
+S0396,36.81383,-119.736405,walkway,Gibson Farm Market,unknown
+S0397,36.813828,-119.745373,walkway,Satellite Student Union,unknown
+S0398,36.813826,-119.749964,walkway,Social Science,unknown
+S0399,36.813826,-119.745923,walkway,Agricultural Sciences,unknown
+S0400,36.813817,-119.747873,walkway,McLane Hall,unknown
+S0401,36.813803,-119.742583,walkway,Science I,unknown
+S0402,36.813801,-119.744741,walkway,Science I,unknown
+S0403,36.813792,-119.748896,walkway,KcKee Fiske Building,unknown
+S0404,36.813775,-119.742759,walkway,Science I,unknown
+S0405,36.81377,-119.754029,walkway,,unknown
+S0406,36.813765,-119.752529,walkway,North Gymnasium,unknown
+S0407,36.813757,-119.751953,walkway,North Gymnasium,unknown
+S0408,36.813737,-119.749065,near_building,KcKee Fiske Building,unknown
+S0409,36.813724,-119.747016,walkway,McLane Hall,unknown
+S0410,36.813723,-119.752326,walkway,North Gymnasium,unknown
+S0411,36.813701,-119.736087,walkway,Gibson Farm Market,unknown
+S0412,36.813698,-119.749964,walkway,Social Science,unknown
+S0413,36.813682,-119.750973,walkway,North Gymnasium,unknown
+S0414,36.81368,-119.748897,walkway,KcKee Fiske Building,unknown
+S0415,36.813669,-119.750861,walkway,Social Science,unknown
+S0416,36.813653,-119.749724,walkway,KcKee Fiske Building,unknown
+S0417,36.813651,-119.751911,walkway,North Gymnasium,unknown
+S0418,36.813642,-119.754343,walkway,,unknown
+S0419,36.813634,-119.750218,walkway,Social Science,unknown
+S0420,36.813631,-119.745381,near_building,Satellite Student Union,unknown
+S0421,36.813629,-119.745664,walkway,Satellite Student Union,unknown
+S0422,36.813627,-119.746104,walkway,Agricultural Sciences,unknown
+S0423,36.813627,-119.745925,walkway,Agricultural Sciences,unknown
+S0424,36.813621,-119.742937,walkway,Science I,unknown
+S0425,36.81362,-119.742584,walkway,Science I,unknown
+S0426,36.813615,-119.744792,walkway,Science I,unknown
+S0427,36.813608,-119.736408,walkway,Gibson Farm Market,unknown
+S0428,36.813607,-119.752345,walkway,North Gymnasium,unknown
+S0429,36.813557,-119.748898,walkway,KcKee Fiske Building,unknown
+S0430,36.813557,-119.748748,walkway,McLane Hall,unknown
+S0431,36.813557,-119.748598,walkway,McLane Hall,unknown
+S0432,36.813553,-119.754029,walkway,,unknown
+S0433,36.81354,-119.749954,walkway,Social Science,unknown
+S0434,36.81353,-119.747156,walkway,McLane Hall,unknown
+S0435,36.81353,-119.747016,walkway,McLane Hall,unknown
+S0436,36.813529,-119.746765,walkway,Agricultural Sciences,unknown
+S0437,36.813518,-119.749549,walkway,KcKee Fiske Building,unknown
+S0438,36.813498,-119.736091,walkway,Gibson Farm Market,unknown
+S0439,36.81349,-119.752363,walkway,North Gymnasium,unknown
+S0440,36.81349,-119.750975,walkway,North Gymnasium,unknown
+S0441,36.813485,-119.746289,walkway,Agricultural Sciences,unknown
+S0442,36.813484,-119.745421,walkway,Satellite Student Union,unknown
+S0443,36.813483,-119.752611,walkway,North Gymnasium,unknown
+S0444,36.813475,-119.751114,walkway,North Gymnasium,unknown
+S0445,36.813465,-119.750861,walkway,Social Science,unknown
+S0446,36.813464,-119.750605,walkway,Social Science,unknown
+S0447,36.813457,-119.744647,near_building,Science I,unknown
+S0448,36.813447,-119.745924,walkway,Agricultural Sciences,unknown
+S0449,36.813445,-119.75034,walkway,Family and Food Science,unknown
+S0450,36.813438,-119.742586,walkway,Leon S Peters Business Center,unknown
+S0451,36.813437,-119.744877,walkway,Satellite Student Union,unknown
+S0452,36.813429,-119.746736,walkway,Agricultural Sciences,unknown
+S0453,36.813424,-119.746592,walkway,Agricultural Sciences,unknown
+S0454,36.813424,-119.743032,walkway,Science I,unknown
+S0455,36.813423,-119.748898,walkway,KcKee Fiske Building,unknown
+S0456,36.813422,-119.754343,walkway,,unknown
+S0457,36.813414,-119.750143,walkway,Family and Food Science,unknown
+S0458,36.813398,-119.747016,walkway,McLane Hall,unknown
+S0459,36.813392,-119.750976,walkway,North Gymnasium,unknown
+S0460,36.813386,-119.736412,walkway,Gibson Farm Market,unknown
+S0461,36.813383,-119.749945,walkway,Family and Food Science,unknown
+S0462,36.813356,-119.749768,walkway,Professional Human Services,unknown
+S0463,36.813348,-119.746441,walkway,Agricultural Sciences,unknown
+S0464,36.813341,-119.74401,walkway,Science I,unknown
+S0465,36.813335,-119.75403,walkway,,unknown
+S0466,36.81333,-119.749591,walkway,Professional Human Services,unknown
+S0467,36.813315,-119.749418,walkway,Professional Human Services,unknown
+S0468,36.81331,-119.744557,walkway,Science I,unknown
+S0469,36.813307,-119.749244,walkway,KcKee Fiske Building,unknown
+S0470,36.813306,-119.74907,walkway,KcKee Fiske Building,unknown
+S0471,36.813299,-119.750861,walkway,Family and Food Science,unknown
+S0472,36.813297,-119.744759,walkway,Science I,unknown
+S0473,36.813295,-119.750284,walkway,Family and Food Science,unknown
+S0474,36.813295,-119.743005,walkway,Leon S Peters Business Center,unknown
+S0475,36.813294,-119.736094,walkway,Gibson Farm Market,unknown
+S0476,36.813289,-119.748868,near_building,KcKee Fiske Building,unknown
+S0477,36.813288,-119.744353,walkway,Science I,unknown
+S0478,36.813287,-119.742795,walkway,Leon S Peters Business Center,unknown
+S0479,36.813284,-119.748603,walkway,McLane Hall,unknown
+S0480,36.813278,-119.752365,walkway,North Gymnasium,unknown
+S0481,36.813278,-119.743497,walkway,Science I,unknown
+S0482,36.813273,-119.746289,walkway,Agricultural Sciences,unknown
+S0483,36.81327,-119.74331,walkway,Science I,unknown
+S0484,36.813268,-119.745924,walkway,Agricultural Sciences,unknown
+S0485,36.813267,-119.747016,walkway,McLane Hall,unknown
+S0486,36.813259,-119.743682,walkway,Science I,unknown
+S0487,36.813258,-119.751066,walkway,North Gymnasium,unknown
+S0488,36.813257,-119.744152,walkway,Science I,unknown
+S0489,36.813257,-119.74387,walkway,Science I,unknown
+S0490,36.813256,-119.742587,walkway,Leon S Peters Business Center,unknown
+S0491,36.813249,-119.74491,walkway,Satellite Student Union,unknown
+S0492,36.813243,-119.745466,walkway,Satellite Student Union,unknown
+S0493,36.813233,-119.749738,walkway,Professional Human Services,unknown
+S0494,36.813216,-119.74714,near_building,McLane Hall,unknown
+S0495,36.813202,-119.754343,walkway,,unknown
+S0496,36.813197,-119.750135,walkway,Family and Food Science,unknown
+S0497,36.813183,-119.749919,walkway,Family and Food Science,unknown
+S0498,36.813181,-119.746106,walkway,Agricultural Sciences,unknown
+S0499,36.813168,-119.748518,walkway,McLane Hall,unknown
+S0500,36.813167,-119.748317,walkway,McLane Hall,unknown
+S0501,36.813166,-119.748116,walkway,McLane Hall,unknown
+S0502,36.813165,-119.747938,walkway,McLane Hall,unknown
+S0503,36.813164,-119.736416,walkway,Kennel Marketplace,unknown
+S0504,36.813162,-119.745033,walkway,Satellite Student Union,unknown
+S0505,36.813155,-119.748897,walkway,Professional Human Services,unknown
+S0506,36.813148,-119.751208,walkway,North Gymnasium,unknown
+S0507,36.813139,-119.750829,walkway,Family and Food Science,unknown
+S0508,36.813137,-119.747017,walkway,McLane Hall,unknown
+S0509,36.813137,-119.743907,walkway,Leon S Peters Business Center,unknown
+S0510,36.813136,-119.744105,walkway,Science I,unknown
+S0511,36.813117,-119.754031,walkway,,unknown
+S0512,36.813099,-119.742627,walkway,Leon S Peters Business Center,unknown
+S0513,36.813092,-119.746625,walkway,Thomas Administration Building,unknown
+S0514,36.813091,-119.746391,walkway,Thomas Administration Building,unknown
+S0515,36.813091,-119.736098,walkway,Kennel Marketplace,unknown
+S0516,36.81309,-119.746157,walkway,Thomas Administration Building,unknown
+S0517,36.813089,-119.745923,walkway,Thomas Administration Building,unknown
+S0518,36.813088,-119.745723,walkway,Satellite Student Union,unknown
+S0519,36.813088,-119.745523,walkway,Satellite Student Union,unknown
+S0520,36.813087,-119.74528,walkway,Satellite Student Union,unknown
+S0521,36.813075,-119.748417,walkway,McLane Hall,unknown
+S0522,36.81307,-119.74995,walkway,Family and Food Science,unknown
+S0523,36.813067,-119.752366,walkway,North Gymnasium,unknown
+S0524,36.813063,-119.745141,walkway,Satellite Student Union,unknown
+S0525,36.813031,-119.744002,walkway,Leon S Peters Business Center,unknown
+S0526,36.813021,-119.74889,walkway,Professional Human Services,unknown
+S0527,36.813019,-119.748744,walkway,University Student Union,unknown
+S0528,36.813018,-119.748598,walkway,University Student Union,unknown
+S0529,36.813012,-119.743312,walkway,Leon S Peters Business Center,unknown
+S0530,36.813008,-119.747057,walkway,McLane Hall,unknown
+S0531,36.812995,-119.751169,walkway,South Gymnasium,unknown
+S0532,36.812993,-119.751446,walkway,South Gymnasium,unknown
+S0533,36.812982,-119.754343,walkway,,unknown
+S0534,36.812982,-119.748469,walkway,University Student Union,unknown
+S0535,36.812982,-119.748317,walkway,University Student Union,unknown
+S0536,36.812971,-119.751719,walkway,North Gymnasium,unknown
+S0537,36.812961,-119.750921,walkway,Family and Food Science,unknown
+S0538,36.812947,-119.750665,walkway,Family and Food Science,unknown
+S0539,36.812942,-119.736419,walkway,Kennel Marketplace,unknown
+S0540,36.812938,-119.742608,walkway,Leon S Peters Business Center,unknown
+S0541,36.812912,-119.745349,walkway,Satellite Student Union,unknown
+S0542,36.812911,-119.748625,walkway,University Student Union,unknown
+S0543,36.812903,-119.75041,walkway,Family and Food Science,unknown
+S0544,36.812903,-119.74815,near_building,University Student Union,unknown
+S0545,36.812899,-119.754032,walkway,,unknown
+S0546,36.812898,-119.745924,walkway,Thomas Administration Building,unknown
+S0547,36.812894,-119.743313,walkway,Leon S Peters Business Center,unknown
+S0548,36.812893,-119.747828,walkway,McLane Hall,unknown
+S0549,36.812893,-119.747596,walkway,Kennel Bookstore,unknown
+S0550,36.812892,-119.747365,walkway,McLane Hall,unknown
+S0551,36.812892,-119.747134,walkway,McLane Hall,unknown
+S0552,36.812889,-119.751976,walkway,North Gymnasium,unknown
+S0553,36.812888,-119.736102,walkway,Kennel Marketplace,unknown
+S0554,36.812879,-119.747019,walkway,McLane Hall,unknown
+S0555,36.812878,-119.750002,near_building,Family and Food Science,unknown
+S0556,36.812875,-119.745145,walkway,Satellite Student Union,unknown
+S0557,36.812872,-119.752172,walkway,North Gymnasium,unknown
+S0558,36.812868,-119.750212,walkway,Family and Food Science,unknown
+S0559,36.812855,-119.752368,walkway,North Gymnasium,unknown
+S0560,36.812851,-119.744001,walkway,Leon S Peters Business Center,unknown
+S0561,36.812839,-119.750918,walkway,South Gymnasium,unknown
+S0562,36.812831,-119.750545,walkway,Family and Food Science,unknown
+S0563,36.812813,-119.74793,near_building,Kennel Bookstore,unknown
+S0564,36.812806,-119.748882,walkway,Professional Human Services,unknown
+S0565,36.812804,-119.752601,walkway,North Gymnasium,unknown
+S0566,36.812799,-119.749815,walkway,Professional Human Services,unknown
+S0567,36.812782,-119.743001,walkway,Leon S Peters Business Center,unknown
+S0568,36.812781,-119.74279,walkway,Leon S Peters Business Center,unknown
+S0569,36.812779,-119.742579,walkway,Leon S Peters Business Center,unknown
+S0570,36.812774,-119.749056,near_building,Professional Human Services,unknown
+S0571,36.812763,-119.754344,walkway,,unknown
+S0572,36.812763,-119.749617,walkway,Professional Human Services,unknown
+S0573,36.812753,-119.752835,walkway,North Gymnasium,unknown
+S0574,36.812743,-119.74702,walkway,Thomas Administration Building,unknown
+S0575,36.812741,-119.747181,walkway,McLane Hall,unknown
+S0576,36.812739,-119.749181,walkway,Professional Human Services,unknown
+S0577,36.812728,-119.749418,walkway,Professional Human Services,unknown
+S0578,36.812725,-119.750481,walkway,Family and Food Science,unknown
+S0579,36.812724,-119.750628,walkway,Family and Food Science,unknown
+S0580,36.812721,-119.73642,walkway,Kennel Marketplace,unknown
+S0581,36.812717,-119.750908,walkway,South Gymnasium,unknown
+S0582,36.812716,-119.750772,walkway,South Gymnasium,unknown
+S0583,36.812709,-119.75198,walkway,South Gymnasium,unknown
+S0584,36.812706,-119.745925,walkway,Thomas Administration Building,unknown
+S0585,36.812705,-119.745734,walkway,Thomas Administration Building,unknown
+S0586,36.812703,-119.745542,walkway,Thomas Administration Building,unknown
+S0587,36.812702,-119.753068,walkway,North Gymnasium,unknown
+S0588,36.812702,-119.745351,walkway,Satellite Student Union,unknown
+S0589,36.812686,-119.745149,walkway,Satellite Student Union,unknown
+S0590,36.812686,-119.736118,walkway,Kennel Marketplace,unknown
+S0591,36.812682,-119.753307,walkway,North Gymnasium,unknown
+S0592,36.812681,-119.754033,walkway,,unknown
+S0593,36.812681,-119.753791,walkway,,unknown
+S0594,36.812681,-119.753549,walkway,North Gymnasium,unknown
+S0595,36.812678,-119.735483,near_building,Kennel Marketplace,unknown
+S0596,36.812676,-119.735225,walkway,Kennel Marketplace,unknown
+S0597,36.812672,-119.744,walkway,Leon S Peters Business Center,unknown
+S0598,36.81265,-119.747937,near_building,Kennel Bookstore,unknown
+S0599,36.812638,-119.749057,walkway,Professional Human Services,unknown
+S0600,36.812622,-119.749296,walkway,Professional Human Services,unknown
+S0601,36.812608,-119.747021,walkway,Thomas Administration Building,unknown
+S0602,36.812607,-119.742726,walkway,Leon S Peters Business Center,unknown
+S0603,36.812606,-119.742583,walkway,Leon S Peters Business Center,unknown
+S0604,36.812604,-119.747161,walkway,Kennel Bookstore,unknown
+S0605,36.812588,-119.7473,walkway,Kennel Bookstore,unknown
+S0606,36.812583,-119.74888,walkway,University Student Union,unknown
+S0607,36.81258,-119.735433,near_building,Kennel Marketplace,unknown
+S0608,36.812565,-119.748046,near_building,University Student Union,unknown
+S0609,36.812564,-119.746819,walkway,Thomas Administration Building,unknown
+S0610,36.81256,-119.750877,walkway,South Gymnasium,unknown
+S0611,36.812555,-119.750379,walkway,Fresno State Library,unknown
+S0612,36.81255,-119.748688,walkway,University Student Union,unknown
+S0613,36.812545,-119.733519,near_building,,unknown
+S0614,36.812543,-119.754344,walkway,,unknown
+S0615,36.812542,-119.747506,walkway,Kennel Bookstore,unknown
+S0616,36.812529,-119.751983,walkway,South Gymnasium,unknown
+S0617,36.812525,-119.748159,walkway,University Student Union,unknown
+S0618,36.812515,-119.749174,walkway,Professional Human Services,unknown
+S0619,36.812509,-119.745926,walkway,Thomas Administration Building,unknown
+S0620,36.812507,-119.745353,walkway,Thomas Administration Building,unknown
+S0621,36.812505,-119.754034,walkway,,unknown
+S0622,36.812503,-119.736389,walkway,Kennel Marketplace,unknown
+S0623,36.8125,-119.743318,near_building,Leon S Peters Business Center,unknown
+S0624,36.812498,-119.745153,walkway,Satellite Student Union,unknown
+S0625,36.812492,-119.743999,walkway,Leon S Peters Business Center,unknown
+S0626,36.812488,-119.736093,walkway,Kennel Marketplace,unknown
+S0627,36.812486,-119.750615,walkway,Fresno State Library,unknown
+S0628,36.812476,-119.750311,walkway,Fresno State Library,unknown
+S0629,36.812474,-119.74847,walkway,University Student Union,unknown
+S0630,36.812473,-119.748325,walkway,University Student Union,unknown
+S0631,36.812471,-119.7477,walkway,Kennel Bookstore,unknown
+S0632,36.812454,-119.747023,walkway,Thomas Administration Building,unknown
+S0633,36.812453,-119.746663,walkway,Thomas Administration Building,unknown
+S0634,36.812444,-119.750044,walkway,Fresno State Library,unknown
+S0635,36.812433,-119.749345,walkway,Fresno State Library,unknown
+S0636,36.812426,-119.734643,walkway,Kennel Marketplace,unknown
+S0637,36.812424,-119.742587,walkway,Leon S Peters Business Center,unknown
+S0638,36.812424,-119.734411,near_building,Kennel Marketplace,unknown
+S0639,36.812423,-119.733496,walkway,,unknown
+S0640,36.812404,-119.750842,walkway,South Gymnasium,unknown
+S0641,36.812404,-119.744413,walkway,Conley Art Gallery,unknown
+S0642,36.812401,-119.748879,walkway,University Student Union,unknown
+S0643,36.8124,-119.747868,walkway,Kennel Bookstore,unknown
+S0644,36.812399,-119.751025,walkway,South Gymnasium,unknown
+S0645,36.812397,-119.74978,walkway,Fresno State Library,unknown
+S0646,36.812385,-119.749026,walkway,Fresno State Library,unknown
+S0647,36.81238,-119.74465,walkway,Conley Art Gallery,unknown
+S0648,36.812372,-119.743316,walkway,Leon S Peters Business Center,unknown
+S0649,36.81237,-119.743999,walkway,Leon S Peters Business Center,unknown
+S0650,36.812359,-119.736584,walkway,Kennel Marketplace,unknown
+S0651,36.812356,-119.748469,walkway,University Center,unknown
+S0652,36.812351,-119.749517,walkway,Fresno State Library,unknown
+S0653,36.812351,-119.748323,walkway,University Center,unknown
+S0654,36.812349,-119.751986,walkway,South Gymnasium,unknown
+S0655,36.812345,-119.74419,walkway,Conley Art Gallery,unknown
+S0656,36.812339,-119.735937,walkway,Kennel Marketplace,unknown
+S0657,36.812336,-119.735688,walkway,Kennel Marketplace,unknown
+S0658,36.812334,-119.735438,walkway,Kennel Marketplace,unknown
+S0659,36.812333,-119.748038,walkway,University Center,unknown
+S0660,36.812332,-119.735174,walkway,Kennel Marketplace,unknown
+S0661,36.81233,-119.734909,walkway,Kennel Marketplace,unknown
+S0662,36.812328,-119.754035,walkway,,unknown
+S0663,36.812325,-119.738786,walkway,,unknown
+S0664,36.812324,-119.73851,walkway,,unknown
+S0665,36.812324,-119.738234,walkway,,unknown
+S0666,36.812323,-119.737958,walkway,,unknown
+S0667,36.812323,-119.736855,walkway,Kennel Marketplace,unknown
+S0668,36.812322,-119.737682,walkway,Kennel Marketplace,unknown
+S0669,36.812321,-119.737406,walkway,Kennel Marketplace,unknown
+S0670,36.812321,-119.73713,walkway,Kennel Marketplace,unknown
+S0671,36.812316,-119.734646,walkway,Kennel Marketplace,unknown
+S0672,36.812313,-119.734411,walkway,Kennel Marketplace,unknown
+S0673,36.812312,-119.745737,walkway,Thomas Administration Building,unknown
+S0674,36.812312,-119.745546,walkway,Thomas Administration Building,unknown
+S0675,36.812312,-119.745355,walkway,Thomas Administration Building,unknown
+S0676,36.812311,-119.746192,walkway,Thomas Administration Building,unknown
+S0677,36.812311,-119.746035,near_building,Thomas Administration Building,unknown
+S0678,36.81231,-119.746317,walkway,Thomas Administration Building,unknown
+S0679,36.81231,-119.734182,walkway,Kennel Marketplace,unknown
+S0680,36.812309,-119.745157,walkway,Thomas Administration Building,unknown
+S0681,36.812308,-119.744871,walkway,Conley Art Gallery,unknown
+S0682,36.812307,-119.750359,near_building,Fresno State Library,unknown
+S0683,36.812307,-119.733953,walkway,Kennel Marketplace,unknown
+S0684,36.812304,-119.733725,walkway,,unknown
+S0685,36.812301,-119.733496,walkway,,unknown
+S0686,36.812298,-119.750898,walkway,South Gymnasium,unknown
+S0687,36.812298,-119.733264,walkway,,unknown
+S0688,36.812296,-119.739057,walkway,,unknown
+S0689,36.812295,-119.733032,walkway,,unknown
+S0690,36.812282,-119.74914,walkway,Fresno State Library,unknown
+S0691,36.812261,-119.748107,walkway,University Center,unknown
+S0692,36.812261,-119.747928,walkway,University Center,unknown
+S0693,36.81226,-119.747759,walkway,University Center,unknown
+S0694,36.812259,-119.74832,near_building,University Center,unknown
+S0695,36.812259,-119.747545,walkway,Kennel Bookstore,unknown
+S0696,36.812258,-119.748468,walkway,University Center,unknown
+S0697,36.812257,-119.74733,walkway,Kennel Bookstore,unknown
+S0698,36.812256,-119.748673,walkway,University Center,unknown
+S0699,36.812255,-119.747116,walkway,Speech Arts,unknown
+S0700,36.812254,-119.748878,walkway,University Center,unknown
+S0701,36.812248,-119.743998,walkway,Conley Art Gallery,unknown
+S0702,36.812247,-119.74377,walkway,Conley Art Gallery,unknown
+S0703,36.812246,-119.743542,walkway,Leon S Peters Business Center,unknown
+S0704,36.812245,-119.743246,near_building,Leon S Peters Business Center,unknown
+S0705,36.812244,-119.743073,walkway,Leon S Peters Business Center,unknown
+S0706,36.812243,-119.742832,walkway,Leon S Peters Business Center,unknown
+S0707,36.812242,-119.74259,walkway,Leon S Peters Business Center,unknown
+S0708,36.812236,-119.742233,walkway,Leon S Peters Business Center,unknown
+S0709,36.812236,-119.741978,walkway,Leon S Peters Business Center,unknown
+S0710,36.812235,-119.741724,walkway,Leon S Peters Business Center,unknown
+S0711,36.812235,-119.74147,walkway,Leon S Peters Business Center,unknown
+S0712,36.812235,-119.741215,walkway,Leon S Peters Business Center,unknown
+S0713,36.812235,-119.739322,walkway,,unknown
+S0714,36.81222,-119.753214,walkway,South Gymnasium,unknown
+S0715,36.812211,-119.746961,walkway,Speech Arts,unknown
+S0716,36.81221,-119.746774,walkway,Speech Arts,unknown
+S0717,36.812209,-119.746587,walkway,Speech Arts,unknown
+S0718,36.812205,-119.750763,walkway,South Gymnasium,unknown
+S0719,36.812196,-119.750963,walkway,South Gymnasium,unknown
+S0720,36.812195,-119.74042,walkway,,unknown
+S0721,36.812195,-119.739593,walkway,,unknown
+S0722,36.812194,-119.740144,walkway,,unknown
+S0723,36.812193,-119.746317,walkway,Speech Arts,unknown
+S0724,36.812193,-119.746192,walkway,Speech Arts,unknown
+S0725,36.812193,-119.745928,walkway,Speech Arts,unknown
+S0726,36.812193,-119.745738,walkway,Thomas Administration Building,unknown
+S0727,36.812192,-119.745549,walkway,Thomas Administration Building,unknown
+S0728,36.812192,-119.739868,walkway,,unknown
+S0729,36.812191,-119.745359,walkway,Thomas Administration Building,unknown
+S0730,36.812189,-119.745029,walkway,Conley Art Gallery,unknown
+S0731,36.812176,-119.75193,near_building,South Gymnasium,unknown
+S0732,36.812171,-119.74104,walkway,,unknown
+S0733,36.81217,-119.751748,walkway,South Gymnasium,unknown
+S0734,36.81217,-119.735836,walkway,Kennel Marketplace,unknown
+S0735,36.812167,-119.735567,walkway,Kennel Marketplace,unknown
+S0736,36.812164,-119.735298,walkway,Kennel Marketplace,unknown
+S0737,36.812163,-119.740684,walkway,,unknown
+S0738,36.812161,-119.735029,walkway,Kennel Marketplace,unknown
+S0739,36.81216,-119.740868,walkway,,unknown
+S0740,36.812158,-119.73476,walkway,Kennel Marketplace,unknown
+S0741,36.812154,-119.734534,walkway,Kennel Marketplace,unknown
+S0742,36.812151,-119.736984,walkway,Kennel Marketplace,unknown
+S0743,36.81215,-119.734308,walkway,Kennel Marketplace,unknown
+S0744,36.812146,-119.734051,walkway,Kennel Marketplace,unknown
+S0745,36.812145,-119.736724,walkway,Kennel Marketplace,unknown
+S0746,36.812141,-119.733794,walkway,,unknown
+S0747,36.812137,-119.733538,walkway,,unknown
+S0748,36.812134,-119.739356,walkway,,unknown
+S0749,36.812132,-119.733281,walkway,,unknown
+S0750,36.812128,-119.733025,walkway,,unknown
+S0751,36.812125,-119.75121,walkway,South Gymnasium,unknown
+S0752,36.812121,-119.748877,walkway,Fresno State Library,unknown
+S0753,36.812106,-119.74785,walkway,University Center,unknown
+S0754,36.812094,-119.750419,walkway,Fresno State Library,unknown
+S0755,36.812088,-119.736056,walkway,Kennel Marketplace,unknown
+S0756,36.812083,-119.751837,walkway,South Gymnasium,unknown
+S0757,36.812078,-119.736487,walkway,Kennel Marketplace,unknown
+S0758,36.812065,-119.7507,walkway,Fresno State Library,unknown
+S0759,36.812063,-119.748035,walkway,University Center,unknown
+S0760,36.81206,-119.747029,walkway,Speech Arts,unknown
+S0761,36.812055,-119.746665,walkway,Speech Arts,unknown
+S0762,36.812052,-119.751461,walkway,South Gymnasium,unknown
+S0763,36.812052,-119.745929,walkway,Speech Arts,unknown
+S0764,36.812044,-119.746051,walkway,Speech Arts,unknown
+S0765,36.812037,-119.745132,walkway,Conley Art Gallery,unknown
+S0766,36.812029,-119.742591,walkway,Leon S Peters Business Center,unknown
+S0767,36.812023,-119.740684,walkway,,unknown
+S0768,36.81202,-119.747659,walkway,Speech Arts,unknown
+S0769,36.812017,-119.739291,walkway,,unknown
+S0770,36.812005,-119.73431,walkway,Kennel Marketplace,unknown
+S0771,36.812004,-119.753153,walkway,South Gymnasium,unknown
+S0772,36.812002,-119.745361,walkway,Speech Arts,unknown
+S0773,36.811947,-119.746826,walkway,Speech Arts,unknown
+S0774,36.811938,-119.751678,walkway,South Gymnasium,unknown
+S0775,36.811935,-119.749008,walkway,Fresno State Library,unknown
+S0776,36.811934,-119.748886,walkway,University Center,unknown
+S0777,36.811923,-119.750629,walkway,Fresno State Library,unknown
+S0778,36.811911,-119.747506,walkway,Speech Arts,unknown
+S0779,36.811911,-119.747242,walkway,Speech Arts,unknown
+S0780,36.81191,-119.747769,walkway,University Center,unknown
+S0781,36.81191,-119.74593,walkway,Speech Arts,unknown
+S0782,36.811909,-119.747029,walkway,Speech Arts,unknown
+S0783,36.8119,-119.736419,walkway,Kennel Marketplace,unknown
+S0784,36.811892,-119.734741,near_building,Kennel Marketplace,unknown
+S0785,36.811891,-119.736137,walkway,Kennel Marketplace,unknown
+S0786,36.811889,-119.745123,walkway,Conley Art Gallery,unknown
+S0787,36.811886,-119.750778,walkway,University Dining Hall,unknown
+S0788,36.811876,-119.750434,walkway,Fresno State Library,unknown
+S0789,36.811862,-119.734527,walkway,Kennel Marketplace,unknown
+S0790,36.811853,-119.748043,walkway,University Center,unknown
+S0791,36.811842,-119.749252,walkway,Fresno State Library,unknown
+S0792,36.811832,-119.740673,walkway,,unknown
+S0793,36.811829,-119.734312,near_building,Kennel Marketplace,unknown
+S0794,36.811819,-119.746053,walkway,Speech Arts,unknown
+S0795,36.811817,-119.74593,walkway,Speech Arts,unknown
+S0796,36.811816,-119.742593,walkway,Leon S Peters Business Center,unknown
+S0797,36.811813,-119.745622,walkway,Speech Arts,unknown
+S0798,36.811812,-119.745364,walkway,Speech Arts,unknown
+S0799,36.811798,-119.748941,walkway,University Center,unknown
+S0800,36.81179,-119.750537,walkway,University Dining Hall,unknown
+S0801,36.811787,-119.753182,walkway,South Gymnasium,unknown
+S0802,36.811756,-119.745033,walkway,Joyal Administration Building,unknown
+S0803,36.811754,-119.744828,walkway,Conley Art Gallery,unknown
+S0804,36.811752,-119.744623,walkway,Conley Art Gallery,unknown
+S0805,36.81175,-119.744418,near_building,Conley Art Gallery,unknown
+S0806,36.811729,-119.747912,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0807,36.811728,-119.751727,walkway,University Dining Hall,unknown
+S0808,36.811726,-119.734314,walkway,Hyatt House,unknown
+S0809,36.811708,-119.750856,walkway,University Dining Hall,unknown
+S0810,36.811695,-119.736447,walkway,Kennel Marketplace,unknown
+S0811,36.81169,-119.748879,walkway,University Center,unknown
+S0812,36.811676,-119.736119,walkway,Kennel Marketplace,unknown
+S0813,36.811657,-119.750441,walkway,University Dining Hall,unknown
+S0814,36.811657,-119.747724,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0815,36.811652,-119.748681,walkway,University Center,unknown
+S0816,36.811652,-119.748469,walkway,University Center,unknown
+S0817,36.811652,-119.748256,walkway,University Center,unknown
+S0818,36.811652,-119.748044,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0819,36.811649,-119.74908,walkway,Fresno State Library,unknown
+S0820,36.811641,-119.745069,walkway,Joyal Administration Building,unknown
+S0821,36.81164,-119.740672,walkway,,unknown
+S0822,36.811635,-119.745767,walkway,Music,unknown
+S0823,36.811633,-119.745931,walkway,Speech Arts,unknown
+S0824,36.811606,-119.745368,walkway,Music,unknown
+S0825,36.811603,-119.742595,walkway,Conley Art Gallery,unknown
+S0826,36.811602,-119.734317,walkway,Hyatt House,unknown
+S0827,36.811596,-119.734167,walkway,Hyatt House,unknown
+S0828,36.811576,-119.743876,walkway,Conley Art Gallery,unknown
+S0829,36.811566,-119.753204,walkway,Baker Hall,unknown
+S0830,36.811559,-119.747481,near_building,Speech Arts,unknown
+S0831,36.811554,-119.750507,walkway,University Dining Hall,unknown
+S0832,36.811539,-119.745139,walkway,Joyal Administration Building,unknown
+S0833,36.811536,-119.748045,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0834,36.811536,-119.747179,walkway,Speech Arts,unknown
+S0835,36.811534,-119.751832,walkway,University Dining Hall,unknown
+S0836,36.811519,-119.74888,walkway,University Center,unknown
+S0837,36.811503,-119.744983,walkway,Joyal Administration Building,unknown
+S0838,36.811486,-119.736451,walkway,Kennel Marketplace,unknown
+S0839,36.811486,-119.734765,walkway,Hyatt House,unknown
+S0840,36.81148,-119.745671,walkway,Music,unknown
+S0841,36.811478,-119.746996,walkway,Speech Arts,unknown
+S0842,36.811476,-119.74922,walkway,Fresno State Library,unknown
+S0843,36.811469,-119.750305,walkway,University Dining Hall,unknown
+S0844,36.811459,-119.736125,walkway,Hyatt House,unknown
+S0845,36.811457,-119.750428,walkway,University Dining Hall,unknown
+S0846,36.811457,-119.746786,walkway,Speech Arts,unknown
+S0847,36.811449,-119.745932,walkway,Music,unknown
+S0848,36.811448,-119.740671,walkway,,unknown
+S0849,36.811447,-119.75056,near_building,University Dining Hall,unknown
+S0850,36.81144,-119.747508,walkway,Speech Arts,unknown
+S0851,36.811406,-119.749311,walkway,Fresno State Library,unknown
+S0852,36.811404,-119.744904,walkway,Joyal Administration Building,unknown
+S0853,36.811401,-119.745142,walkway,Joyal Administration Building,unknown
+S0854,36.811401,-119.744605,walkway,Joyal Administration Building,unknown
+S0855,36.8114,-119.745372,walkway,Joyal Administration Building,unknown
+S0856,36.811399,-119.744395,walkway,Joyal Administration Building,unknown
+S0857,36.811398,-119.744186,walkway,Joyal Administration Building,unknown
+S0858,36.811398,-119.744029,walkway,Joyal Administration Building,unknown
+S0859,36.811397,-119.743872,walkway,Conley Art Gallery,unknown
+S0860,36.811395,-119.743617,walkway,Conley Art Gallery,unknown
+S0861,36.811394,-119.743362,walkway,Conley Art Gallery,unknown
+S0862,36.811393,-119.743107,walkway,Conley Art Gallery,unknown
+S0863,36.811391,-119.742852,walkway,Conley Art Gallery,unknown
+S0864,36.81139,-119.742596,walkway,Conley Art Gallery,unknown
+S0865,36.811359,-119.751984,walkway,University Dining Hall,unknown
+S0866,36.811354,-119.748045,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0867,36.811349,-119.753158,walkway,Baker Hall,unknown
+S0868,36.811348,-119.748881,walkway,University Center,unknown
+S0869,36.811326,-119.745574,walkway,Music,unknown
+S0870,36.811322,-119.747445,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0871,36.811299,-119.749262,walkway,Fresno State Library,unknown
+S0872,36.811286,-119.750173,walkway,Fresno State Library,unknown
+S0873,36.811285,-119.742426,walkway,Conley Art Gallery,unknown
+S0874,36.811284,-119.746751,walkway,Speech Arts,unknown
+S0875,36.811277,-119.736455,walkway,Hyatt House,unknown
+S0876,36.81127,-119.747101,near_building,Lynda and Stewart Resnick Student Union,unknown
+S0877,36.811266,-119.750509,walkway,University Dining Hall,unknown
+S0878,36.811266,-119.749592,walkway,Fresno State Library,unknown
+S0879,36.811266,-119.745934,near_building,Music,unknown
+S0880,36.811256,-119.740671,walkway,Student Recreation Center,unknown
+S0881,36.811243,-119.736131,walkway,Hyatt House,unknown
+S0882,36.81124,-119.7441,walkway,Joyal Administration Building,unknown
+S0883,36.811221,-119.745145,walkway,Joyal Administration Building,unknown
+S0884,36.81122,-119.749767,walkway,Fresno State Library,unknown
+S0885,36.811215,-119.744903,walkway,Joyal Administration Building,unknown
+S0886,36.811212,-119.74537,walkway,Joyal Administration Building,unknown
+S0887,36.811206,-119.742369,walkway,Conley Art Gallery,unknown
+S0888,36.811194,-119.749315,walkway,Fresno State Library,unknown
+S0889,36.81119,-119.749109,walkway,Fresno State Library,unknown
+S0890,36.811188,-119.748896,walkway,Fresno State Library,unknown
+S0891,36.811185,-119.752138,walkway,Baker Hall,unknown
+S0892,36.811174,-119.749943,walkway,Fresno State Library,unknown
+S0893,36.811173,-119.748045,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0894,36.811171,-119.745478,walkway,Music,unknown
+S0895,36.81113,-119.750041,walkway,Fresno State Library,unknown
+S0896,36.811129,-119.753804,walkway,Baker Hall,unknown
+S0897,36.811128,-119.75359,walkway,Baker Hall,unknown
+S0898,36.811128,-119.753377,walkway,Baker Hall,unknown
+S0899,36.811128,-119.751131,walkway,University Dining Hall,unknown
+S0900,36.811127,-119.753163,walkway,Baker Hall,unknown
+S0901,36.811127,-119.752897,walkway,Baker Hall,unknown
+S0902,36.811126,-119.752631,walkway,Baker Hall,unknown
+S0903,36.811126,-119.745924,walkway,Music,unknown
+S0904,36.811125,-119.752366,walkway,Baker Hall,unknown
+S0905,36.811116,-119.749415,walkway,Fresno State Library,unknown
+S0906,36.811109,-119.742327,walkway,Smittcamp Alumni House,unknown
+S0907,36.811102,-119.74702,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0908,36.811102,-119.746751,walkway,Music,unknown
+S0909,36.811082,-119.749539,walkway,Fresno State Library,unknown
+S0910,36.811082,-119.749276,walkway,Fresno State Library,unknown
+S0911,36.811081,-119.750608,walkway,University Dining Hall,unknown
+S0912,36.81108,-119.750414,walkway,University Dining Hall,unknown
+S0913,36.81108,-119.749754,walkway,Fresno State Library,unknown
+S0914,36.811079,-119.750221,walkway,Fresno State Library,unknown
+S0915,36.811069,-119.73646,walkway,Hyatt House,unknown
+S0916,36.811064,-119.74067,walkway,Student Recreation Center,unknown
+S0917,36.811055,-119.744107,walkway,Joyal Administration Building,unknown
+S0918,36.81104,-119.745148,walkway,Joyal Administration Building,unknown
+S0919,36.811037,-119.740961,walkway,Student Recreation Center,unknown
+S0920,36.811027,-119.736137,walkway,Hyatt House,unknown
+S0921,36.811026,-119.744902,walkway,Joyal Administration Building,unknown
+S0922,36.811024,-119.745369,walkway,Joyal Administration Building,unknown
+S0923,36.811013,-119.742316,walkway,Smittcamp Alumni House,unknown
+S0924,36.811006,-119.750703,walkway,University Dining Hall,unknown
+S0925,36.811002,-119.745574,walkway,Music,unknown
+S0926,36.811001,-119.745783,walkway,Music,unknown
+S0927,36.811,-119.751189,walkway,University Dining Hall,unknown
+S0928,36.810991,-119.748045,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0929,36.810979,-119.749869,walkway,Fresno State Library,unknown
+S0930,36.810972,-119.743085,walkway,University High School,unknown
+S0931,36.810942,-119.752157,walkway,Baker Hall,unknown
+S0932,36.810941,-119.751899,walkway,Baker Hall,unknown
+S0933,36.810941,-119.751641,walkway,Baker Hall,unknown
+S0934,36.81094,-119.751433,walkway,Baker Hall,unknown
+S0935,36.810933,-119.74515,walkway,Joyal Administration Building,unknown
+S0936,36.810921,-119.75239,walkway,Baker Hall,unknown
+S0937,36.810918,-119.746751,walkway,Music,unknown
+S0938,36.810914,-119.748883,walkway,Fresno State Library,unknown
+S0939,36.810909,-119.745841,walkway,Music,unknown
+S0940,36.810906,-119.750937,walkway,University Dining Hall,unknown
+S0941,36.810887,-119.741687,walkway,Smittcamp Alumni House,unknown
+S0942,36.810881,-119.740691,walkway,Student Recreation Center,unknown
+S0943,36.810874,-119.742192,walkway,Smittcamp Alumni House,unknown
+S0944,36.810872,-119.751248,walkway,Baker Hall,unknown
+S0945,36.810872,-119.735994,walkway,Hyatt House,unknown
+S0946,36.810869,-119.744114,walkway,Joyal Administration Building,unknown
+S0947,36.810867,-119.740916,walkway,Student Recreation Center,unknown
+S0948,36.810865,-119.735725,walkway,Hyatt House,unknown
+S0949,36.810863,-119.741177,walkway,Student Recreation Center,unknown
+S0950,36.810863,-119.735612,near_building,Hyatt House,unknown
+S0951,36.810861,-119.750793,walkway,University Dining Hall,unknown
+S0952,36.81086,-119.736464,walkway,Hyatt House,unknown
+S0953,36.81086,-119.735456,walkway,Hyatt House,unknown
+S0954,36.810859,-119.742363,walkway,Smittcamp Alumni House,unknown
+S0955,36.810859,-119.741439,walkway,Smittcamp Alumni House,unknown
+S0956,36.810857,-119.741936,walkway,Smittcamp Alumni House,unknown
+S0957,36.810856,-119.742589,walkway,Smittcamp Alumni House,unknown
+S0958,36.810855,-119.735187,walkway,Hyatt House,unknown
+S0959,36.81085,-119.734863,near_building,Hyatt House,unknown
+S0960,36.810846,-119.734649,walkway,Hyatt House,unknown
+S0961,36.810841,-119.734381,walkway,Hyatt House,unknown
+S0962,36.810838,-119.745152,walkway,Joyal Administration Building,unknown
+S0963,36.810837,-119.744902,walkway,Joyal Administration Building,unknown
+S0964,36.810837,-119.734112,walkway,Hyatt House,unknown
+S0965,36.810836,-119.742815,walkway,University High School,unknown
+S0966,36.810832,-119.733843,walkway,Hyatt House,unknown
+S0967,36.810829,-119.746871,walkway,Music,unknown
+S0968,36.810827,-119.747101,walkway,Music,unknown
+S0969,36.810827,-119.74304,walkway,University High School,unknown
+S0970,36.810827,-119.733574,walkway,Hyatt House,unknown
+S0971,36.810825,-119.74733,walkway,Music,unknown
+S0972,36.810822,-119.733305,walkway,Hyatt House,unknown
+S0973,36.810818,-119.733036,walkway,,unknown
+S0974,36.810813,-119.745372,walkway,Joyal Administration Building,unknown
+S0975,36.810811,-119.747853,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0976,36.810811,-119.74766,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0977,36.81081,-119.748045,walkway,Lynda and Stewart Resnick Student Union,unknown
+S0978,36.8108,-119.7517,walkway,Baker Hall,unknown
+S0979,36.810774,-119.749865,walkway,Sycamore Hall,unknown
+S0980,36.810772,-119.739382,walkway,Save Mart Center,unknown
+S0981,36.810749,-119.737791,walkway,Save Mart Center,unknown
+S0982,36.810749,-119.737518,walkway,Save Mart Center,unknown
+S0983,36.810748,-119.737244,walkway,Save Mart Center,unknown
+S0984,36.810747,-119.736971,walkway,Save Mart Center,unknown
+S0985,36.810747,-119.736697,walkway,Save Mart Center,unknown
+S0986,36.810736,-119.743075,walkway,University High School,unknown
+S0987,36.810733,-119.742821,walkway,University High School,unknown
+S0988,36.810732,-119.741912,walkway,Smittcamp Alumni House,unknown
+S0989,36.810731,-119.741664,walkway,Smittcamp Alumni House,unknown
+S0990,36.81073,-119.748861,walkway,Fresno State Library,unknown
+S0991,36.81073,-119.742566,walkway,Smittcamp Alumni House,unknown
+S0992,36.81073,-119.741416,walkway,Student Recreation Center,unknown
+S0993,36.810729,-119.741168,walkway,Student Recreation Center,unknown
+S0994,36.810727,-119.742159,walkway,Smittcamp Alumni House,unknown
+S0995,36.810727,-119.740921,walkway,Student Recreation Center,unknown
+S0996,36.810724,-119.742316,walkway,Smittcamp Alumni House,unknown
+S0997,36.810722,-119.740694,walkway,Student Recreation Center,unknown
+S0998,36.810718,-119.751083,walkway,Baker Hall,unknown
+S0999,36.810717,-119.750882,walkway,Baker Hall,unknown
+S1000,36.810714,-119.752389,walkway,Baker Hall,unknown
+S1001,36.810689,-119.745374,walkway,Joyal Administration Building,unknown
+S1002,36.810688,-119.745606,walkway,Music,unknown
+S1003,36.810687,-119.745838,walkway,Music,unknown
+S1004,36.810686,-119.750172,walkway,Sycamore Hall,unknown
+S1005,36.81068,-119.744819,near_building,Joyal Administration Building,unknown
+S1006,36.810678,-119.744637,walkway,Joyal Administration Building,unknown
+S1007,36.810676,-119.744432,walkway,Joyal Administration Building,unknown
+S1008,36.810675,-119.744222,walkway,Joyal Administration Building,unknown
+S1009,36.81067,-119.736467,walkway,Hyatt House,unknown
+S1010,36.81066,-119.751192,walkway,Baker Hall,unknown
+S1011,36.810655,-119.74516,walkway,Joyal Administration Building,unknown
+S1012,36.8106,-119.748047,walkway,Lynda and Stewart Resnick Student Union,unknown
+S1013,36.8106,-119.747659,walkway,Music,unknown
+S1014,36.810598,-119.741053,walkway,Student Recreation Center,unknown
+S1015,36.810594,-119.739382,walkway,Save Mart Center,unknown
+S1016,36.810572,-119.750972,walkway,Baker Hall,unknown
+S1017,36.810568,-119.749862,walkway,Sycamore Hall,unknown
+S1018,36.810568,-119.740673,walkway,Student Recreation Center,unknown
+S1019,36.810548,-119.74882,walkway,Lab School,unknown
+S1020,36.810544,-119.743091,walkway,University High School,unknown
+S1021,36.810542,-119.746017,walkway,Music,unknown
+S1022,36.810535,-119.744535,walkway,University High School,unknown
+S1023,36.810533,-119.74546,walkway,Music,unknown
+S1024,36.810526,-119.737793,walkway,Save Mart Center,unknown
+S1025,36.810525,-119.745063,walkway,Joyal Administration Building,unknown
+S1026,36.810519,-119.745843,walkway,Music,unknown
+S1027,36.810519,-119.742311,walkway,Smittcamp Alumni House,unknown
+S1028,36.810514,-119.75055,walkway,Sycamore Hall,unknown
+S1029,36.810506,-119.75239,walkway,Baker Hall,unknown
+S1030,36.810489,-119.7522,walkway,Baker Hall,unknown
+S1031,36.810457,-119.75119,walkway,Baker Hall,unknown
+S1032,36.810456,-119.75033,walkway,Sycamore Hall,unknown
+S1033,36.81045,-119.736472,walkway,Hyatt House,unknown
+S1034,36.810444,-119.752018,near_building,Baker Hall,unknown
+S1035,36.810442,-119.746335,walkway,Music,unknown
+S1036,36.810436,-119.746135,walkway,Music,unknown
+S1037,36.810416,-119.739382,walkway,Save Mart Center,unknown
+S1038,36.810412,-119.744579,walkway,University High School,unknown
+S1039,36.810408,-119.751076,walkway,Baker Hall,unknown
+S1040,36.810406,-119.740674,walkway,Student Recreation Center,unknown
+S1041,36.81039,-119.748048,walkway,Lab School,unknown
+S1042,36.81039,-119.745387,walkway,Music,unknown
+S1043,36.810389,-119.747658,walkway,Music,unknown
+S1044,36.810388,-119.751851,walkway,Baker Hall,unknown
+S1045,36.810386,-119.745141,walkway,Joyal Administration Building,unknown
+S1046,36.810385,-119.750619,near_building,Sycamore Hall,unknown
+S1047,36.810375,-119.750074,near_building,Sycamore Hall,unknown
+S1048,36.810367,-119.749812,walkway,Sycamore Hall,unknown
+S1049,36.810365,-119.745655,walkway,Music,unknown
+S1050,36.810364,-119.748787,walkway,Lab School,unknown
+S1051,36.81036,-119.746488,walkway,Music,unknown
+S1052,36.810347,-119.744455,walkway,University High School,unknown
+S1053,36.810344,-119.751189,walkway,Baker Hall,unknown
+S1054,36.810342,-119.75139,walkway,Baker Hall,unknown
+S1055,36.81034,-119.743091,walkway,University High School,unknown
+S1056,36.810331,-119.750853,walkway,Sycamore Hall,unknown
+S1057,36.810329,-119.742847,walkway,Smittcamp Alumni House,unknown
+S1058,36.810327,-119.742593,walkway,Smittcamp Alumni House,unknown
+S1059,36.810324,-119.742338,walkway,Smittcamp Alumni House,unknown
+S1060,36.810306,-119.75239,walkway,Graves Hall,unknown
+S1061,36.810306,-119.750412,walkway,Sycamore Hall,unknown
+S1062,36.810302,-119.737794,walkway,Save Mart Center,unknown
+S1063,36.810299,-119.751716,near_building,Graves Hall,unknown
+S1064,36.810294,-119.750714,walkway,Sycamore Hall,unknown
+S1065,36.81029,-119.746191,walkway,Music,unknown
+S1066,36.810283,-119.74666,walkway,Music,unknown
+S1067,36.810261,-119.744569,walkway,University High School,unknown
+S1068,36.810244,-119.742449,walkway,Smittcamp Alumni House,unknown
+S1069,36.810243,-119.740676,walkway,Student Recreation Center,unknown
+S1070,36.810242,-119.740514,walkway,Student Recreation Center,unknown
+S1071,36.810242,-119.740352,walkway,Student Recreation Center,unknown
+S1072,36.810241,-119.74018,walkway,Student Recreation Center,unknown
+S1073,36.810241,-119.73997,walkway,Student Recreation Center,unknown
+S1074,36.81024,-119.73976,walkway,Student Recreation Center,unknown
+S1075,36.810239,-119.73955,walkway,Save Mart Center,unknown
+S1076,36.810238,-119.739382,walkway,Save Mart Center,unknown
+S1077,36.810238,-119.739103,walkway,Save Mart Center,unknown
+S1078,36.810237,-119.738825,walkway,Save Mart Center,unknown
+S1079,36.810237,-119.738547,walkway,Save Mart Center,unknown
+S1080,36.810236,-119.738268,walkway,Save Mart Center,unknown
+S1081,36.810236,-119.73799,walkway,Save Mart Center,unknown
+S1082,36.810235,-119.750179,walkway,Sycamore Hall,unknown
+S1083,36.810232,-119.74537,walkway,Kremen School of Education and Human Development,unknown
+S1084,36.810231,-119.751188,walkway,Graves Hall,unknown
+S1085,36.810231,-119.745146,walkway,Kremen School of Education and Human Development,unknown
+S1086,36.81023,-119.736477,walkway,Hyatt House,unknown
+S1087,36.810225,-119.744909,walkway,University High School,unknown
+S1088,36.810215,-119.750995,walkway,Graves Hall,unknown
+S1089,36.810209,-119.746891,walkway,Music,unknown
+S1090,36.810206,-119.75172,walkway,Graves Hall,unknown
+S1091,36.810193,-119.750665,walkway,Sycamore Hall,unknown
+S1092,36.810186,-119.751365,walkway,Graves Hall,unknown
+S1093,36.810184,-119.751527,walkway,Graves Hall,unknown
+S1094,36.810182,-119.748242,walkway,Lab School,unknown
+S1095,36.810181,-119.748512,walkway,Lab School,unknown
+S1096,36.810181,-119.744678,walkway,University High School,unknown
+S1097,36.81018,-119.749796,walkway,Sycamore Hall,unknown
+S1098,36.81018,-119.748782,walkway,Lab School,unknown
+S1099,36.81018,-119.74805,walkway,Lab School,unknown
+S1100,36.810179,-119.747853,walkway,Lab School,unknown
+S1101,36.810179,-119.74711,walkway,Music,unknown
+S1102,36.810178,-119.747657,walkway,Music,unknown
+S1103,36.810176,-119.747332,walkway,Music,unknown
+S1104,36.81016,-119.749663,walkway,Sycamore Hall,unknown
+S1105,36.810159,-119.749439,walkway,Health Center,unknown
+S1106,36.810159,-119.749215,walkway,Health Center,unknown
+S1107,36.810159,-119.74899,walkway,Health Center,unknown
+S1108,36.810146,-119.746776,walkway,Music,unknown
+S1109,36.810144,-119.746653,walkway,Kremen School of Education and Human Development,unknown
+S1110,36.810144,-119.746413,walkway,Kremen School of Education and Human Development,unknown
+S1111,36.810143,-119.746172,walkway,Kremen School of Education and Human Development,unknown
+S1112,36.810142,-119.750485,walkway,Sycamore Hall,unknown
+S1113,36.810142,-119.745943,walkway,Kremen School of Education and Human Development,unknown
+S1114,36.810142,-119.744535,walkway,University High School,unknown
+S1115,36.810141,-119.745714,walkway,Kremen School of Education and Human Development,unknown
+S1116,36.81014,-119.745484,walkway,Kremen School of Education and Human Development,unknown
+S1117,36.810126,-119.750252,near_building,Sycamore Hall,unknown
+S1118,36.810114,-119.740352,walkway,Student Recreation Center,unknown
+S1119,36.810114,-119.740182,walkway,Student Recreation Center,unknown
+S1120,36.810113,-119.739972,walkway,Student Recreation Center,unknown
+S1121,36.810113,-119.739762,walkway,Student Recreation Center,unknown
+S1122,36.810112,-119.742652,near_building,Smittcamp Alumni House,unknown
+S1123,36.810112,-119.739552,walkway,Student Recreation Center,unknown
+S1124,36.810112,-119.739381,walkway,Save Mart Center,unknown
+S1125,36.810111,-119.742494,walkway,Smittcamp Alumni House,unknown
+S1126,36.810106,-119.752391,walkway,Graves Hall,unknown
+S1127,36.810098,-119.74068,walkway,Student Recreation Center,unknown
+S1128,36.810093,-119.750138,walkway,Sycamore Hall,unknown
+S1129,36.810092,-119.751215,walkway,Graves Hall,unknown
+S1130,36.810044,-119.74438,walkway,University High School,unknown
+S1131,36.810037,-119.744957,walkway,University High School,unknown
+S1132,36.810017,-119.748512,walkway,Lab School,unknown
+S1133,36.810017,-119.748295,walkway,Lab School,unknown
+S1134,36.81001,-119.736483,walkway,Hyatt House,unknown
+S1135,36.810005,-119.749663,walkway,Health Center,unknown
+S1136,36.810005,-119.749495,walkway,Health Center,unknown
+S1137,36.810005,-119.749211,walkway,Health Center,unknown
+S1138,36.810004,-119.749079,walkway,Health Center,unknown
+S1139,36.810004,-119.748948,walkway,Health Center,unknown
+S1140,36.810003,-119.748768,walkway,Health Center,unknown
+S1141,36.810003,-119.747895,walkway,Lab School,unknown
+S1142,36.810003,-119.744742,walkway,University High School,unknown
+S1143,36.810002,-119.747656,walkway,Lab School,unknown
+S1144,36.81,-119.747337,walkway,Kremen School of Education and Human Development,unknown
+S1145,36.809999,-119.74711,walkway,Kremen School of Education and Human Development,unknown
+S1146,36.809996,-119.743985,near_building,University High School,unknown
+S1147,36.809991,-119.749796,walkway,Sycamore Hall,unknown
+S1148,36.809986,-119.742629,walkway,Smittcamp Alumni House,unknown
+S1149,36.809984,-119.742495,walkway,Smittcamp Alumni House,unknown
+S1150,36.809983,-119.750185,walkway,Sycamore Hall,unknown
+S1151,36.80998,-119.745145,walkway,Kremen School of Education and Human Development,unknown
+S1152,36.809973,-119.74652,walkway,Kremen School of Education and Human Development,unknown
+S1153,36.809969,-119.744199,walkway,University High School,unknown
+S1154,36.809968,-119.746966,walkway,Kremen School of Education and Human Development,unknown
+S1155,36.809966,-119.746114,walkway,Kremen School of Education and Human Development,unknown
+S1156,36.809965,-119.746324,walkway,Kremen School of Education and Human Development,unknown
+S1157,36.809965,-119.745905,walkway,Kremen School of Education and Human Development,unknown
+S1158,36.809958,-119.74681,walkway,Kremen School of Education and Human Development,unknown
+S1159,36.809955,-119.748099,walkway,Lab School,unknown
+S1160,36.809955,-119.745532,walkway,Kremen School of Education and Human Development,unknown
+S1161,36.809951,-119.745368,walkway,Kremen School of Education and Human Development,unknown
+S1162,36.809944,-119.751631,walkway,Graves Hall,unknown
+S1163,36.809932,-119.743173,walkway,Smittcamp Alumni House,unknown
+S1164,36.809931,-119.744542,walkway,University High School,unknown
+S1165,36.809928,-119.740352,walkway,Student Recreation Center,unknown
+S1166,36.809927,-119.749353,walkway,Health Center,unknown
+S1167,36.809915,-119.745699,near_building,Kremen School of Education and Human Development,unknown
+S1168,36.80991,-119.740681,walkway,Student Recreation Center,unknown
+S1169,36.809907,-119.752392,walkway,Graves Hall,unknown
+S1170,36.809906,-119.739383,walkway,Save Mart Center,unknown
+S1171,36.809905,-119.751307,walkway,Graves Hall,unknown
+S1172,36.809905,-119.749902,walkway,Sycamore Hall,unknown
+S1173,36.809903,-119.744012,walkway,University High School,unknown
+S1174,36.809902,-119.746407,walkway,Kremen School of Education and Human Development,unknown
+S1175,36.809897,-119.749212,walkway,Health Center,unknown
+S1176,36.809897,-119.748634,walkway,Lab School,unknown
+S1177,36.809886,-119.752141,walkway,Graves Hall,unknown
+S1178,36.809879,-119.746607,walkway,Kremen School of Education and Human Development,unknown
+S1179,36.809878,-119.751425,walkway,Graves Hall,unknown
+S1180,36.809878,-119.748768,walkway,Health Center,unknown
+S1181,36.809872,-119.750231,walkway,Sycamore Hall,unknown
+S1182,36.809866,-119.747656,walkway,Lab School,unknown
+S1183,36.809861,-119.745005,walkway,Kremen School of Education and Human Development,unknown
+S1184,36.809856,-119.748101,walkway,Lab School,unknown
+S1185,36.80985,-119.751191,walkway,Graves Hall,unknown
+S1186,36.809846,-119.744344,walkway,University High School,unknown
+S1187,36.809841,-119.749663,walkway,Health Center,unknown
+S1188,36.809838,-119.743105,walkway,Smittcamp Alumni House,unknown
+S1189,36.809836,-119.747495,walkway,Kremen School of Education and Human Development,unknown
+S1190,36.809836,-119.746496,walkway,Kremen School of Education and Human Development,unknown
+S1191,36.809833,-119.751899,walkway,Graves Hall,unknown
+S1192,36.809832,-119.743764,walkway,University High School,unknown
+S1193,36.809827,-119.749351,walkway,Health Center,unknown
+S1194,36.809816,-119.742988,entrance,Smittcamp Alumni House,unknown
+S1195,36.809814,-119.74449,walkway,University High School,unknown
+S1196,36.80981,-119.747011,walkway,Kremen School of Education and Human Development,unknown
+S1197,36.809809,-119.74537,walkway,Kremen School of Education and Human Development,unknown
+S1198,36.809806,-119.749989,walkway,Sycamore Hall,unknown
+S1199,36.8098,-119.751358,walkway,Graves Hall,unknown
+S1200,36.8098,-119.751008,walkway,Sequoia Hall,unknown
+S1201,36.8098,-119.748981,near_building,Health Center,unknown
+S1202,36.809795,-119.749827,walkway,Birch Hall,unknown
+S1203,36.809793,-119.745147,walkway,Kremen School of Education and Human Development,unknown
+S1204,36.809792,-119.742342,walkway,Smittcamp Alumni House,unknown
+S1205,36.80979,-119.736488,walkway,Hyatt House,unknown
+S1206,36.809777,-119.745616,walkway,Kremen School of Education and Human Development,unknown
+S1207,36.809776,-119.74351,walkway,University High School,unknown
+S1208,36.809773,-119.742498,walkway,Smittcamp Alumni House,unknown
+S1209,36.809768,-119.751662,walkway,Graves Hall,unknown
+S1210,36.809764,-119.746399,walkway,Kremen School of Education and Human Development,unknown
+S1211,36.809762,-119.743251,walkway,Smittcamp Alumni House,unknown
+S1212,36.809753,-119.742743,walkway,Smittcamp Alumni House,unknown
+S1213,36.809752,-119.748769,walkway,Health Center,unknown
+S1214,36.809752,-119.748539,walkway,Lab School,unknown
+S1215,36.809751,-119.750824,walkway,Sequoia Hall,unknown
+S1216,36.809743,-119.744866,walkway,University High School,unknown
+S1217,36.809742,-119.740353,walkway,Student Recreation Center,unknown
+S1218,36.809735,-119.751556,walkway,Graves Hall,unknown
+S1219,36.809731,-119.747685,near_building,Lab School,unknown
+S1220,36.809729,-119.748113,near_building,Lab School,unknown
+S1221,36.809723,-119.740681,walkway,Student Recreation Center,unknown
+S1222,36.80971,-119.752393,walkway,Homan Hall,unknown
+S1223,36.809709,-119.750668,walkway,Birch Hall,unknown
+S1224,36.809701,-119.745919,walkway,Kremen School of Education and Human Development,unknown
+S1225,36.809701,-119.739385,walkway,Save Mart Center,unknown
+S1226,36.8097,-119.747808,near_building,Lab School,unknown
+S1227,36.809699,-119.745748,walkway,Kremen School of Education and Human Development,unknown
+S1228,36.809695,-119.751409,walkway,Graves Hall,unknown
+S1229,36.809692,-119.747206,walkway,Kremen School of Education and Human Development,unknown
+S1230,36.809676,-119.749662,walkway,Health Center,unknown
+S1231,36.80967,-119.747425,walkway,Kremen School of Education and Human Development,unknown
+S1232,36.809664,-119.742988,walkway,Smittcamp Alumni House,unknown
+S1233,36.809643,-119.751192,walkway,Sequoia Hall,unknown
+S1234,36.809636,-119.750404,walkway,Birch Hall,unknown
+S1235,36.809609,-119.74537,walkway,Kremen School of Education and Human Development,unknown
+S1236,36.809607,-119.745149,walkway,Kremen School of Education and Human Development,unknown
+S1237,36.809604,-119.750716,walkway,Sequoia Hall,unknown
+S1238,36.809598,-119.742344,walkway,Smittcamp Alumni House,unknown
+S1239,36.809597,-119.749805,walkway,Birch Hall,unknown
+S1240,36.80958,-119.748771,walkway,Health Center,unknown
+S1241,36.80958,-119.745703,walkway,Kremen School of Education and Human Development,unknown
+S1242,36.809576,-119.750192,near_building,Birch Hall,unknown
+S1243,36.809572,-119.740393,walkway,Student Recreation Center,unknown
+S1244,36.809571,-119.736501,walkway,Save Mart Center,unknown
+S1245,36.809569,-119.747269,walkway,Kremen School of Education and Human Development,unknown
+S1246,36.809563,-119.7513,walkway,Homan Hall,unknown
+S1247,36.809563,-119.745918,walkway,Kremen School of Education and Human Development,unknown
+S1248,36.809551,-119.746114,walkway,Kremen School of Education and Human Development,unknown
+S1249,36.809536,-119.740662,walkway,Student Recreation Center,unknown
+S1250,36.809534,-119.747659,near_building,Lab School,unknown
+S1251,36.809528,-119.748958,walkway,Health Center,unknown
+S1252,36.809514,-119.752395,walkway,Homan Hall,unknown
+S1253,36.809497,-119.742346,walkway,Smittcamp Alumni House,unknown
+S1254,36.809496,-119.739387,walkway,Save Mart Center,unknown
+S1255,36.809495,-119.739639,walkway,Student Recreation Center,unknown
+S1256,36.809486,-119.749662,walkway,Health Center,unknown
+S1257,36.809466,-119.74579,walkway,Kremen School of Education and Human Development,unknown
+S1258,36.809457,-119.742992,walkway,Smittcamp Alumni House,unknown
+S1259,36.80945,-119.747152,walkway,Kremen School of Education and Human Development,unknown
+S1260,36.809443,-119.751314,walkway,Homan Hall,unknown
+S1261,36.809437,-119.751193,walkway,Sequoia Hall,unknown
+S1262,36.809437,-119.746228,walkway,Kremen School of Education and Human Development,unknown
+S1263,36.809434,-119.750498,walkway,Cedar Hall,unknown
+S1264,36.809432,-119.748893,walkway,Health Center,unknown
+S1265,36.809425,-119.740564,walkway,Student Recreation Center,unknown
+S1266,36.809423,-119.74039,walkway,Student Recreation Center,unknown
+S1267,36.80942,-119.745152,walkway,Kremen School of Education and Human Development,unknown
+S1268,36.809409,-119.748772,walkway,Health Center,unknown
+S1269,36.809409,-119.745371,walkway,Kremen School of Education and Human Development,unknown
+S1270,36.809396,-119.750809,walkway,Sequoia Hall,unknown
+S1271,36.809395,-119.750169,walkway,Cedar Hall,unknown
+S1272,36.809395,-119.749805,walkway,Birch Hall,unknown
+S1273,36.809395,-119.745923,walkway,Kremen School of Education and Human Development,unknown
+S1274,36.809369,-119.745661,walkway,Kremen School of Education and Human Development,unknown
+S1275,36.809365,-119.751431,walkway,Homan Hall,unknown
+S1276,36.809351,-119.736518,walkway,Save Mart Center,unknown
+S1277,36.809345,-119.746257,walkway,Kremen School of Education and Human Development,unknown
+S1278,36.809328,-119.746396,walkway,Kremen School of Education and Human Development,unknown
+S1279,36.809327,-119.747009,walkway,Kremen School of Education and Human Development,unknown
+S1280,36.80932,-119.739389,walkway,Save Mart Center,unknown
+S1281,36.809318,-119.752397,walkway,Homan Hall,unknown
+S1282,36.809304,-119.740643,walkway,Student Recreation Center,unknown
+S1283,36.809298,-119.74888,walkway,Health Center,unknown
+S1284,36.809297,-119.74946,walkway,Health Center,unknown
+S1285,36.809297,-119.749286,walkway,Health Center,unknown
+S1286,36.809296,-119.74916,walkway,Health Center,unknown
+S1287,36.809293,-119.740356,walkway,Student Recreation Center,unknown
+S1288,36.809286,-119.742992,walkway,Smittcamp Alumni House,unknown
+S1289,36.809274,-119.737665,near_building,Save Mart Center,unknown
+S1290,36.809265,-119.746048,walkway,Kremen School of Education and Human Development,unknown
+S1291,36.809263,-119.750701,walkway,Sequoia Hall,unknown
+S1292,36.809261,-119.749661,walkway,Health Center,unknown
+S1293,36.809252,-119.746621,walkway,Kremen School of Education and Human Development,unknown
+S1294,36.809242,-119.750239,walkway,Cedar Hall,unknown
+S1295,36.80924,-119.745732,walkway,Kremen School of Education and Human Development,unknown
+S1296,36.809239,-119.74877,walkway,Health Center,unknown
+S1297,36.809234,-119.745155,walkway,Kremen School of Education and Human Development,unknown
+S1298,36.80923,-119.751194,walkway,Homan Hall,unknown
+S1299,36.809226,-119.747974,walkway,Lab School,unknown
+S1300,36.809222,-119.750566,near_building,Sequoia Hall,unknown
+S1301,36.80921,-119.737552,walkway,Save Mart Center,unknown
+S1302,36.809209,-119.745371,walkway,Kremen School of Education and Human Development,unknown
+S1303,36.8092,-119.750026,walkway,Birch Hall,unknown
+S1304,36.809193,-119.749806,walkway,Birch Hall,unknown
+S1305,36.809177,-119.745961,walkway,Kremen School of Education and Human Development,unknown
+S1306,36.809176,-119.74684,walkway,Kremen School of Education and Human Development,unknown
+S1307,36.809154,-119.749656,walkway,Health Center,unknown
+S1308,36.809154,-119.745497,walkway,Kremen School of Education and Human Development,unknown
+S1309,36.809151,-119.740641,walkway,Student Recreation Center,unknown
+S1310,36.809151,-119.740499,walkway,Student Recreation Center,unknown
+S1311,36.80915,-119.740357,walkway,Student Recreation Center,unknown
+S1312,36.809148,-119.74005,walkway,Student Recreation Center,unknown
+S1313,36.809147,-119.739897,walkway,Student Recreation Center,unknown
+S1314,36.809146,-119.739743,near_building,Student Recreation Center,unknown
+S1315,36.809145,-119.739391,walkway,Save Mart Center,unknown
+S1316,36.809143,-119.739122,walkway,Save Mart Center,unknown
+S1317,36.809141,-119.738854,walkway,Save Mart Center,unknown
+S1318,36.809139,-119.738585,walkway,Save Mart Center,unknown
+S1319,36.809137,-119.738317,walkway,Save Mart Center,unknown
+S1320,36.809137,-119.737296,walkway,Save Mart Center,unknown
+S1321,36.809135,-119.738049,walkway,Save Mart Center,unknown
+S1322,36.809135,-119.737038,walkway,Save Mart Center,unknown
+S1323,36.809133,-119.73678,walkway,Save Mart Center,unknown
+S1324,36.809131,-119.736522,walkway,Save Mart Center,unknown
+S1325,36.809125,-119.75035,walkway,Cedar Hall,unknown
+S1326,36.809121,-119.752399,walkway,Homan Hall,unknown
+S1327,36.809121,-119.747005,walkway,Kremen School of Education and Human Development,unknown
+S1328,36.809121,-119.737784,walkway,Save Mart Center,unknown
+S1329,36.809115,-119.742992,walkway,Smittcamp Alumni House,unknown
+S1330,36.809099,-119.737542,walkway,Save Mart Center,unknown
+S1331,36.809098,-119.745773,walkway,Kremen School of Education and Human Development,unknown
+S1332,36.809095,-119.751833,near_building,Homan Hall,unknown
+S1333,36.809089,-119.745153,walkway,Kremen School of Education and Human Development,unknown
+S1334,36.809077,-119.74877,walkway,Lab School,unknown
+S1335,36.809075,-119.748553,walkway,Lab School,unknown
+S1336,36.809072,-119.748337,walkway,Lab School,unknown
+S1337,36.809071,-119.748209,walkway,Lab School,unknown
+S1338,36.809069,-119.748094,walkway,Lab School,unknown
+S1339,36.809042,-119.745368,walkway,Kremen School of Education and Human Development,unknown
+S1340,36.809023,-119.751195,walkway,Homan Hall,unknown
+S1341,36.809016,-119.749553,walkway,Health Center,unknown
+S1342,36.809016,-119.739556,walkway,Student Recreation Center,unknown
+S1343,36.808994,-119.749858,walkway,Birch Hall,unknown
+S1344,36.808984,-119.737399,walkway,Save Mart Center,unknown
+S1345,36.808974,-119.736526,walkway,Save Mart Center,unknown
+S1346,36.808969,-119.750362,walkway,Cedar Hall,unknown
+S1347,36.808956,-119.740642,walkway,Student Recreation Center,unknown
+S1348,36.808946,-119.745582,walkway,Kremen School of Education and Human Development,unknown
+S1349,36.80893,-119.745153,walkway,Kremen School of Education and Human Development,unknown
+S1350,36.808927,-119.752398,walkway,Homan Hall,unknown
+S1351,36.808927,-119.752153,walkway,Homan Hall,unknown
+S1352,36.808926,-119.751909,walkway,Homan Hall,unknown
+S1353,36.808926,-119.751652,walkway,Homan Hall,unknown
+S1354,36.808926,-119.751395,walkway,Homan Hall,unknown
+S1355,36.808926,-119.748914,walkway,Health Center,unknown
+S1356,36.808912,-119.749176,walkway,Health Center,unknown
+S1357,36.808908,-119.749439,walkway,Health Center,unknown
+S1358,36.808907,-119.74537,walkway,Kremen School of Education and Human Development,unknown
+S1359,36.808899,-119.74106,walkway,Student Recreation Center,unknown
+S1360,36.808889,-119.739721,walkway,Student Recreation Center,unknown
+S1361,36.80887,-119.737255,walkway,Save Mart Center,unknown
+S1362,36.808858,-119.742992,walkway,Smittcamp Alumni House,unknown
+S1363,36.808787,-119.74988,walkway,Birch Hall,unknown
+S1364,36.808786,-119.749558,walkway,Health Center,unknown
+S1365,36.808772,-119.745371,walkway,Kremen School of Education and Human Development,unknown
+S1366,36.808762,-119.740933,walkway,Student Recreation Center,unknown
+S1367,36.808761,-119.740643,walkway,Student Recreation Center,unknown

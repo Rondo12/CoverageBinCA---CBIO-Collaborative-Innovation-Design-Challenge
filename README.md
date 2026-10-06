@@ -12,17 +12,20 @@ We estimate where waste-generating foot traffic happens on the main campus (buil
 
 Start with [`docs/data-contract.md`](docs/data-contract.md): it lists every file the notebooks share, its columns and units, and a small example dataset with known answers.
 
+**Rebuild the campus data** (on a laptop, from the repo folder): `.venv/bin/python -m binopt.build`. It rewrites `data/demand.csv`, `data/candidates.csv` and `data/distances.csv` from the OpenStreetMap snapshots and `binopt/config.py`, and prints checks to read. When Facilities sends files, follow [`docs/when-data-arrives.md`](docs/when-data-arrives.md).
+
 ## What's in the repo
 
 | Folder | Contents |
 |---|---|
-| `binopt/` | Python code for campus data and maps. All tunable assumptions are in `binopt/config.py`. |
+| `binopt/` | Python code for campus data and maps. All tunable assumptions are in `binopt/config.py`. `build.py` runs everything. |
+| `data/` | `demand.csv`, `candidates.csv`, `distances.csv`: the model's inputs, built from OpenStreetMap (estimates, PLACEHOLDER weights). |
 | `data/osm/` | Saved OpenStreetMap snapshots and the campus boundary (main campus, farm land excluded). |
 | `data/example/` | Tiny made-up dataset for testing the model. |
 | `data/private/` | Files from Facilities. **Never uploaded** (see below). |
 | `notebooks/` | Colab notebooks. |
 | `outputs/` | Results. Only `chosen_sites.csv` and `map.html` are saved to GitHub. |
-| `docs/` | Data contract and decisions log. |
+| `docs/` | Data contract, decisions log, and the checklist for when Facilities data arrives. |
 | `scripts/` | One-time scripts (refresh the OpenStreetMap snapshots, rebuild the example data). |
 | `tests/` | Automated checks (`pytest`). |
 
@@ -53,4 +56,4 @@ This repository is **public**. Anything Facilities sends (bin locations, maps, s
 
 ## Credits
 
-Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). The snapshots in `data/osm/` were fetched on 2026-09-28. Anything derived from them (the campus boundary, and later the demand and candidate files) is shared under the same license.
+Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). The snapshots in `data/osm/` were fetched on 2026-09-28. Anything derived from them (the campus boundary, `data/demand.csv`, `data/candidates.csv`, `data/distances.csv`, and the map) is shared under the same license.
