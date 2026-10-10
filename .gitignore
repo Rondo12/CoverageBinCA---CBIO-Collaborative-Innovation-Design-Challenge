@@ -29,3 +29,4 @@ outputs/*
 !outputs/.gitkeep
 !outputs/chosen_sites.csv
 !outputs/map.html
+!outputs/scenarios.csv

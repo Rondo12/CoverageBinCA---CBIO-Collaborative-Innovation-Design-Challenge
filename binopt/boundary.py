@@ -14,8 +14,9 @@ Data (c) OpenStreetMap contributors, ODbL.
 from pathlib import Path
 
 import geopandas as gpd
+import shapely.geometry
 
-from binopt.config import ADD_BACK, STRIP_WIDTH_M
+from binopt.config import ADD_BACK, OUT_OF_SCOPE, STRIP_WIDTH_M
 
 OSM_DIR = Path(__file__).resolve().parent.parent / "data" / "osm"
 
@@ -67,6 +68,13 @@ def build_boundary(osm_dir=OSM_DIR, add_back=ADD_BACK):
     # Make sure added-back areas are included in full, even if they were thin or detached.
     if len(kept_in):
         final = final.union(kept_in.union_all().intersection(uni.geometry.iloc[0]))
+
+    # Cut out areas Facilities doesn't serve (OUT_OF_SCOPE in config.py), e.g. Campus Pointe.
+    # Each box is drawn in lat/lon, then switched to meters to match `final`.
+    for area in OUT_OF_SCOPE:
+        box_ll = shapely.geometry.box(area["min_lon"], 36.70, -119.60, area["max_lat"])
+        box_m = gpd.GeoSeries([box_ll], crs=LATLON).to_crs(METERS).iloc[0]
+        final = final.difference(box_m)
 
     boundary = gpd.GeoDataFrame(
         {"name": ["Fresno State main campus (excluding farm)"],

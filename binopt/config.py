@@ -38,6 +38,15 @@ STRIP_WIDTH_M = 20
 #   Then note the change and the reason in docs/decisions.md.
 ADD_BACK = []
 
+# Areas inside the university outline that Facilities' bins don't serve, cut out of the campus.
+# Each is a box: everything east of min_lon AND south of max_lat (degrees) is removed.
+# Campus Pointe: the private hotel, apartment and restaurant development east of Chestnut Ave and
+# south of the Gibson Farm Market. The 2021 receptacle map shows no Facilities bins there.
+# Decision 2026-10-10 (docs/decisions.md). Delete the entry to put it back.
+OUT_OF_SCOPE = [
+    {"name": "Campus Pointe", "min_lon": -119.7366, "max_lat": 36.8133},
+]
+
 # ---------------------------------------------------------------------------
 # Demand: how much waste-generating foot traffic each place gets (binopt/demand.py)
 # ---------------------------------------------------------------------------
@@ -180,6 +189,28 @@ CURRENT_BINS_FILE = None   # e.g. "data/private/Bin Inventory 2026.xlsx"
 # If the file has x/y in a map projection instead of lat/lon, set its EPSG code here.
 # Example: California State Plane Zone 4 (feet), used by many California agencies = "EPSG:2228".
 CURRENT_BINS_CRS = None
+
+# ---------------------------------------------------------------------------
+# Facilities' 2021 receptacle map (binopt/digitize.py)
+# ---------------------------------------------------------------------------
+
+# The PDF Facilities shared, saved in data/private/ (gitignored). digitize.py reads it and writes
+# data/private/current_bins.csv (the yellow receptacle dots) and data/private/dumpsters_2021.csv.
+MAP_2021_PDF = "RecepticlesMap-BW-lighter 2021.pdf"
+
+# Control points: street corners we can see on the map AND look up in OpenStreetMap.
+# px = (x, y) pixel position on the map rendered at 150 dpi (measured from the road bands).
+# lat/lon = where the two street center lines cross in OpenStreetMap (data/osm/streets.json,
+# fetched 2026-10-10). Public information, so it's fine in the repo.
+MAP_2021_CONTROL_POINTS = {
+    "Shaw x Cedar":      {"px": (489.5, 1312.0), "lat": 36.808613, "lon": -119.754210},
+    "Shaw x Woodrow":    {"px": (1777.0, 1312.0), "lat": 36.808572, "lon": -119.740802},
+    "Shaw x Chestnut":   {"px": (2214.0, 1312.0), "lat": 36.808553, "lon": -119.736326},
+    "Barstow x Cedar":   {"px": (489.5, 449.5), "lat": 36.815870, "lon": -119.754182},
+    "Barstow x Woodrow": {"px": (1752.0, 449.5), "lat": 36.815835, "lon": -119.740955},
+    "Bulldog x Cedar":   {"px": (489.5, 882.0), "lat": 36.812243, "lon": -119.754195},
+    "Bulldog x Woodrow": {"px": (1777.0, 870.0), "lat": 36.812096, "lon": -119.740772},
+}
 
 # ---------------------------------------------------------------------------
 # Coverage settings (read by the model notebook, 02_model.ipynb, and by the map)
