@@ -2,6 +2,8 @@
 
 **Where should Fresno State put its bins?** A data-driven pilot for the BEAM Circular / CBIO Collaborative "Return to Earth" challenge, focused on single-use plastic packaging and food ware under California SB 54.
 
+**Part of our pitch: "What's in the Bin? A Student-Run Plastic Pilot."** The model shows Fresno State's receptacles are already mostly in the right places, so our main proposal is a one-semester, student-run pilot that tracks which single-use plastic items end up in the wrong bin, sends that tally to Dining Services, and feeds the measurements back into this model.
+
 We estimate where waste-generating foot traffic happens on the main campus (buildings, dining, cafes, vending, parking), list the spots where a bin station could go (along walkways and near entrances, never inside buildings), and use an optimization model (a Maximal Covering Location Problem, built with PuLP) to choose the stations that cover the most of it. Places where people eat and drink get extra weight.
 
 **What we claim, and what we don't.** Results are projected **coverage**: the share of *estimated* demand within reach of a bin station. We do not measure diversion. Every estimated number is labeled `PLACEHOLDER`, and every choice is logged with its reason in [`docs/decisions.md`](docs/decisions.md).
