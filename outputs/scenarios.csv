@@ -1,0 +1,37 @@
+area,radius_m,scenario,stations,moved,coverage
+whole campus,30,today,88,0.0,0.7571
+whole campus,30,"same number, best spots",53,,0.959
+whole campus,30,greedy check,50,,0.959
+whole campus,30,move up to 5,88,5.0,0.911
+whole campus,30,move up to 10,88,10.0,0.9444
+whole campus,30,move up to 20,88,20.0,0.9592
+whole campus,50,today,88,0.0,0.7978
+whole campus,50,"same number, best spots",37,,0.9677
+whole campus,50,greedy check,40,,0.9677
+whole campus,50,move up to 5,88,5.0,0.9407
+whole campus,50,move up to 10,88,10.0,0.9633
+whole campus,50,move up to 20,85,20.0,0.9691
+whole campus,75,today,88,0.0,0.8289
+whole campus,75,"same number, best spots",32,,0.9701
+whole campus,75,greedy check,31,,0.9701
+whole campus,75,move up to 5,88,5.0,0.9602
+whole campus,75,move up to 10,88,10.0,0.9685
+whole campus,75,move up to 20,84,20.0,0.9702
+academic core,30,today,88,0.0,0.8878
+academic core,30,"same number, best spots",38,,0.9538
+academic core,30,greedy check,35,,0.9538
+academic core,30,move up to 5,88,5.0,0.942
+academic core,30,move up to 10,88,10.0,0.9526
+academic core,30,move up to 20,81,20.0,0.9546
+academic core,50,today,88,0.0,0.9021
+academic core,50,"same number, best spots",32,,0.9641
+academic core,50,greedy check,32,,0.9641
+academic core,50,move up to 5,88,5.0,0.9559
+academic core,50,move up to 10,88,10.0,0.9646
+academic core,50,move up to 20,81,20.0,0.9658
+academic core,75,today,88,0.0,0.9158
+academic core,75,"same number, best spots",24,,0.9664
+academic core,75,greedy check,26,,0.9664
+academic core,75,move up to 5,88,5.0,0.9625
+academic core,75,move up to 10,88,10.0,0.9664
+academic core,75,move up to 20,78,20.0,0.9664

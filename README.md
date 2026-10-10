@@ -8,21 +8,29 @@ We estimate where waste-generating foot traffic happens on the main campus (buil
 
 | Notebook | What it does | Owner | Open |
 |---|---|---|---|
-| `notebooks/02_model.ipynb` | Chooses bin station sites (PuLP model) | Ronnie | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/02_model.ipynb) |
+| `notebooks/01_bin_optimizer.ipynb` | **Main notebook.** Diagnosis (recycling 2018 to 2022), today's receptacles from the 2021 map, the placement model, gaps, pilot plan | Eric | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb) |
+| `notebooks/02_model.ipynb` | Practice notebook: build the PuLP model on the example data | Ronnie | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/02_model.ipynb) |
 
 Start with [`docs/data-contract.md`](docs/data-contract.md): it lists every file the notebooks share, its columns and units, and a small example dataset with known answers.
+
+**Private files for the main notebook.** Facilities' files never go on GitHub. In Google Drive, make a folder named `CoverageBin private data` with `2018-2020 Tonnage Report.xlsx` and `RecepticlesMap-BW-lighter 2021.pdf`; the notebook's first cell copies them in.
+
+**Run the analysis on a laptop:** `python -m binopt.digitize` (2021 map to GPS points), `python -m binopt.scenarios` (all coverage scenarios), `python -m binopt.plan` (the move plan and the gaps), `python -m binopt.figures` (images for the video). The model itself is `binopt/model.py`.
+
+**Rebuild the campus data** (on a laptop, from the repo folder): `.venv/bin/python -m binopt.build`. It rewrites `data/demand.csv`, `data/candidates.csv` and `data/distances.csv` from the OpenStreetMap snapshots and `binopt/config.py`, and prints checks to read. When Facilities sends files, follow [`docs/when-data-arrives.md`](docs/when-data-arrives.md).
 
 ## What's in the repo
 
 | Folder | Contents |
 |---|---|
-| `binopt/` | Python code for campus data and maps. All tunable assumptions are in `binopt/config.py`. |
+| `binopt/` | Python code for campus data and maps. All tunable assumptions are in `binopt/config.py`. `build.py` runs everything. |
+| `data/` | `demand.csv`, `candidates.csv`, `distances.csv`: the model's inputs, built from OpenStreetMap (estimates, PLACEHOLDER weights). |
 | `data/osm/` | Saved OpenStreetMap snapshots and the campus boundary (main campus, farm land excluded). |
 | `data/example/` | Tiny made-up dataset for testing the model. |
 | `data/private/` | Files from Facilities. **Never uploaded** (see below). |
 | `notebooks/` | Colab notebooks. |
-| `outputs/` | Results. Only `chosen_sites.csv` and `map.html` are saved to GitHub. |
-| `docs/` | Data contract and decisions log. |
+| `outputs/` | Results. Only `chosen_sites.csv`, `map.html` and `scenarios.csv` (coverage numbers only) are saved to GitHub. |
+| `docs/` | Data contract, decisions log, and the checklist for when Facilities data arrives. |
 | `scripts/` | One-time scripts (refresh the OpenStreetMap snapshots, rebuild the example data). |
 | `tests/` | Automated checks (`pytest`). |
 
@@ -53,4 +61,4 @@ This repository is **public**. Anything Facilities sends (bin locations, maps, s
 
 ## Credits
 
-Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). The snapshots in `data/osm/` were fetched on 2026-09-28. Anything derived from them (the campus boundary, and later the demand and candidate files) is shared under the same license.
+Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). The snapshots in `data/osm/` were fetched on 2026-09-28. Anything derived from them (the campus boundary, `data/demand.csv`, `data/candidates.csv`, `data/distances.csv`, and the map) is shared under the same license.

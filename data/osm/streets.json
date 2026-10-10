@@ -1,0 +1,3447 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-10T05:25:21Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 10338553,
+  "bounds": {
+    "minlat": 36.8157675,
+    "minlon": -119.7251735,
+    "maxlat": 36.8157690,
+    "maxlon": -119.7245118
+  },
+  "nodes": [
+    87505236,
+    6738627019,
+    506804403
+  ],
+  "geometry": [
+    { "lat": 36.8157675, "lon": -119.7245118 },
+    { "lat": 36.8157683, "lon": -119.7248812 },
+    { "lat": 36.8157690, "lon": -119.7251735 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "maxspeed": "40 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 10343494,
+  "bounds": {
+    "minlat": 36.8122415,
+    "minlon": -119.7609815,
+    "maxlat": 36.8122432,
+    "maxlon": -119.7542669
+  },
+  "nodes": [
+    87548637,
+    6477188263,
+    13019434309,
+    87569894,
+    13019434307,
+    7238165263,
+    6735333057,
+    8903290960,
+    3701390038,
+    11778688090,
+    3701390037,
+    11778659180,
+    5701223835
+  ],
+  "geometry": [
+    { "lat": 36.8122415, "lon": -119.7609815 },
+    { "lat": 36.8122415, "lon": -119.7608739 },
+    { "lat": 36.8122420, "lon": -119.7588164 },
+    { "lat": 36.8122421, "lon": -119.7587390 },
+    { "lat": 36.8122421, "lon": -119.7586568 },
+    { "lat": 36.8122422, "lon": -119.7580963 },
+    { "lat": 36.8122426, "lon": -119.7566360 },
+    { "lat": 36.8122426, "lon": -119.7564253 },
+    { "lat": 36.8122426, "lon": -119.7563810 },
+    { "lat": 36.8122429, "lon": -119.7553872 },
+    { "lat": 36.8122429, "lon": -119.7552082 },
+    { "lat": 36.8122431, "lon": -119.7543658 },
+    { "lat": 36.8122432, "lon": -119.7542669 }
+  ],
+  "tags": {
+    "highway": "residential",
+    "name": "Bulldog Lane",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Bulldog",
+    "tiger:name_type": "Ln",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 10344818,
+  "bounds": {
+    "minlat": 36.8062710,
+    "minlon": -119.7363471,
+    "maxlat": 36.8080696,
+    "maxlon": -119.7363218
+  },
+  "nodes": [
+    87341652,
+    9512317047,
+    9512317048,
+    429420352,
+    8697668332,
+    87584131,
+    7509249810,
+    7229292754,
+    6948263991,
+    6948263997,
+    13371091597
+  ],
+  "geometry": [
+    { "lat": 36.8062710, "lon": -119.7363471 },
+    { "lat": 36.8063063, "lon": -119.7363322 },
+    { "lat": 36.8063414, "lon": -119.7363253 },
+    { "lat": 36.8063737, "lon": -119.7363233 },
+    { "lat": 36.8064126, "lon": -119.7363221 },
+    { "lat": 36.8067676, "lon": -119.7363231 },
+    { "lat": 36.8071826, "lon": -119.7363226 },
+    { "lat": 36.8074347, "lon": -119.7363218 },
+    { "lat": 36.8077497, "lon": -119.7363265 },
+    { "lat": 36.8079362, "lon": -119.7363267 },
+    { "lat": 36.8080696, "lon": -119.7363255 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 10350283,
+  "bounds": {
+    "minlat": 36.8120956,
+    "minlon": -119.7409627,
+    "maxlat": 36.8158350,
+    "maxlon": -119.7407640
+  },
+  "nodes": [
+    3689968322,
+    5717730181,
+    3689968324,
+    7161610826,
+    87640501,
+    8820529947,
+    3689968425,
+    3689968426,
+    3689968427,
+    3689968428,
+    87640499,
+    6695409864,
+    6953366983,
+    6695409854,
+    87601814
+  ],
+  "geometry": [
+    { "lat": 36.8120956, "lon": -119.7407721 },
+    { "lat": 36.8121629, "lon": -119.7407720 },
+    { "lat": 36.8133973, "lon": -119.7407703 },
+    { "lat": 36.8141050, "lon": -119.7407650 },
+    { "lat": 36.8142453, "lon": -119.7407640 },
+    { "lat": 36.8143613, "lon": -119.7407804 },
+    { "lat": 36.8143723, "lon": -119.7407825 },
+    { "lat": 36.8144698, "lon": -119.7408287 },
+    { "lat": 36.8146165, "lon": -119.7409211 },
+    { "lat": 36.8147214, "lon": -119.7409550 },
+    { "lat": 36.8148274, "lon": -119.7409627 },
+    { "lat": 36.8150388, "lon": -119.7409611 },
+    { "lat": 36.8154276, "lon": -119.7409581 },
+    { "lat": 36.8157705, "lon": -119.7409554 },
+    { "lat": 36.8158350, "lon": -119.7409550 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "North Woodrow Avenue",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Woodrow",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 41435715,
+  "bounds": {
+    "minlat": 36.8157752,
+    "minlon": -119.7266043,
+    "maxlat": 36.8157769,
+    "maxlon": -119.7263250
+  },
+  "nodes": [
+    87505398,
+    12849814020
+  ],
+  "geometry": [
+    { "lat": 36.8157752, "lon": -119.7263250 },
+    { "lat": 36.8157769, "lon": -119.7266043 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "lanes:backward": "2",
+    "lanes:forward": "2",
+    "maxspeed": "40 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no",
+    "turn:lanes:backward": "left|none",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 41435736,
+  "bounds": {
+    "minlat": 36.8157690,
+    "minlon": -119.7262321,
+    "maxlat": 36.8157748,
+    "maxlon": -119.7251735
+  },
+  "nodes": [
+    506804403,
+    506804396
+  ],
+  "geometry": [
+    { "lat": 36.8157690, "lon": -119.7251735 },
+    { "lat": 36.8157748, "lon": -119.7262321 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "highway": "secondary",
+    "layer": "1",
+    "maxspeed": "40 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 228827453,
+  "bounds": {
+    "minlat": 36.8084708,
+    "minlon": -119.7408025,
+    "maxlat": 36.8084992,
+    "maxlon": -119.7363261
+  },
+  "nodes": [
+    87595899,
+    2375019521,
+    6929863531,
+    6929863540,
+    2375019520,
+    6929863547,
+    2375019517,
+    87518270,
+    6948225480,
+    6948263995,
+    10030113135,
+    87584134
+  ],
+  "geometry": [
+    { "lat": 36.8084992, "lon": -119.7408025 },
+    { "lat": 36.8084988, "lon": -119.7406822 },
+    { "lat": 36.8084977, "lon": -119.7403030 },
+    { "lat": 36.8084971, "lon": -119.7398759 },
+    { "lat": 36.8084970, "lon": -119.7397510 },
+    { "lat": 36.8084900, "lon": -119.7393041 },
+    { "lat": 36.8084879, "lon": -119.7391677 },
+    { "lat": 36.8084795, "lon": -119.7386332 },
+    { "lat": 36.8084724, "lon": -119.7375679 },
+    { "lat": 36.8084708, "lon": -119.7368614 },
+    { "lat": 36.8084708, "lon": -119.7364603 },
+    { "lat": 36.8084708, "lon": -119.7363261 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 228839116,
+  "bounds": {
+    "minlat": 36.8086195,
+    "minlon": -119.7347355,
+    "maxlat": 36.8086289,
+    "maxlon": -119.7324183
+  },
+  "nodes": [
+    2375019548,
+    2375019554
+  ],
+  "geometry": [
+    { "lat": 36.8086195, "lon": -119.7324183 },
+    { "lat": 36.8086289, "lon": -119.7347355 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "4",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 228839117,
+  "bounds": {
+    "minlat": 36.8085783,
+    "minlon": -119.7324183,
+    "maxlat": 36.8086195,
+    "maxlon": -119.7300884
+  },
+  "nodes": [
+    2375019538,
+    7121289220,
+    2375019539,
+    2375019544,
+    11525526817,
+    2375019548
+  ],
+  "geometry": [
+    { "lat": 36.8085839, "lon": -119.7300884 },
+    { "lat": 36.8085783, "lon": -119.7304476 },
+    { "lat": 36.8085835, "lon": -119.7310832 },
+    { "lat": 36.8085869, "lon": -119.7312904 },
+    { "lat": 36.8086094, "lon": -119.7319981 },
+    { "lat": 36.8086195, "lon": -119.7324183 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "4",
+    "maxspeed": "45 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 228839118,
+  "bounds": {
+    "minlat": 36.8084571,
+    "minlon": -119.7320141,
+    "maxlat": 36.8084613,
+    "maxlon": -119.7298685
+  },
+  "nodes": [
+    3684810219,
+    11055024125,
+    11055024131,
+    6950840798,
+    6950781172
+  ],
+  "geometry": [
+    { "lat": 36.8084613, "lon": -119.7320141 },
+    { "lat": 36.8084600, "lon": -119.7313373 },
+    { "lat": 36.8084592, "lon": -119.7309450 },
+    { "lat": 36.8084584, "lon": -119.7305561 },
+    { "lat": 36.8084571, "lon": -119.7298685 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 260983148,
+  "bounds": {
+    "minlat": 36.8157798,
+    "minlon": -119.7349845,
+    "maxlat": 36.8158171,
+    "maxlon": -119.7274205
+  },
+  "nodes": [
+    5865086371,
+    3689925550,
+    7384191473,
+    7457086202,
+    7457086214,
+    10275038030,
+    87482506
+  ],
+  "geometry": [
+    { "lat": 36.8158167, "lon": -119.7349845 },
+    { "lat": 36.8158171, "lon": -119.7347780 },
+    { "lat": 36.8158150, "lon": -119.7343564 },
+    { "lat": 36.8157939, "lon": -119.7302022 },
+    { "lat": 36.8157862, "lon": -119.7286732 },
+    { "lat": 36.8157805, "lon": -119.7275565 },
+    { "lat": 36.8157798, "lon": -119.7274205 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40 mph",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 260983159,
+  "bounds": {
+    "minlat": 36.8123974,
+    "minlon": -119.7363523,
+    "maxlat": 36.8127302,
+    "maxlon": -119.7362492
+  },
+  "nodes": [
+    5698890740,
+    5698890741,
+    5717730171,
+    5449697501,
+    12280144794
+  ],
+  "geometry": [
+    { "lat": 36.8127302, "lon": -119.7362492 },
+    { "lat": 36.8126577, "lon": -119.7363151 },
+    { "lat": 36.8125657, "lon": -119.7363190 },
+    { "lat": 36.8125120, "lon": -119.7363242 },
+    { "lat": 36.8123974, "lon": -119.7363523 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 364968921,
+  "bounds": {
+    "minlat": 36.8122545,
+    "minlon": -119.7370455,
+    "maxlat": 36.8123643,
+    "maxlon": -119.7364070
+  },
+  "nodes": [
+    2665785152,
+    13398781938,
+    5382312074,
+    5698890751,
+    3689968308
+  ],
+  "geometry": [
+    { "lat": 36.8123643, "lon": -119.7364070 },
+    { "lat": 36.8123228, "lon": -119.7365186 },
+    { "lat": 36.8123040, "lon": -119.7366315 },
+    { "lat": 36.8122986, "lon": -119.7369707 },
+    { "lat": 36.8122545, "lon": -119.7370455 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "Bulldog Lane",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 364968927,
+  "bounds": {
+    "minlat": 36.8158477,
+    "minlon": -119.7500727,
+    "maxlat": 36.8158736,
+    "maxlon": -119.7452195
+  },
+  "nodes": [
+    14136476247,
+    5717730190,
+    87601809,
+    5717730188,
+    6695498002,
+    6695497999,
+    5717730150,
+    7175218904,
+    6695466471,
+    5717730151,
+    87549184
+  ],
+  "geometry": [
+    { "lat": 36.8158721, "lon": -119.7500727 },
+    { "lat": 36.8158734, "lon": -119.7489292 },
+    { "lat": 36.8158736, "lon": -119.7488666 },
+    { "lat": 36.8158731, "lon": -119.7488041 },
+    { "lat": 36.8158702, "lon": -119.7484087 },
+    { "lat": 36.8158651, "lon": -119.7477263 },
+    { "lat": 36.8158625, "lon": -119.7473652 },
+    { "lat": 36.8158620, "lon": -119.7472957 },
+    { "lat": 36.8158541, "lon": -119.7462175 },
+    { "lat": 36.8158477, "lon": -119.7453467 },
+    { "lat": 36.8158481, "lon": -119.7452195 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 364968928,
+  "bounds": {
+    "minlat": 36.8159038,
+    "minlon": -119.7576091,
+    "maxlat": 36.8159273,
+    "maxlon": -119.7542456
+  },
+  "nodes": [
+    9171588670,
+    3689968432,
+    6948660794,
+    6948660793,
+    13019466217,
+    6738183273,
+    6738183269,
+    6738183272,
+    3689968435
+  ],
+  "geometry": [
+    { "lat": 36.8159249, "lon": -119.7542456 },
+    { "lat": 36.8159273, "lon": -119.7543564 },
+    { "lat": 36.8159248, "lon": -119.7547196 },
+    { "lat": 36.8159230, "lon": -119.7549536 },
+    { "lat": 36.8159207, "lon": -119.7552743 },
+    { "lat": 36.8159195, "lon": -119.7554424 },
+    { "lat": 36.8159131, "lon": -119.7563137 },
+    { "lat": 36.8159129, "lon": -119.7563526 },
+    { "lat": 36.8159038, "lon": -119.7576091 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "highway": "secondary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 445984191,
+  "bounds": {
+    "minlat": 36.8183900,
+    "minlon": -119.7541504,
+    "maxlat": 36.8372538,
+    "maxlon": -119.7541034
+  },
+  "nodes": [
+    6167801042,
+    7397850764,
+    87511846,
+    12507212007,
+    13296188594,
+    5701223848,
+    5701223849,
+    13296188595,
+    10701344155,
+    87511851,
+    12507212021,
+    13444009355,
+    5701223850,
+    13444009356,
+    6167801049,
+    87511861,
+    428710389,
+    5701223852,
+    13158365112,
+    87511733,
+    13158365103,
+    6711207693,
+    6054431493,
+    87444152,
+    12507212027,
+    11624941538,
+    87511743
+  ],
+  "geometry": [
+    { "lat": 36.8183900, "lon": -119.7541113 },
+    { "lat": 36.8194921, "lon": -119.7541106 },
+    { "lat": 36.8204177, "lon": -119.7541034 },
+    { "lat": 36.8229791, "lon": -119.7541062 },
+    { "lat": 36.8229944, "lon": -119.7541062 },
+    { "lat": 36.8230832, "lon": -119.7541059 },
+    { "lat": 36.8231839, "lon": -119.7541059 },
+    { "lat": 36.8232616, "lon": -119.7541060 },
+    { "lat": 36.8236028, "lon": -119.7541064 },
+    { "lat": 36.8267585, "lon": -119.7541177 },
+    { "lat": 36.8302026, "lon": -119.7541290 },
+    { "lat": 36.8302174, "lon": -119.7541291 },
+    { "lat": 36.8302898, "lon": -119.7541293 },
+    { "lat": 36.8303792, "lon": -119.7541290 },
+    { "lat": 36.8309399, "lon": -119.7541270 },
+    { "lat": 36.8315525, "lon": -119.7541222 },
+    { "lat": 36.8324748, "lon": -119.7541252 },
+    { "lat": 36.8332662, "lon": -119.7541375 },
+    { "lat": 36.8345599, "lon": -119.7541288 },
+    { "lat": 36.8346453, "lon": -119.7541289 },
+    { "lat": 36.8347239, "lon": -119.7541296 },
+    { "lat": 36.8352676, "lon": -119.7541359 },
+    { "lat": 36.8353845, "lon": -119.7541368 },
+    { "lat": 36.8359949, "lon": -119.7541463 },
+    { "lat": 36.8371328, "lon": -119.7541496 },
+    { "lat": 36.8371530, "lon": -119.7541497 },
+    { "lat": 36.8372538, "lon": -119.7541504 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 548455118,
+  "bounds": {
+    "minlat": 36.8097760,
+    "minlon": -119.7363219,
+    "maxlat": 36.8103090,
+    "maxlon": -119.7363013
+  },
+  "nodes": [
+    5298422878,
+    13775388063,
+    13277062251
+  ],
+  "geometry": [
+    { "lat": 36.8097760, "lon": -119.7363219 },
+    { "lat": 36.8099379, "lon": -119.7363156 },
+    { "lat": 36.8103090, "lon": -119.7363013 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 548455122,
+  "bounds": {
+    "minlat": 36.8162744,
+    "minlon": -119.7361719,
+    "maxlat": 36.8223372,
+    "maxlon": -119.7360639
+  },
+  "nodes": [
+    5865086372,
+    7384191454,
+    7416575137,
+    7416575127,
+    13239275536
+  ],
+  "geometry": [
+    { "lat": 36.8162744, "lon": -119.7361719 },
+    { "lat": 36.8170410, "lon": -119.7361585 },
+    { "lat": 36.8194565, "lon": -119.7361153 },
+    { "lat": 36.8205911, "lon": -119.7360951 },
+    { "lat": 36.8223372, "lon": -119.7360639 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 598802473,
+  "bounds": {
+    "minlat": 36.8123942,
+    "minlon": -119.7362492,
+    "maxlat": 36.8127302,
+    "maxlon": -119.7361540
+  },
+  "nodes": [
+    2665785183,
+    13398781932,
+    5698890739,
+    5717730172,
+    5698890738,
+    5698890740
+  ],
+  "geometry": [
+    { "lat": 36.8123942, "lon": -119.7361540 },
+    { "lat": 36.8124404, "lon": -119.7361608 },
+    { "lat": 36.8124938, "lon": -119.7361724 },
+    { "lat": 36.8125425, "lon": -119.7361801 },
+    { "lat": 36.8126508, "lon": -119.7361851 },
+    { "lat": 36.8127302, "lon": -119.7362492 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 598802476,
+  "bounds": {
+    "minlat": 36.8127302,
+    "minlon": -119.7362492,
+    "maxlat": 36.8130804,
+    "maxlon": -119.7362407
+  },
+  "nodes": [
+    5698890740,
+    6948749804
+  ],
+  "geometry": [
+    { "lat": 36.8127302, "lon": -119.7362492 },
+    { "lat": 36.8130804, "lon": -119.7362407 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "sidewalk:both": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 598802477,
+  "bounds": {
+    "minlat": 36.8117317,
+    "minlon": -119.7362727,
+    "maxlat": 36.8121136,
+    "maxlon": -119.7361408
+  },
+  "nodes": [
+    5698890747,
+    5698890743,
+    5717730146,
+    5698890742,
+    12280144796,
+    5698890744,
+    12280144797,
+    13398781937
+  ],
+  "geometry": [
+    { "lat": 36.8117317, "lon": -119.7362727 },
+    { "lat": 36.8118193, "lon": -119.7362097 },
+    { "lat": 36.8119315, "lon": -119.7362050 },
+    { "lat": 36.8119797, "lon": -119.7362016 },
+    { "lat": 36.8120107, "lon": -119.7361936 },
+    { "lat": 36.8120401, "lon": -119.7361795 },
+    { "lat": 36.8120818, "lon": -119.7361598 },
+    { "lat": 36.8121136, "lon": -119.7361408 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 598802478,
+  "bounds": {
+    "minlat": 36.8117317,
+    "minlon": -119.7363723,
+    "maxlat": 36.8121133,
+    "maxlon": -119.7362727
+  },
+  "nodes": [
+    2665785126,
+    12280144795,
+    5717730145,
+    5717730144,
+    5698890746,
+    5698890747
+  ],
+  "geometry": [
+    { "lat": 36.8121133, "lon": -119.7363723 },
+    { "lat": 36.8120786, "lon": -119.7363638 },
+    { "lat": 36.8120081, "lon": -119.7363464 },
+    { "lat": 36.8119573, "lon": -119.7363341 },
+    { "lat": 36.8118239, "lon": -119.7363307 },
+    { "lat": 36.8117317, "lon": -119.7362727 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 598802479,
+  "bounds": {
+    "minlat": 36.8121463,
+    "minlon": -119.7370455,
+    "maxlat": 36.8122545,
+    "maxlon": -119.7364174
+  },
+  "nodes": [
+    3689968308,
+    5698890749,
+    5698890750,
+    5698890748,
+    2665785156
+  ],
+  "geometry": [
+    { "lat": 36.8122545, "lon": -119.7370455 },
+    { "lat": 36.8122185, "lon": -119.7369580 },
+    { "lat": 36.8122149, "lon": -119.7366736 },
+    { "lat": 36.8121852, "lon": -119.7365330 },
+    { "lat": 36.8121463, "lon": -119.7364174 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "Bulldog Lane",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 598802480,
+  "bounds": {
+    "minlat": 36.8121985,
+    "minlon": -119.7392303,
+    "maxlat": 36.8122583,
+    "maxlon": -119.7370455
+  },
+  "nodes": [
+    3689968308,
+    6096706527,
+    3689968305,
+    6096706517
+  ],
+  "geometry": [
+    { "lat": 36.8122545, "lon": -119.7370455 },
+    { "lat": 36.8122564, "lon": -119.7379574 },
+    { "lat": 36.8122583, "lon": -119.7388948 },
+    { "lat": 36.8121985, "lon": -119.7392303 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "Bulldog Lane",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 620805861,
+  "bounds": {
+    "minlat": 36.8158167,
+    "minlon": -119.7360169,
+    "maxlat": 36.8159326,
+    "maxlon": -119.7349845
+  },
+  "nodes": [
+    5865086371,
+    5865086346,
+    5865086345,
+    5865086344,
+    5865086343,
+    5865086342,
+    2665785117
+  ],
+  "geometry": [
+    { "lat": 36.8158167, "lon": -119.7349845 },
+    { "lat": 36.8158403, "lon": -119.7350640 },
+    { "lat": 36.8158541, "lon": -119.7356249 },
+    { "lat": 36.8158672, "lon": -119.7357812 },
+    { "lat": 36.8158793, "lon": -119.7358429 },
+    { "lat": 36.8159035, "lon": -119.7359267 },
+    { "lat": 36.8159326, "lon": -119.7360169 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:both": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 620805864,
+  "bounds": {
+    "minlat": 36.8152791,
+    "minlon": -119.7361910,
+    "maxlat": 36.8157074,
+    "maxlon": -119.7360647
+  },
+  "nodes": [
+    5865086370,
+    5865086354,
+    13296090277,
+    5865086353,
+    5865086352,
+    5865086351,
+    13398781930
+  ],
+  "geometry": [
+    { "lat": 36.8152791, "lon": -119.7361910 },
+    { "lat": 36.8153803, "lon": -119.7361281 },
+    { "lat": 36.8155057, "lon": -119.7361254 },
+    { "lat": 36.8155475, "lon": -119.7361218 },
+    { "lat": 36.8156157, "lon": -119.7360930 },
+    { "lat": 36.8156606, "lon": -119.7360766 },
+    { "lat": 36.8157074, "lon": -119.7360647 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes": "through|through;right"
+  }
+},
+{
+  "type": "way",
+  "id": 620805869,
+  "bounds": {
+    "minlat": 36.8159690,
+    "minlon": -119.7361719,
+    "maxlat": 36.8162744,
+    "maxlon": -119.7360598
+  },
+  "nodes": [
+    2665785194,
+    5865086364,
+    5865086363,
+    13398781923,
+    5865086362,
+    5865086372
+  ],
+  "geometry": [
+    { "lat": 36.8159690, "lon": -119.7360598 },
+    { "lat": 36.8160049, "lon": -119.7360753 },
+    { "lat": 36.8160696, "lon": -119.7360973 },
+    { "lat": 36.8161396, "lon": -119.7361151 },
+    { "lat": 36.8162046, "lon": -119.7361238 },
+    { "lat": 36.8162744, "lon": -119.7361719 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 620805877,
+  "bounds": {
+    "minlat": 36.8158224,
+    "minlon": -119.7370963,
+    "maxlat": 36.8159453,
+    "maxlon": -119.7363420
+  },
+  "nodes": [
+    2665785195,
+    13398781921,
+    13398781917,
+    13398781920,
+    13398781919,
+    6695393627
+  ],
+  "geometry": [
+    { "lat": 36.8159453, "lon": -119.7363420 },
+    { "lat": 36.8159175, "lon": -119.7364063 },
+    { "lat": 36.8159073, "lon": -119.7364583 },
+    { "lat": 36.8158676, "lon": -119.7367797 },
+    { "lat": 36.8158442, "lon": -119.7370380 },
+    { "lat": 36.8158224, "lon": -119.7370963 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 742221835,
+  "bounds": {
+    "minlat": 36.8130804,
+    "minlon": -119.7362407,
+    "maxlat": 36.8152791,
+    "maxlon": -119.7361910
+  },
+  "nodes": [
+    6948749804,
+    3689968278,
+    8273607310,
+    8273607304,
+    7260766292,
+    5865086370
+  ],
+  "geometry": [
+    { "lat": 36.8130804, "lon": -119.7362407 },
+    { "lat": 36.8134483, "lon": -119.7362313 },
+    { "lat": 36.8139300, "lon": -119.7362213 },
+    { "lat": 36.8148884, "lon": -119.7361989 },
+    { "lat": 36.8150614, "lon": -119.7361958 },
+    { "lat": 36.8152791, "lon": -119.7361910 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "sidewalk:both": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 742447394,
+  "bounds": {
+    "minlat": 36.8084199,
+    "minlon": -119.7271521,
+    "maxlat": 36.8084358,
+    "maxlon": -119.7232098
+  },
+  "nodes": [
+    2375131135,
+    2375131112,
+    6738931967,
+    2375131109,
+    2375131133,
+    2375131150,
+    6738931958,
+    2375131152,
+    6738931961,
+    6738931970,
+    6738931975,
+    87493997,
+    12880409936
+  ],
+  "geometry": [
+    { "lat": 36.8084232, "lon": -119.7271521 },
+    { "lat": 36.8084226, "lon": -119.7270388 },
+    { "lat": 36.8084213, "lon": -119.7266255 },
+    { "lat": 36.8084199, "lon": -119.7261656 },
+    { "lat": 36.8084226, "lon": -119.7259747 },
+    { "lat": 36.8084305, "lon": -119.7256751 },
+    { "lat": 36.8084320, "lon": -119.7256135 },
+    { "lat": 36.8084358, "lon": -119.7254524 },
+    { "lat": 36.8084354, "lon": -119.7250935 },
+    { "lat": 36.8084347, "lon": -119.7244475 },
+    { "lat": 36.8084342, "lon": -119.7240218 },
+    { "lat": 36.8084340, "lon": -119.7238727 },
+    { "lat": 36.8084297, "lon": -119.7232098 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 802334571,
+  "bounds": {
+    "minlat": 36.8157780,
+    "minlon": -119.7272374,
+    "maxlat": 36.8157790,
+    "maxlon": -119.7268924
+  },
+  "nodes": [
+    12849814021,
+    10275038028,
+    2365778955
+  ],
+  "geometry": [
+    { "lat": 36.8157780, "lon": -119.7268924 },
+    { "lat": 36.8157784, "lon": -119.7271081 },
+    { "lat": 36.8157790, "lon": -119.7272374 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "lanes": "4",
+    "lanes:backward": "1",
+    "lanes:forward": "3",
+    "maxspeed": "50 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no",
+    "turn:lanes:forward": "left|none|right"
+  }
+},
+{
+  "type": "way",
+  "id": 908633653,
+  "bounds": {
+    "minlat": 36.8157307,
+    "minlon": -119.7370963,
+    "maxlat": 36.8158224,
+    "maxlon": -119.7363384
+  },
+  "nodes": [
+    6695393627,
+    13398781918,
+    5865086366,
+    13398781928,
+    2665785184
+  ],
+  "geometry": [
+    { "lat": 36.8158224, "lon": -119.7370963 },
+    { "lat": 36.8157896, "lon": -119.7370313 },
+    { "lat": 36.8157962, "lon": -119.7366066 },
+    { "lat": 36.8157802, "lon": -119.7364999 },
+    { "lat": 36.8157307, "lon": -119.7363384 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 908633655,
+  "bounds": {
+    "minlat": 36.8158224,
+    "minlon": -119.7373237,
+    "maxlat": 36.8158250,
+    "maxlon": -119.7370963
+  },
+  "nodes": [
+    6695409925,
+    6695393627
+  ],
+  "geometry": [
+    { "lat": 36.8158250, "lon": -119.7373237 },
+    { "lat": 36.8158224, "lon": -119.7370963 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 920595231,
+  "bounds": {
+    "minlat": 36.8159249,
+    "minlon": -119.7542500,
+    "maxlat": 36.8231837,
+    "maxlon": -119.7542382
+  },
+  "nodes": [
+    3683070973,
+    428712202,
+    13296188596,
+    6735372497,
+    6735368861,
+    5701223836,
+    6735368845,
+    6167801037,
+    6753381513,
+    6738183278,
+    6738183280,
+    13019466220,
+    6948660791,
+    11778659096,
+    9171588670
+  ],
+  "geometry": [
+    { "lat": 36.8231837, "lon": -119.7542445 },
+    { "lat": 36.8230826, "lon": -119.7542418 },
+    { "lat": 36.8229954, "lon": -119.7542417 },
+    { "lat": 36.8222576, "lon": -119.7542407 },
+    { "lat": 36.8214177, "lon": -119.7542396 },
+    { "lat": 36.8204184, "lon": -119.7542382 },
+    { "lat": 36.8196384, "lon": -119.7542413 },
+    { "lat": 36.8192333, "lon": -119.7542429 },
+    { "lat": 36.8188707, "lon": -119.7542443 },
+    { "lat": 36.8175392, "lon": -119.7542482 },
+    { "lat": 36.8174386, "lon": -119.7542500 },
+    { "lat": 36.8167544, "lon": -119.7542500 },
+    { "lat": 36.8164752, "lon": -119.7542468 },
+    { "lat": 36.8159979, "lon": -119.7542455 },
+    { "lat": 36.8159249, "lon": -119.7542456 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 920597800,
+  "bounds": {
+    "minlat": 36.8086361,
+    "minlon": -119.7363260,
+    "maxlat": 36.8097760,
+    "maxlon": -119.7363219
+  },
+  "nodes": [
+    2375019556,
+    10030113130,
+    5298422878
+  ],
+  "geometry": [
+    { "lat": 36.8086361, "lon": -119.7363260 },
+    { "lat": 36.8087868, "lon": -119.7363253 },
+    { "lat": 36.8097760, "lon": -119.7363219 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 920597801,
+  "bounds": {
+    "minlat": 36.8084708,
+    "minlon": -119.7363261,
+    "maxlat": 36.8086361,
+    "maxlon": -119.7363260
+  },
+  "nodes": [
+    87584134,
+    2375019556
+  ],
+  "geometry": [
+    { "lat": 36.8084708, "lon": -119.7363261 },
+    { "lat": 36.8086361, "lon": -119.7363260 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 920597802,
+  "bounds": {
+    "minlat": 36.8084741,
+    "minlon": -119.7356261,
+    "maxlat": 36.8084764,
+    "maxlon": -119.7344773
+  },
+  "nodes": [
+    2375019516,
+    2375019514
+  ],
+  "geometry": [
+    { "lat": 36.8084764, "lon": -119.7356261 },
+    { "lat": 36.8084741, "lon": -119.7344773 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 928810911,
+  "bounds": {
+    "minlat": 36.8085839,
+    "minlon": -119.7300884,
+    "maxlat": 36.8086023,
+    "maxlon": -119.7273643
+  },
+  "nodes": [
+    2365746993,
+    2375019545,
+    12320401400,
+    2375019550,
+    2375019549,
+    8273151726,
+    6996325859,
+    2375019540,
+    2375019538
+  ],
+  "geometry": [
+    { "lat": 36.8085981, "lon": -119.7273643 },
+    { "lat": 36.8085975, "lon": -119.7274751 },
+    { "lat": 36.8085990, "lon": -119.7276753 },
+    { "lat": 36.8086023, "lon": -119.7281123 },
+    { "lat": 36.8086011, "lon": -119.7284390 },
+    { "lat": 36.8085994, "lon": -119.7285631 },
+    { "lat": 36.8085882, "lon": -119.7291484 },
+    { "lat": 36.8085860, "lon": -119.7293357 },
+    { "lat": 36.8085839, "lon": -119.7300884 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "45 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 928810915,
+  "bounds": {
+    "minlat": 36.8086345,
+    "minlon": -119.7452528,
+    "maxlat": 36.8086513,
+    "maxlon": -119.7363260
+  },
+  "nodes": [
+    2375019556,
+    10030113136,
+    2375019555,
+    2375019558,
+    2375019559,
+    2375019560,
+    2375019561,
+    10548416710,
+    10548356101,
+    87548996
+  ],
+  "geometry": [
+    { "lat": 36.8086361, "lon": -119.7363260 },
+    { "lat": 36.8086360, "lon": -119.7365012 },
+    { "lat": 36.8086345, "lon": -119.7385603 },
+    { "lat": 36.8086439, "lon": -119.7406588 },
+    { "lat": 36.8086443, "lon": -119.7408010 },
+    { "lat": 36.8086449, "lon": -119.7409117 },
+    { "lat": 36.8086507, "lon": -119.7451260 },
+    { "lat": 36.8086507, "lon": -119.7451347 },
+    { "lat": 36.8086511, "lon": -119.7452185 },
+    { "lat": 36.8086513, "lon": -119.7452528 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 931355205,
+  "bounds": {
+    "minlat": 36.8086513,
+    "minlon": -119.7497339,
+    "maxlat": 36.8086668,
+    "maxlon": -119.7452528
+  },
+  "nodes": [
+    87548996,
+    10548356106,
+    2375019562,
+    87595894,
+    2375019565,
+    10548356098,
+    87490545
+  ],
+  "geometry": [
+    { "lat": 36.8086513, "lon": -119.7452528 },
+    { "lat": 36.8086515, "lon": -119.7453032 },
+    { "lat": 36.8086519, "lon": -119.7453859 },
+    { "lat": 36.8086603, "lon": -119.7474955 },
+    { "lat": 36.8086668, "lon": -119.7495813 },
+    { "lat": 36.8086668, "lon": -119.7495936 },
+    { "lat": 36.8086663, "lon": -119.7497339 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 931355206,
+  "bounds": {
+    "minlat": 36.8013642,
+    "minlon": -119.7541876,
+    "maxlat": 36.8058148,
+    "maxlon": -119.7541503
+  },
+  "nodes": [
+    5701223844,
+    10030113160,
+    6948281850,
+    87511835,
+    10561512916,
+    10651239017,
+    10651239020,
+    5701223845,
+    87484317
+  ],
+  "geometry": [
+    { "lat": 36.8013642, "lon": -119.7541876 },
+    { "lat": 36.8014685, "lon": -119.7541866 },
+    { "lat": 36.8020713, "lon": -119.7541843 },
+    { "lat": 36.8031816, "lon": -119.7541790 },
+    { "lat": 36.8037117, "lon": -119.7541746 },
+    { "lat": 36.8041620, "lon": -119.7541705 },
+    { "lat": 36.8045120, "lon": -119.7541677 },
+    { "lat": 36.8049867, "lon": -119.7541640 },
+    { "lat": 36.8058148, "lon": -119.7541503 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1009061517,
+  "bounds": {
+    "minlat": 36.8085366,
+    "minlon": -119.7541303,
+    "maxlat": 36.8086877,
+    "maxlon": -119.7541269
+  },
+  "nodes": [
+    2375019530,
+    5701223846
+  ],
+  "geometry": [
+    { "lat": 36.8085366, "lon": -119.7541303 },
+    { "lat": 36.8086877, "lon": -119.7541269 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1009080019,
+  "bounds": {
+    "minlat": 36.8086877,
+    "minlon": -119.7547531,
+    "maxlat": 36.8086925,
+    "maxlon": -119.7541269
+  },
+  "nodes": [
+    5701223846,
+    87511839,
+    2374942637,
+    8526730064,
+    9310248909
+  ],
+  "geometry": [
+    { "lat": 36.8086877, "lon": -119.7541269 },
+    { "lat": 36.8086905, "lon": -119.7542886 },
+    { "lat": 36.8086916, "lon": -119.7544005 },
+    { "lat": 36.8086908, "lon": -119.7545883 },
+    { "lat": 36.8086925, "lon": -119.7547531 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1051742505,
+  "bounds": {
+    "minlat": 36.8084708,
+    "minlon": -119.7363261,
+    "maxlat": 36.8084764,
+    "maxlon": -119.7356261
+  },
+  "nodes": [
+    87584134,
+    7116330741,
+    7116330746,
+    2375019516
+  ],
+  "geometry": [
+    { "lat": 36.8084708, "lon": -119.7363261 },
+    { "lat": 36.8084755, "lon": -119.7360882 },
+    { "lat": 36.8084752, "lon": -119.7357450 },
+    { "lat": 36.8084764, "lon": -119.7356261 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1051742507,
+  "bounds": {
+    "minlat": 36.8085288,
+    "minlon": -119.7541303,
+    "maxlat": 36.8085384,
+    "maxlon": -119.7512477
+  },
+  "nodes": [
+    2375019530,
+    11778690724,
+    2375019531,
+    7071412163,
+    11768607508,
+    11768607511,
+    87552377,
+    12882540873
+  ],
+  "geometry": [
+    { "lat": 36.8085366, "lon": -119.7541303 },
+    { "lat": 36.8085375, "lon": -119.7540101 },
+    { "lat": 36.8085384, "lon": -119.7539899 },
+    { "lat": 36.8085313, "lon": -119.7536098 },
+    { "lat": 36.8085314, "lon": -119.7532659 },
+    { "lat": 36.8085311, "lon": -119.7530171 },
+    { "lat": 36.8085320, "lon": -119.7519614 },
+    { "lat": 36.8085288, "lon": -119.7512477 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1066604988,
+  "bounds": {
+    "minlat": 36.8158055,
+    "minlon": -119.7576066,
+    "maxlat": 36.8158759,
+    "maxlon": -119.7540088
+  },
+  "nodes": [
+    87601806,
+    11778688077,
+    6948660796,
+    11778659097,
+    3689968431,
+    9171588668,
+    9171588671
+  ],
+  "geometry": [
+    { "lat": 36.8158055, "lon": -119.7576066 },
+    { "lat": 36.8158178, "lon": -119.7552071 },
+    { "lat": 36.8158195, "lon": -119.7547074 },
+    { "lat": 36.8158156, "lon": -119.7543556 },
+    { "lat": 36.8158158, "lon": -119.7542504 },
+    { "lat": 36.8158187, "lon": -119.7541169 },
+    { "lat": 36.8158759, "lon": -119.7540088 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "highway": "secondary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1079942827,
+  "bounds": {
+    "minlat": 36.8068044,
+    "minlon": -119.7541454,
+    "maxlat": 36.8085366,
+    "maxlon": -119.7541301
+  },
+  "nodes": [
+    87495391,
+    10558929588,
+    6167799286,
+    87511837,
+    7071412162,
+    11778690726,
+    2375019530
+  ],
+  "geometry": [
+    { "lat": 36.8068044, "lon": -119.7541454 },
+    { "lat": 36.8069298, "lon": -119.7541436 },
+    { "lat": 36.8070148, "lon": -119.7541421 },
+    { "lat": 36.8077133, "lon": -119.7541362 },
+    { "lat": 36.8080905, "lon": -119.7541330 },
+    { "lat": 36.8084405, "lon": -119.7541301 },
+    { "lat": 36.8085366, "lon": -119.7541303 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1079942828,
+  "bounds": {
+    "minlat": 36.8066011,
+    "minlon": -119.7541464,
+    "maxlat": 36.8068044,
+    "maxlon": -119.7541454
+  },
+  "nodes": [
+    6167796056,
+    87495391
+  ],
+  "geometry": [
+    { "lat": 36.8066011, "lon": -119.7541464 },
+    { "lat": 36.8068044, "lon": -119.7541454 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1079942830,
+  "bounds": {
+    "minlat": 36.8066831,
+    "minlon": -119.7542911,
+    "maxlat": 36.8068148,
+    "maxlon": -119.7542849
+  },
+  "nodes": [
+    6167796051,
+    6749647019
+  ],
+  "geometry": [
+    { "lat": 36.8068148, "lon": -119.7542849 },
+    { "lat": 36.8066831, "lon": -119.7542911 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1079942832,
+  "bounds": {
+    "minlat": 36.8068148,
+    "minlon": -119.7542937,
+    "maxlat": 36.8071124,
+    "maxlon": -119.7542849
+  },
+  "nodes": [
+    6167796061,
+    6167796051
+  ],
+  "geometry": [
+    { "lat": 36.8071124, "lon": -119.7542937 },
+    { "lat": 36.8068148, "lon": -119.7542849 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1079942833,
+  "bounds": {
+    "minlat": 36.8058148,
+    "minlon": -119.7541503,
+    "maxlat": 36.8066011,
+    "maxlon": -119.7541464
+  },
+  "nodes": [
+    87484317,
+    7007928829,
+    6167796056
+  ],
+  "geometry": [
+    { "lat": 36.8058148, "lon": -119.7541503 },
+    { "lat": 36.8063547, "lon": -119.7541476 },
+    { "lat": 36.8066011, "lon": -119.7541464 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1116740497,
+  "bounds": {
+    "minlat": 36.8157790,
+    "minlon": -119.7274205,
+    "maxlat": 36.8157798,
+    "maxlon": -119.7272374
+  },
+  "nodes": [
+    2365778955,
+    87482506
+  ],
+  "geometry": [
+    { "lat": 36.8157790, "lon": -119.7272374 },
+    { "lat": 36.8157798, "lon": -119.7274205 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "maxspeed": "50 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1131526226,
+  "bounds": {
+    "minlat": 36.8084245,
+    "minlon": -119.7298685,
+    "maxlat": 36.8084571,
+    "maxlon": -119.7273666
+  },
+  "nodes": [
+    6950781172,
+    2375019511,
+    2375019510,
+    6950840799,
+    2375019508,
+    6950840815,
+    2375019507,
+    6950840845,
+    2375019505,
+    2375019506
+  ],
+  "geometry": [
+    { "lat": 36.8084571, "lon": -119.7298685 },
+    { "lat": 36.8084571, "lon": -119.7298498 },
+    { "lat": 36.8084550, "lon": -119.7290554 },
+    { "lat": 36.8084529, "lon": -119.7289939 },
+    { "lat": 36.8084393, "lon": -119.7286002 },
+    { "lat": 36.8084335, "lon": -119.7284606 },
+    { "lat": 36.8084292, "lon": -119.7283557 },
+    { "lat": 36.8084269, "lon": -119.7278700 },
+    { "lat": 36.8084251, "lon": -119.7274748 },
+    { "lat": 36.8084245, "lon": -119.7273666 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1131526228,
+  "bounds": {
+    "minlat": 36.8084232,
+    "minlon": -119.7273666,
+    "maxlat": 36.8084245,
+    "maxlon": -119.7271521
+  },
+  "nodes": [
+    2375019506,
+    2375131135
+  ],
+  "geometry": [
+    { "lat": 36.8084245, "lon": -119.7273666 },
+    { "lat": 36.8084232, "lon": -119.7271521 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1185194937,
+  "bounds": {
+    "minlat": 36.8086289,
+    "minlon": -119.7363260,
+    "maxlat": 36.8086361,
+    "maxlon": -119.7347355
+  },
+  "nodes": [
+    2375019554,
+    2375019556
+  ],
+  "geometry": [
+    { "lat": 36.8086289, "lon": -119.7347355 },
+    { "lat": 36.8086361, "lon": -119.7363260 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "4",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1185194938,
+  "bounds": {
+    "minlat": 36.8084613,
+    "minlon": -119.7344773,
+    "maxlat": 36.8084741,
+    "maxlon": -119.7320141
+  },
+  "nodes": [
+    2375019514,
+    11525526820,
+    2375019522,
+    3684810219
+  ],
+  "geometry": [
+    { "lat": 36.8084741, "lon": -119.7344773 },
+    { "lat": 36.8084631, "lon": -119.7324027 },
+    { "lat": 36.8084622, "lon": -119.7322050 },
+    { "lat": 36.8084613, "lon": -119.7320141 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1245623174,
+  "bounds": {
+    "minlat": 36.8157412,
+    "minlon": -119.7360219,
+    "maxlat": 36.8158167,
+    "maxlon": -119.7349845
+  },
+  "nodes": [
+    2665785111,
+    13398781926,
+    5865086349,
+    5865086348,
+    5865086347,
+    5865086371
+  ],
+  "geometry": [
+    { "lat": 36.8157412, "lon": -119.7360219 },
+    { "lat": 36.8157597, "lon": -119.7359224 },
+    { "lat": 36.8157694, "lon": -119.7358182 },
+    { "lat": 36.8157839, "lon": -119.7353573 },
+    { "lat": 36.8157923, "lon": -119.7350671 },
+    { "lat": 36.8158167, "lon": -119.7349845 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1245623175,
+  "bounds": {
+    "minlat": 36.8152791,
+    "minlon": -119.7362923,
+    "maxlat": 36.8156999,
+    "maxlon": -119.7361910
+  },
+  "nodes": [
+    2665785179,
+    5865086357,
+    5865086356,
+    5865086355,
+    5865086370
+  ],
+  "geometry": [
+    { "lat": 36.8156999, "lon": -119.7362923 },
+    { "lat": 36.8156495, "lon": -119.7362828 },
+    { "lat": 36.8155314, "lon": -119.7362489 },
+    { "lat": 36.8153862, "lon": -119.7362534 },
+    { "lat": 36.8152791, "lon": -119.7361910 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 1245623176,
+  "bounds": {
+    "minlat": 36.8159713,
+    "minlon": -119.7363030,
+    "maxlat": 36.8162744,
+    "maxlon": -119.7361719
+  },
+  "nodes": [
+    5865086372,
+    13398781922,
+    5865086361,
+    5865086360,
+    5865086359,
+    13398781927
+  ],
+  "geometry": [
+    { "lat": 36.8162744, "lon": -119.7361719 },
+    { "lat": 36.8161989, "lon": -119.7362379 },
+    { "lat": 36.8161627, "lon": -119.7362386 },
+    { "lat": 36.8160930, "lon": -119.7362590 },
+    { "lat": 36.8160143, "lon": -119.7362934 },
+    { "lat": 36.8159713, "lon": -119.7363030 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "North Chestnut Avenue",
+    "oneway": "yes",
+    "sidewalk:both": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes": "throughthrough;right"
+  }
+},
+{
+  "type": "way",
+  "id": 1300479306,
+  "bounds": {
+    "minlat": 36.8086663,
+    "minlon": -119.7541269,
+    "maxlat": 36.8086877,
+    "maxlon": -119.7497339
+  },
+  "nodes": [
+    87490545,
+    2375019564,
+    2375019567,
+    2375019569,
+    11778690725,
+    5701223846
+  ],
+  "geometry": [
+    { "lat": 36.8086663, "lon": -119.7497339 },
+    { "lat": 36.8086751, "lon": -119.7511305 },
+    { "lat": 36.8086778, "lon": -119.7527736 },
+    { "lat": 36.8086850, "lon": -119.7540011 },
+    { "lat": 36.8086850, "lon": -119.7540142 },
+    { "lat": 36.8086877, "lon": -119.7541269 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1300479308,
+  "bounds": {
+    "minlat": 36.8085084,
+    "minlon": -119.7497326,
+    "maxlat": 36.8085227,
+    "maxlon": -119.7452536
+  },
+  "nodes": [
+    2375019528,
+    2375019529,
+    2375019527,
+    7432175777,
+    11912225955,
+    8527212826,
+    10963176757,
+    10548356107,
+    2375019525,
+    10548356102,
+    2375019524
+  ],
+  "geometry": [
+    { "lat": 36.8085219, "lon": -119.7497326 },
+    { "lat": 36.8085227, "lon": -119.7496307 },
+    { "lat": 36.8085191, "lon": -119.7474974 },
+    { "lat": 36.8085170, "lon": -119.7470314 },
+    { "lat": 36.8085168, "lon": -119.7469922 },
+    { "lat": 36.8085127, "lon": -119.7460832 },
+    { "lat": 36.8085106, "lon": -119.7456280 },
+    { "lat": 36.8085095, "lon": -119.7453807 },
+    { "lat": 36.8085095, "lon": -119.7453706 },
+    { "lat": 36.8085090, "lon": -119.7453138 },
+    { "lat": 36.8085084, "lon": -119.7452536 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1317731650,
+  "bounds": {
+    "minlat": 36.8054838,
+    "minlon": -119.7408368,
+    "maxlat": 36.8084992,
+    "maxlon": -119.7407964
+  },
+  "nodes": [
+    87484271,
+    10117167601,
+    10117167579,
+    87640449,
+    7353943994,
+    6738528637,
+    6738528634,
+    6929863561,
+    6929863549,
+    6957772565,
+    6929863533,
+    10117167759,
+    87595899
+  ],
+  "geometry": [
+    { "lat": 36.8054838, "lon": -119.7408368 },
+    { "lat": 36.8055697, "lon": -119.7408122 },
+    { "lat": 36.8056112, "lon": -119.7408007 },
+    { "lat": 36.8056576, "lon": -119.7407964 },
+    { "lat": 36.8063161, "lon": -119.7407978 },
+    { "lat": 36.8064068, "lon": -119.7407980 },
+    { "lat": 36.8064577, "lon": -119.7407981 },
+    { "lat": 36.8068249, "lon": -119.7407989 },
+    { "lat": 36.8078067, "lon": -119.7408010 },
+    { "lat": 36.8079348, "lon": -119.7408013 },
+    { "lat": 36.8080865, "lon": -119.7408016 },
+    { "lat": 36.8084022, "lon": -119.7408023 },
+    { "lat": 36.8084992, "lon": -119.7408025 }
+  ],
+  "tags": {
+    "highway": "residential",
+    "name": "North Woodrow Avenue",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Woodrow",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1317731651,
+  "bounds": {
+    "minlat": 36.8084992,
+    "minlon": -119.7452536,
+    "maxlat": 36.8085084,
+    "maxlon": -119.7408025
+  },
+  "nodes": [
+    2375019524,
+    10548356105,
+    2375019523,
+    13362257957,
+    87595898,
+    2375019519,
+    87595899
+  ],
+  "geometry": [
+    { "lat": 36.8085084, "lon": -119.7452536 },
+    { "lat": 36.8085078, "lon": -119.7451844 },
+    { "lat": 36.8085076, "lon": -119.7451148 },
+    { "lat": 36.8085036, "lon": -119.7424230 },
+    { "lat": 36.8085034, "lon": -119.7423169 },
+    { "lat": 36.8084997, "lon": -119.7409044 },
+    { "lat": 36.8084992, "lon": -119.7408025 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 1351835841,
+  "bounds": {
+    "minlat": 36.7973379,
+    "minlon": -119.7543437,
+    "maxlat": 36.8066831,
+    "maxlon": -119.7542904
+  },
+  "nodes": [
+    6749647019,
+    6749647032,
+    6869945239,
+    5701223833,
+    87446815,
+    87565760,
+    8678764195,
+    6948281857,
+    6948281863,
+    6948281870,
+    12842620128,
+    10030113162,
+    5701223832,
+    10030113161,
+    6948286004,
+    6948285995,
+    6948281884,
+    6948285992,
+    87511833,
+    7244092687,
+    7244092692,
+    5701223831
+  ],
+  "geometry": [
+    { "lat": 36.8066831, "lon": -119.7542911 },
+    { "lat": 36.8059500, "lon": -119.7542946 },
+    { "lat": 36.8057905, "lon": -119.7542947 },
+    { "lat": 36.8049762, "lon": -119.7542904 },
+    { "lat": 36.8037165, "lon": -119.7543078 },
+    { "lat": 36.8031866, "lon": -119.7543041 },
+    { "lat": 36.8027986, "lon": -119.7543052 },
+    { "lat": 36.8025290, "lon": -119.7543068 },
+    { "lat": 36.8020195, "lon": -119.7543089 },
+    { "lat": 36.8016122, "lon": -119.7543106 },
+    { "lat": 36.8014841, "lon": -119.7543106 },
+    { "lat": 36.8014660, "lon": -119.7543106 },
+    { "lat": 36.8013632, "lon": -119.7543116 },
+    { "lat": 36.8012531, "lon": -119.7543119 },
+    { "lat": 36.8008836, "lon": -119.7543154 },
+    { "lat": 36.8003222, "lon": -119.7543199 },
+    { "lat": 36.7994515, "lon": -119.7543268 },
+    { "lat": 36.7990895, "lon": -119.7543297 },
+    { "lat": 36.7988280, "lon": -119.7543318 },
+    { "lat": 36.7982721, "lon": -119.7543362 },
+    { "lat": 36.7977482, "lon": -119.7543404 },
+    { "lat": 36.7973379, "lon": -119.7543437 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1369500576,
+  "bounds": {
+    "minlat": 36.8085645,
+    "minlon": -119.7273643,
+    "maxlat": 36.8085981,
+    "maxlon": -119.7238713
+  },
+  "nodes": [
+    2375131261,
+    6944371442,
+    6776849271,
+    2375131269,
+    2375131281,
+    6776849257,
+    2375131295,
+    2375131299,
+    6776849262,
+    2375131318,
+    87482517,
+    2365746993
+  ],
+  "geometry": [
+    { "lat": 36.8085645, "lon": -119.7238713 },
+    { "lat": 36.8085674, "lon": -119.7244899 },
+    { "lat": 36.8085703, "lon": -119.7250894 },
+    { "lat": 36.8085711, "lon": -119.7252496 },
+    { "lat": 36.8085777, "lon": -119.7254710 },
+    { "lat": 36.8085810, "lon": -119.7255678 },
+    { "lat": 36.8085870, "lon": -119.7257480 },
+    { "lat": 36.8085896, "lon": -119.7260980 },
+    { "lat": 36.8085901, "lon": -119.7262444 },
+    { "lat": 36.8085931, "lon": -119.7270358 },
+    { "lat": 36.8085961, "lon": -119.7271502 },
+    { "lat": 36.8085981, "lon": -119.7273643 }
+  ],
+  "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "40 mph",
+    "name": "West Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1375787699,
+  "bounds": {
+    "minlat": 36.8158459,
+    "minlon": -119.7452195,
+    "maxlat": 36.8158481,
+    "maxlon": -119.7449500
+  },
+  "nodes": [
+    87549184,
+    6695277862
+  ],
+  "geometry": [
+    { "lat": 36.8158481, "lon": -119.7452195 },
+    { "lat": 36.8158459, "lon": -119.7449500 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 1375787700,
+  "bounds": {
+    "minlat": 36.8158350,
+    "minlon": -119.7449500,
+    "maxlat": 36.8158459,
+    "maxlon": -119.7409550
+  },
+  "nodes": [
+    6695277862,
+    6695409997,
+    87601812,
+    11299931285,
+    6953366981,
+    87601814
+  ],
+  "geometry": [
+    { "lat": 36.8158459, "lon": -119.7449500 },
+    { "lat": 36.8158427, "lon": -119.7438000 },
+    { "lat": 36.8158409, "lon": -119.7431133 },
+    { "lat": 36.8158399, "lon": -119.7427595 },
+    { "lat": 36.8158377, "lon": -119.7419604 },
+    { "lat": 36.8158350, "lon": -119.7409550 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 1388112762,
+  "bounds": {
+    "minlat": 36.8157748,
+    "minlon": -119.7263250,
+    "maxlat": 36.8157752,
+    "maxlon": -119.7262321
+  },
+  "nodes": [
+    506804396,
+    87505398
+  ],
+  "geometry": [
+    { "lat": 36.8157748, "lon": -119.7262321 },
+    { "lat": 36.8157752, "lon": -119.7263250 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "maxspeed": "40 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1388112763,
+  "bounds": {
+    "minlat": 36.8157769,
+    "minlon": -119.7267090,
+    "maxlat": 36.8157776,
+    "maxlon": -119.7266043
+  },
+  "nodes": [
+    12849814020,
+    7505001337
+  ],
+  "geometry": [
+    { "lat": 36.8157769, "lon": -119.7266043 },
+    { "lat": 36.8157776, "lon": -119.7267090 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "maxspeed": "40 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1388112764,
+  "bounds": {
+    "minlat": 36.8157776,
+    "minlon": -119.7268924,
+    "maxlat": 36.8157780,
+    "maxlon": -119.7267090
+  },
+  "nodes": [
+    7505001337,
+    12849814021
+  ],
+  "geometry": [
+    { "lat": 36.8157776, "lon": -119.7267090 },
+    { "lat": 36.8157780, "lon": -119.7268924 }
+  ],
+  "tags": {
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "maxspeed": "50 mph",
+    "name": "West Barstow Avenue",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Barstow",
+    "tiger:name_direction_prefix": "W",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1391735063,
+  "bounds": {
+    "minlat": 36.8085219,
+    "minlon": -119.7512477,
+    "maxlat": 36.8085288,
+    "maxlon": -119.7497326
+  },
+  "nodes": [
+    12882540873,
+    2375019528
+  ],
+  "geometry": [
+    { "lat": 36.8085288, "lon": -119.7512477 },
+    { "lat": 36.8085219, "lon": -119.7497326 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "4",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "turn:lanes": "left|||"
+  }
+},
+{
+  "type": "way",
+  "id": 1444090440,
+  "bounds": {
+    "minlat": 36.8158758,
+    "minlon": -119.7540088,
+    "maxlat": 36.8158759,
+    "maxlon": -119.7531297
+  },
+  "nodes": [
+    9171588671,
+    13251112185
+  ],
+  "geometry": [
+    { "lat": 36.8158759, "lon": -119.7540088 },
+    { "lat": 36.8158758, "lon": -119.7531297 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "5",
+    "lanes:backward": "3",
+    "lanes:forward": "2",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710",
+    "sidewalk:both": "separate",
+    "turn:lanes:backward": "left|none|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1447072164,
+  "bounds": {
+    "minlat": 36.8114182,
+    "minlon": -119.7362751,
+    "maxlat": 36.8117317,
+    "maxlon": -119.7362727
+  },
+  "nodes": [
+    13277062250,
+    5698890747
+  ],
+  "geometry": [
+    { "lat": 36.8114182, "lon": -119.7362751 },
+    { "lat": 36.8117317, "lon": -119.7362727 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "name": "North Chestnut Avenue",
+    "sidewalk:both": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave"
+  }
+},
+{
+  "type": "way",
+  "id": 1447072165,
+  "bounds": {
+    "minlat": 36.8110885,
+    "minlon": -119.7362808,
+    "maxlat": 36.8114182,
+    "maxlon": -119.7362751
+  },
+  "nodes": [
+    5698890752,
+    6948727269,
+    13277062250
+  ],
+  "geometry": [
+    { "lat": 36.8110885, "lon": -119.7362808 },
+    { "lat": 36.8113635, "lon": -119.7362755 },
+    { "lat": 36.8114182, "lon": -119.7362751 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "5",
+    "lanes:backward": "3",
+    "lanes:forward": "2",
+    "name": "North Chestnut Avenue",
+    "sidewalk:both": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes:backward": "left|none|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1447072166,
+  "bounds": {
+    "minlat": 36.8104508,
+    "minlon": -119.7362958,
+    "maxlat": 36.8107822,
+    "maxlon": -119.7362832
+  },
+  "nodes": [
+    13277062252,
+    3689968277
+  ],
+  "geometry": [
+    { "lat": 36.8104508, "lon": -119.7362958 },
+    { "lat": 36.8107822, "lon": -119.7362832 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "6",
+    "lanes:backward": "2",
+    "lanes:forward": "4",
+    "name": "North Chestnut Avenue",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes:forward": "left|none|none|right"
+  }
+},
+{
+  "type": "way",
+  "id": 1447072167,
+  "bounds": {
+    "minlat": 36.8103090,
+    "minlon": -119.7363013,
+    "maxlat": 36.8104508,
+    "maxlon": -119.7362958
+  },
+  "nodes": [
+    13277062251,
+    13277062252
+  ],
+  "geometry": [
+    { "lat": 36.8103090, "lon": -119.7363013 },
+    { "lat": 36.8104508, "lon": -119.7362958 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "5",
+    "lanes:backward": "2",
+    "lanes:forward": "3",
+    "name": "North Chestnut Avenue",
+    "sidewalk:left": "separate",
+    "sidewalk:right": "no",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes:forward": "left|none|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1449599350,
+  "bounds": {
+    "minlat": 36.8158709,
+    "minlon": -119.7531297,
+    "maxlat": 36.8158758,
+    "maxlon": -119.7509101
+  },
+  "nodes": [
+    13251112185,
+    9713132879,
+    6695498101,
+    5717730165,
+    87600280
+  ],
+  "geometry": [
+    { "lat": 36.8158758, "lon": -119.7531297 },
+    { "lat": 36.8158756, "lon": -119.7516384 },
+    { "lat": 36.8158748, "lon": -119.7514748 },
+    { "lat": 36.8158711, "lon": -119.7509937 },
+    { "lat": 36.8158709, "lon": -119.7509101 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710",
+    "sidewalk:both": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1449634375,
+  "bounds": {
+    "minlat": 36.8071124,
+    "minlon": -119.7542937,
+    "maxlat": 36.8086905,
+    "maxlon": -119.7542886
+  },
+  "nodes": [
+    87511839,
+    5701223834,
+    11778690728,
+    6167797081,
+    6167796061
+  ],
+  "geometry": [
+    { "lat": 36.8086905, "lon": -119.7542886 },
+    { "lat": 36.8085354, "lon": -119.7542927 },
+    { "lat": 36.8084419, "lon": -119.7542928 },
+    { "lat": 36.8075871, "lon": -119.7542934 },
+    { "lat": 36.8071124, "lon": -119.7542937 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1449945665,
+  "bounds": {
+    "minlat": 36.8086877,
+    "minlon": -119.7541269,
+    "maxlat": 36.8183900,
+    "maxlon": -119.7541113
+  },
+  "nodes": [
+    5701223846,
+    11778690727,
+    6167801004,
+    6167801005,
+    87511841,
+    11778659181,
+    11778659182,
+    87511842,
+    11778659187,
+    11778659183,
+    11299931284,
+    11778659093,
+    9171588668,
+    9171588669,
+    11778659094,
+    6167801042
+  ],
+  "geometry": [
+    { "lat": 36.8086877, "lon": -119.7541269 },
+    { "lat": 36.8087847, "lon": -119.7541268 },
+    { "lat": 36.8094847, "lon": -119.7541167 },
+    { "lat": 36.8101576, "lon": -119.7541255 },
+    { "lat": 36.8110413, "lon": -119.7541246 },
+    { "lat": 36.8121774, "lon": -119.7541229 },
+    { "lat": 36.8122148, "lon": -119.7541228 },
+    { "lat": 36.8122432, "lon": -119.7541228 },
+    { "lat": 36.8122759, "lon": -119.7541227 },
+    { "lat": 36.8123170, "lon": -119.7541226 },
+    { "lat": 36.8126749, "lon": -119.7541220 },
+    { "lat": 36.8157597, "lon": -119.7541169 },
+    { "lat": 36.8158187, "lon": -119.7541169 },
+    { "lat": 36.8159225, "lon": -119.7541169 },
+    { "lat": 36.8159850, "lon": -119.7541158 },
+    { "lat": 36.8183900, "lon": -119.7541113 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Cedar",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1453759034,
+  "bounds": {
+    "minlat": 36.8086783,
+    "minlon": -119.7565176,
+    "maxlat": 36.8086925,
+    "maxlon": -119.7547531
+  },
+  "nodes": [
+    9310248909,
+    6934229383,
+    6934229381,
+    2665792243
+  ],
+  "geometry": [
+    { "lat": 36.8086925, "lon": -119.7547531 },
+    { "lat": 36.8086836, "lon": -119.7549466 },
+    { "lat": 36.8086802, "lon": -119.7557445 },
+    { "lat": 36.8086783, "lon": -119.7565176 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1453759037,
+  "bounds": {
+    "minlat": 36.8085327,
+    "minlon": -119.7570999,
+    "maxlat": 36.8085386,
+    "maxlon": -119.7541303
+  },
+  "nodes": [
+    423898632,
+    6934229289,
+    6934229335,
+    6934229295,
+    6934229296,
+    6934229300,
+    6934229304,
+    2374942462,
+    5701223834,
+    2375019530
+  ],
+  "geometry": [
+    { "lat": 36.8085386, "lon": -119.7570999 },
+    { "lat": 36.8085386, "lon": -119.7569458 },
+    { "lat": 36.8085343, "lon": -119.7566184 },
+    { "lat": 36.8085356, "lon": -119.7563981 },
+    { "lat": 36.8085327, "lon": -119.7560558 },
+    { "lat": 36.8085367, "lon": -119.7552165 },
+    { "lat": 36.8085353, "lon": -119.7550908 },
+    { "lat": 36.8085362, "lon": -119.7543980 },
+    { "lat": 36.8085354, "lon": -119.7542927 },
+    { "lat": 36.8085366, "lon": -119.7541303 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "primary",
+    "lanes": "3",
+    "name": "East Shaw Avenue",
+    "old_ref": "CA 168",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1457961446,
+  "bounds": {
+    "minlat": 36.8080696,
+    "minlon": -119.7363261,
+    "maxlat": 36.8084708,
+    "maxlon": -119.7363254
+  },
+  "nodes": [
+    13371091597,
+    10030113134,
+    87584134
+  ],
+  "geometry": [
+    { "lat": 36.8080696, "lon": -119.7363255 },
+    { "lat": 36.8083940, "lon": -119.7363254 },
+    { "lat": 36.8084708, "lon": -119.7363261 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "name": "North Chestnut Avenue",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes:forward": "left|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1528631815,
+  "bounds": {
+    "minlat": 36.8158759,
+    "minlon": -119.7542456,
+    "maxlat": 36.8159249,
+    "maxlon": -119.7540088
+  },
+  "nodes": [
+    9171588671,
+    9171588669,
+    9171588670
+  ],
+  "geometry": [
+    { "lat": 36.8158759, "lon": -119.7540088 },
+    { "lat": 36.8159225, "lon": -119.7541169 },
+    { "lat": 36.8159249, "lon": -119.7542456 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "highway": "secondary",
+    "name": "East Barstow Avenue",
+    "oneway": "yes",
+    "postal_code": "93710",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1528631816,
+  "bounds": {
+    "minlat": 36.8122432,
+    "minlon": -119.7542669,
+    "maxlat": 36.8159249,
+    "maxlon": -119.7542456
+  },
+  "nodes": [
+    9171588670,
+    3689968431,
+    11778659095,
+    10272688951,
+    8903290983,
+    11778688086,
+    11778659186,
+    11778659185,
+    5701223835
+  ],
+  "geometry": [
+    { "lat": 36.8159249, "lon": -119.7542456 },
+    { "lat": 36.8158158, "lon": -119.7542504 },
+    { "lat": 36.8157481, "lon": -119.7542542 },
+    { "lat": 36.8150313, "lon": -119.7542608 },
+    { "lat": 36.8139161, "lon": -119.7542598 },
+    { "lat": 36.8132160, "lon": -119.7542627 },
+    { "lat": 36.8123186, "lon": -119.7542665 },
+    { "lat": 36.8122734, "lon": -119.7542667 },
+    { "lat": 36.8122432, "lon": -119.7542669 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1528631817,
+  "bounds": {
+    "minlat": 36.8122432,
+    "minlon": -119.7542669,
+    "maxlat": 36.8122432,
+    "maxlon": -119.7541228
+  },
+  "nodes": [
+    5701223835,
+    11778659179,
+    87511842
+  ],
+  "geometry": [
+    { "lat": 36.8122432, "lon": -119.7542669 },
+    { "lat": 36.8122432, "lon": -119.7541938 },
+    { "lat": 36.8122432, "lon": -119.7541228 }
+  ],
+  "tags": {
+    "highway": "residential",
+    "name": "Bulldog Lane",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Bulldog",
+    "tiger:name_type": "Ln",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1528631818,
+  "bounds": {
+    "minlat": 36.8086905,
+    "minlon": -119.7542886,
+    "maxlat": 36.8122432,
+    "maxlon": -119.7542665
+  },
+  "nodes": [
+    5701223835,
+    11778659188,
+    11778659184,
+    3701390033,
+    8273554078,
+    6167801012,
+    3701390030,
+    6167800998,
+    8526730069,
+    11778690729,
+    87511839
+  ],
+  "geometry": [
+    { "lat": 36.8122432, "lon": -119.7542669 },
+    { "lat": 36.8122101, "lon": -119.7542669 },
+    { "lat": 36.8121734, "lon": -119.7542670 },
+    { "lat": 36.8112242, "lon": -119.7542685 },
+    { "lat": 36.8110179, "lon": -119.7542687 },
+    { "lat": 36.8109275, "lon": -119.7542695 },
+    { "lat": 36.8103990, "lon": -119.7542713 },
+    { "lat": 36.8100936, "lon": -119.7542665 },
+    { "lat": 36.8091899, "lon": -119.7542844 },
+    { "lat": 36.8087817, "lon": -119.7542858 },
+    { "lat": 36.8086905, "lon": -119.7542886 }
+  ],
+  "tags": {
+    "hgv": "designated",
+    "highway": "secondary",
+    "name": "North Cedar Avenue",
+    "oneway": "yes",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1528633763,
+  "bounds": {
+    "minlat": 36.8158250,
+    "minlon": -119.7409550,
+    "maxlat": 36.8158350,
+    "maxlon": -119.7373237
+  },
+  "nodes": [
+    87601814,
+    6695409855,
+    87479384,
+    6695409857,
+    6695409845,
+    6695277916,
+    6695393608,
+    6695393616,
+    8820529955,
+    6695409925
+  ],
+  "geometry": [
+    { "lat": 36.8158350, "lon": -119.7409550 },
+    { "lat": 36.8158347, "lon": -119.7408702 },
+    { "lat": 36.8158341, "lon": -119.7406469 },
+    { "lat": 36.8158320, "lon": -119.7398771 },
+    { "lat": 36.8158309, "lon": -119.7394930 },
+    { "lat": 36.8158276, "lon": -119.7382833 },
+    { "lat": 36.8158269, "lon": -119.7380339 },
+    { "lat": 36.8158256, "lon": -119.7375518 },
+    { "lat": 36.8158253, "lon": -119.7374161 },
+    { "lat": 36.8158250, "lon": -119.7373237 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710"
+  }
+},
+{
+  "type": "way",
+  "id": 1528633764,
+  "bounds": {
+    "minlat": 36.8084992,
+    "minlon": -119.7408025,
+    "maxlat": 36.8107865,
+    "maxlon": -119.7407700
+  },
+  "nodes": [
+    87595899,
+    2375019559,
+    5733390309,
+    5382301871,
+    5382301876,
+    5717730169,
+    2665788260
+  ],
+  "geometry": [
+    { "lat": 36.8084992, "lon": -119.7408025 },
+    { "lat": 36.8086443, "lon": -119.7408010 },
+    { "lat": 36.8087502, "lon": -119.7407999 },
+    { "lat": 36.8094899, "lon": -119.7407892 },
+    { "lat": 36.8101412, "lon": -119.7407795 },
+    { "lat": 36.8107193, "lon": -119.7407710 },
+    { "lat": 36.8107865, "lon": -119.7407700 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "North Woodrow Avenue",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Woodrow",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1528633766,
+  "bounds": {
+    "minlat": 36.8107865,
+    "minlon": -119.7407721,
+    "maxlat": 36.8120956,
+    "maxlon": -119.7407700
+  },
+  "nodes": [
+    2665788260,
+    5717730170,
+    5717730180,
+    3689968322
+  ],
+  "geometry": [
+    { "lat": 36.8107865, "lon": -119.7407700 },
+    { "lat": 36.8108752, "lon": -119.7407700 },
+    { "lat": 36.8120326, "lon": -119.7407720 },
+    { "lat": 36.8120956, "lon": -119.7407721 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "North Woodrow Avenue",
+    "tiger:cfcc": "A41",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Woodrow",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "tiger:reviewed": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1528633768,
+  "bounds": {
+    "minlat": 36.8120919,
+    "minlon": -119.7407721,
+    "maxlat": 36.8121985,
+    "maxlon": -119.7392303
+  },
+  "nodes": [
+    6096706517,
+    6693607838,
+    3689968306,
+    5717730183,
+    3689968322
+  ],
+  "geometry": [
+    { "lat": 36.8121985, "lon": -119.7392303 },
+    { "lat": 36.8121738, "lon": -119.7393692 },
+    { "lat": 36.8120919, "lon": -119.7398288 },
+    { "lat": 36.8120952, "lon": -119.7406864 },
+    { "lat": 36.8120956, "lon": -119.7407721 }
+  ],
+  "tags": {
+    "highway": "unclassified",
+    "name": "Bulldog Lane",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1528634247,
+  "bounds": {
+    "minlat": 36.8107822,
+    "minlon": -119.7362832,
+    "maxlat": 36.8110885,
+    "maxlon": -119.7362808
+  },
+  "nodes": [
+    3689968277,
+    5698890752
+  ],
+  "geometry": [
+    { "lat": 36.8107822, "lon": -119.7362832 },
+    { "lat": 36.8110885, "lon": -119.7362808 }
+  ],
+  "tags": {
+    "cycleway": "lane",
+    "hgv": "designated",
+    "highway": "tertiary",
+    "lanes": "5",
+    "lanes:backward": "3",
+    "lanes:forward": "2",
+    "name": "North Chestnut Avenue",
+    "sidewalk:both": "separate",
+    "source:hgv": "https://www.fresno.gov/wp-content/uploads/2023/04/Designated-Truck-Routes.pdf",
+    "tiger:cfcc": "A45",
+    "tiger:county": "Fresno, CA",
+    "tiger:name_base": "Chestnut",
+    "tiger:name_direction_prefix": "N",
+    "tiger:name_type": "Ave",
+    "turn:lanes:backward": "left|none|none"
+  }
+},
+{
+  "type": "way",
+  "id": 1553788915,
+  "bounds": {
+    "minlat": 36.8158709,
+    "minlon": -119.7509101,
+    "maxlat": 36.8158721,
+    "maxlon": -119.7500727
+  },
+  "nodes": [
+    87600280,
+    5717730166,
+    14136476247
+  ],
+  "geometry": [
+    { "lat": 36.8158709, "lon": -119.7509101 },
+    { "lat": 36.8158712, "lon": -119.7508165 },
+    { "lat": 36.8158721, "lon": -119.7500727 }
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "5",
+    "lanes:backward": "3",
+    "lanes:forward": "2",
+    "name": "East Barstow Avenue",
+    "postal_code": "93710",
+    "turn:lanes:backward": "left|through|through"
+  }
+}
+
+  ]
+}
