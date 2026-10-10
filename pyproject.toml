@@ -11,6 +11,9 @@ name = "binopt"
 version = "0.1.0"
 description = "Fresno State bin-placement pilot: campus data, maps, and the coverage model's inputs"
 requires-python = ">=3.11"
+# Only PuLP is pinned here, so `pip install -e .` in Colab installs a version our model is tested
+# on instead of whatever Colab ships (Colab moved to PuLP 4.0, which changed how variables are made).
+dependencies = ["pulp>=2.7,<4"]
 
 [tool.setuptools]
 packages = ["binopt"]
