@@ -26,6 +26,12 @@ import pandas as pd
 import pulp
 
 
+def binary_vars(prefix, keys):
+    """{key: 0/1 PuLP variable}. Built by hand instead of pulp.LpVariable.dicts, which newer
+    PuLP releases removed. Names use a position number, so odd characters in ids can't break them."""
+    return {k: pulp.LpVariable(f"{prefix}_{n}", cat="Binary") for n, k in enumerate(keys)}
+
+
 def coverage_sets(distances, radius_m, demand_ids=None):
     """{demand_id: set of site_ids within radius_m}. Points no site reaches are left out.
     demand_ids = only these demand points (lets us run the model on part of campus)."""
@@ -55,8 +61,8 @@ def solve_mclp(demand, distances, p, radius_m, current=None, max_moves=None, tim
 
     prob = pulp.LpProblem("mclp", pulp.LpMaximize)
     # x[j] = 1 if site j gets a station. y[i] = 1 if demand point i is covered.
-    x = pulp.LpVariable.dicts("x", sites, cat="Binary")
-    y = pulp.LpVariable.dicts("y", list(cover), cat="Binary")
+    x = binary_vars("x", sites)
+    y = binary_vars("y", list(cover))
 
     prob += pulp.lpSum(weight[i] * y[i] for i in cover)               # goal: covered weight
     prob += pulp.lpSum(x.values()) <= p                                 # station budget
@@ -99,8 +105,8 @@ def fewest_sites_for(demand, distances, target_share, radius_m, time_limit=120):
     cover = coverage_sets(distances, radius_m, demand["demand_id"])
     sites = sorted(set(distances["site_id"]))
     prob = pulp.LpProblem("fewest", pulp.LpMinimize)
-    x = pulp.LpVariable.dicts("x", sites, cat="Binary")
-    y = pulp.LpVariable.dicts("y", list(cover), cat="Binary")
+    x = binary_vars("x", sites)
+    y = binary_vars("y", list(cover))
     prob += pulp.lpSum(x.values())
     prob += pulp.lpSum(weight[i] * y[i] for i in cover) >= target_share * total
     for i, near in cover.items():

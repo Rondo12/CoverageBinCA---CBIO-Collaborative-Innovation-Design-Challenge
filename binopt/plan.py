@@ -46,7 +46,12 @@ def make_plan(radius_m=50, max_moves=5):
     core = demand[~demand["use_type"].isin(NOT_CORE)]
     current = list(bins["bin_id"])
     # The model works on the academic core: that's where Facilities' receptacles are.
-    chosen = solve_mclp(core, dist_all, len(current), radius_m, current=current, max_moves=max_moves)
+    # Tie-break: several layouts can tie on the core, so places outside the core count a tiny bit
+    # (0.1%). Among equally good core layouts, the model then picks the one that also helps the
+    # rest of campus, and the answer stays the same from run to run.
+    tie = demand.copy()
+    tie.loc[tie["use_type"].isin(NOT_CORE), "weight"] *= 0.001
+    chosen = solve_mclp(tie, dist_all, len(current), radius_m, current=current, max_moves=max_moves)
     out_ids = sorted(set(current) - set(chosen))
     in_ids = sorted(set(chosen) - set(current))
 
