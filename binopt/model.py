@@ -26,10 +26,19 @@ import pandas as pd
 import pulp
 
 
-def binary_vars(prefix, keys):
-    """{key: 0/1 PuLP variable}. Built by hand instead of pulp.LpVariable.dicts, which newer
-    PuLP releases removed. Names use a position number, so odd characters in ids can't break them."""
-    return {k: pulp.LpVariable(f"{prefix}_{n}", cat="Binary") for n, k in enumerate(keys)}
+def binary_vars(prob, prefix, keys):
+    """{key: 0/1 PuLP variable}, attached to `prob`.
+
+    Simple: one yes/no switch per key.
+    Technical: PuLP 4.0 removed LpVariable.dicts and creating LpVariable(...) directly; variables
+    must come from prob.add_variable(...). PuLP 3.x has add_variable too, so we use it whenever it
+    exists and fall back to LpVariable on older versions. Names use a position number, so odd
+    characters in ids can't break them."""
+    if hasattr(prob, "add_variable"):
+        make = lambda name: prob.add_variable(name, cat="Binary")  # noqa: E731
+    else:
+        make = lambda name: pulp.LpVariable(name, cat="Binary")  # noqa: E731
+    return {k: make(f"{prefix}_{n}") for n, k in enumerate(keys)}
 
 
 def coverage_sets(distances, radius_m, demand_ids=None):
@@ -61,8 +70,8 @@ def solve_mclp(demand, distances, p, radius_m, current=None, max_moves=None, tim
 
     prob = pulp.LpProblem("mclp", pulp.LpMaximize)
     # x[j] = 1 if site j gets a station. y[i] = 1 if demand point i is covered.
-    x = binary_vars("x", sites)
-    y = binary_vars("y", list(cover))
+    x = binary_vars(prob, "x", sites)
+    y = binary_vars(prob, "y", list(cover))
 
     prob += pulp.lpSum(weight[i] * y[i] for i in cover)               # goal: covered weight
     prob += pulp.lpSum(x.values()) <= p                                 # station budget
@@ -105,8 +114,8 @@ def fewest_sites_for(demand, distances, target_share, radius_m, time_limit=120):
     cover = coverage_sets(distances, radius_m, demand["demand_id"])
     sites = sorted(set(distances["site_id"]))
     prob = pulp.LpProblem("fewest", pulp.LpMinimize)
-    x = binary_vars("x", sites)
-    y = binary_vars("y", list(cover))
+    x = binary_vars(prob, "x", sites)
+    y = binary_vars(prob, "y", list(cover))
     prob += pulp.lpSum(x.values())
     prob += pulp.lpSum(weight[i] * y[i] for i in cover) >= target_share * total
     for i, near in cover.items():
