@@ -1,8 +1,8 @@
 """Interactive web map of the plan (Folium = a Python remote control for Leaflet web maps).
 
-Layers you can switch on and off: estimated demand, receptacles that stay, receptacles to move,
-new spots, and the gaps (housing / event venues) to ask Facilities about. Street map and
-satellite backgrounds.
+Layers you can switch on and off: estimated demand, every receptacle, the busiest ones to
+upgrade first, the added receptacle, and the gaps (housing / event venues) to ask Facilities
+about. Street map and satellite backgrounds. Fresno State colors: red #C41230, blue #13284C.
 
 It shows Facilities' receptacle layout, so it's saved privately: data/private/plan_map.html.
 In Colab, the notebook displays it inline.
@@ -13,7 +13,7 @@ from pathlib import Path
 import folium
 
 ROOT = Path(__file__).resolve().parent.parent
-BLUE, ORANGE = "#2a78d6", "#eb6834"
+BLUE, RED, GRAY = "#13284C", "#C41230", "#9aa0a6"
 
 
 def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
@@ -41,27 +41,29 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
                               f"({r['share']:.1%} of demand), no receptacle within {plan.radius_m} m "
                               "on the 2021 map").add_to(gaps)
 
-    keep = folium.FeatureGroup(name=f"Receptacles that stay ({len(plan.kept)})").add_to(m)
-    for _, r in plan.kept.iterrows():
-        folium.CircleMarker([r["lat"], r["lon"]], radius=5, color="white", weight=1, fill=True,
-                            fill_color=ORANGE, fill_opacity=1, tooltip=r["bin_id"]).add_to(keep)
-    mv = folium.FeatureGroup(name=f"Receptacles to move ({len(plan.moves_from)})").add_to(m)
-    for _, r in plan.moves_from.iterrows():
-        folium.CircleMarker([r["lat"], r["lon"]], radius=8, color=ORANGE, weight=3, fill=True,
-                            fill_color="white", fill_opacity=1, tooltip=f"move {r['bin_id']}").add_to(mv)
-    new = folium.FeatureGroup(name=f"New spots ({len(plan.moves_to)})").add_to(m)
-    for _, r in plan.moves_to.iterrows():
-        folium.RegularPolygonMarker([r["lat"], r["lon"]], number_of_sides=4, radius=9, color="white",
+    rest = folium.FeatureGroup(name=f"Other receptacles ({len(plan.ranked) - plan.top_k})").add_to(m)
+    top = folium.FeatureGroup(name=f"Busiest {plan.top_k} receptacles (upgrade first)").add_to(m)
+    for _, r in plan.ranked.iterrows():
+        tip = f"#{r['rank']} {r['bin_id']}: about {r['share']:.1%} of estimated foot traffic" + (f" ({r['serves']})" if r["serves"] else "")
+        if r["rank"] <= plan.top_k:
+            folium.CircleMarker([r["lat"], r["lon"]], radius=9, color="white", weight=2, fill=True,
+                                fill_color=RED, fill_opacity=1, tooltip=tip).add_to(top)
+        else:
+            folium.CircleMarker([r["lat"], r["lon"]], radius=4, color="white", weight=1, fill=True,
+                                fill_color=GRAY, fill_opacity=1, tooltip=tip).add_to(rest)
+    new = folium.FeatureGroup(name=f"Add {plan.add} receptacle").add_to(m)
+    for _, r in plan.new_spots.iterrows():
+        folium.RegularPolygonMarker([r["lat"], r["lon"]], number_of_sides=4, radius=11, color="white",
                                     weight=1, fill_color=BLUE, fill_opacity=1,
-                                    tooltip=f"new spot near {r['near']}").add_to(new)
+                                    tooltip=f"Add a receptacle here: reaches {r['near']}").add_to(new)
         folium.Circle([r["lat"], r["lon"]], radius=plan.radius_m, color=BLUE, weight=1,
-                      fill=True, fill_opacity=0.08).add_to(new)
+                      fill=True, fill_opacity=0.10).add_to(new)
 
-    title = (f"Move {len(plan.moves_from)} receptacles: academic core {plan.today_core:.0%} to "
-             f"{plan.after_core:.0%} projected coverage (within {plan.radius_m} m). PLACEHOLDER demand; not diversion.")
+    title = (f"{plan.top_k} of {len(plan.ranked)} receptacles handle about {plan.top_k_share:.0%} of estimated foot traffic. "
+             f"Add {plan.add}: academic core {plan.today_core:.0%} to {plan.after_core:.0%} projected coverage. PLACEHOLDER demand; not diversion.")
     m.get_root().html.add_child(folium.Element(
-        f'<div style="position:fixed;top:10px;left:50px;z-index:9999;background:white;padding:6px 10px;'
-        f'border-radius:6px;font:14px sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.3)">{title}</div>'))
+        f'<div style="position:fixed;top:10px;left:50px;right:220px;z-index:9999;background:white;padding:6px 10px;'
+        f'border-left:5px solid {RED};border-radius:6px;font:14px sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.3)">{title}</div>'))
     folium.LayerControl(collapsed=False).add_to(m)
     m.save(path)
     return m
