@@ -3,7 +3,7 @@
 Simple version:
     Every place on campus (a building, food spot or parking lot) sends its people to the
     closest receptacle within reach. Add up what each receptacle receives, sort from busiest
-    to quietest, and you get a priority list. Most outdoor receptacles are trash only, so the
+    to quietest, and you get a priority list. On our walks, most outdoor receptacles were trash only, so the
     busiest ones are where a new recycling bin (with clear "no bags in recycling" signs) reaches
     the most people. recycling_curve() compares that ranking with random placement.
 
@@ -80,7 +80,7 @@ def quiet_candidates(ranked, demand, max_pair_m=30):
 def recycling_curve(ranked, ks=range(1, 31)):
     """Where should the NEXT recycling bins go? Compare the algorithm with random placement.
 
-    Simple: most outdoor bins on campus are trash only. Put a recycling bin beside the k trash
+    Simple: on our walks, most outdoor bins were trash only. Put a recycling bin beside the k trash
     cans that reach the most people (the ranking above), and count how much estimated foot traffic
     now has recycling within reach. Then compare with putting the same k recycling bins beside k
     trash cans chosen at random.
