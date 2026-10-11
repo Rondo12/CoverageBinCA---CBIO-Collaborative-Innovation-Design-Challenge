@@ -34,7 +34,7 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
                                     f"[{r['use_type']}] {r['share']:.1%} of demand; "
                                     f"{'covered' if r['covered_today'] else 'NOT covered'} today").add_to(dem)
 
-    gaps = folium.FeatureGroup(name="Gaps to ask Facilities about").add_to(m)
+    gaps = folium.FeatureGroup(name="No outdoor bin nearby: ask Facilities").add_to(m)
     for _, r in plan.gaps[plan.gaps["group"].notna()].iterrows():
         folium.Marker([r["lat"], r["lon"]], icon=folium.Icon(color="black", icon="question-sign"),
                       tooltip=f"{r['group']}: {r['name'] if isinstance(r['name'], str) else '(no name)'} "
@@ -51,7 +51,12 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
         else:
             folium.CircleMarker([r["lat"], r["lon"]], radius=4, color="white", weight=1, fill=True,
                                 fill_color=GRAY, fill_opacity=1, tooltip=tip).add_to(rest)
-    new = folium.FeatureGroup(name=f"Add {plan.add} receptacle").add_to(m)
+    qt = folium.FeatureGroup(name=f"Quiet receptacles to review ({len(plan.quiet)})").add_to(m)
+    for _, r in plan.quiet.iterrows():
+        folium.CircleMarker([r["lat"], r["lon"]], radius=9, color="#0b0b0b", weight=3, fill=True, fill_color="white",
+                            fill_opacity=1, tooltip=f"Review {r['bin_id']} near {r['near']}: no building's closest bin, "
+                                                    f"another bin {r['pair_m']:.0f} m away. Check the fill log before moving.").add_to(qt)
+    new = folium.FeatureGroup(name=f"Add {plan.add} receptacle", show=bool(plan.add)).add_to(m)
     for _, r in plan.new_spots.iterrows():
         folium.RegularPolygonMarker([r["lat"], r["lon"]], number_of_sides=4, radius=11, color="white",
                                     weight=1, fill_color=BLUE, fill_opacity=1,
@@ -59,8 +64,8 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
         folium.Circle([r["lat"], r["lon"]], radius=plan.radius_m, color=BLUE, weight=1,
                       fill=True, fill_opacity=0.10).add_to(new)
 
-    title = (f"{plan.top_k} of {len(plan.ranked)} receptacles handle about {plan.top_k_share:.0%} of estimated foot traffic. "
-             f"Add {plan.add}: academic core {plan.today_core:.0%} to {plan.after_core:.0%} projected coverage. PLACEHOLDER demand; not diversion.")
+    title = (f"Rebalance by foot traffic: {plan.top_k} of {len(plan.ranked)} receptacles handle about {plan.top_k_share:.0%} of it; "
+             f"{len(plan.quiet)} quiet ones to review. Academic core coverage today {plan.today_core:.0%}. PLACEHOLDER demand; not diversion.")
     m.get_root().html.add_child(folium.Element(
         f'<div style="position:fixed;top:10px;left:50px;right:220px;z-index:9999;background:white;padding:6px 10px;'
         f'border-left:5px solid {RED};border-radius:6px;font:14px sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.3)">{title}</div>'))

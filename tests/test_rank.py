@@ -31,3 +31,14 @@ def test_shares_never_double_count():
     r = rank_receptacles(*tiny(), radius_m=50)
     assert r["share"].sum() <= 1.0 + 1e-9
     assert top_share(r, 2) == pytest.approx(0.95)
+
+
+def test_quiet_needs_zero_load_and_a_close_neighbor():
+    from binopt.rank import quiet_candidates
+    # three bins on a line: A and B 20 m apart, C 200 m away; only A serves a building
+    ranked = pd.DataFrame({"bin_id": ["A", "B", "C"], "lat": [36.8, 36.8, 36.8],
+                           "lon": [-119.75, -119.75 + 20 / 89000, -119.75 + 200 / 89000], "load": [10.0, 0.0, 0.0]})
+    demand = pd.DataFrame({"demand_id": ["d1"], "name": ["Library"], "lat": [36.8], "lon": [-119.75]})
+    q = quiet_candidates(ranked, demand, max_pair_m=30)
+    assert list(q["bin_id"]) == ["B"]          # C is quiet but alone, so it stays
+    assert q["near"].iloc[0] == "Library"

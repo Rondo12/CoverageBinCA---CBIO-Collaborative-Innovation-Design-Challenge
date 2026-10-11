@@ -69,8 +69,9 @@ def tonnage_figure(monthly, yearly, path=None):
 
 def plan_map_figure(plan, path=None):
     """Campus base map from the OpenStreetMap snapshots, plus the plan:
-    every receptacle (gray), the busiest top-k numbered in red, the pilot buildings in blue,
-    the added receptacle as a blue diamond, and the gaps to ask Facilities about (hatched)."""
+    every receptacle (gray), the busiest top-k numbered in red, the quiet ones to review (hollow),
+    the pilot buildings in blue, any added receptacle (blue diamond), and the places to ask
+    Facilities about (hatched)."""
     from binopt.plan import PILOT_SITES
     to_m = lambda df: gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df["lon"], df["lat"]),  # noqa: E731
                                        crs=LATLON).to_crs(METERS)
@@ -89,8 +90,7 @@ def plan_map_figure(plan, path=None):
     if len(pilot_b):
         pilot_b.plot(ax=ax, color=BLUE, alpha=0.85, edgecolor=BLUE, lw=0.8)
 
-    gaps = plan.demand[~plan.demand["in_core"] & ~plan.demand["covered_today"] &
-                       plan.demand["use_type"].isin(["dormitory", "event"])]
+    gaps = plan.gaps[plan.gaps["group"].notna() & (plan.gaps["group"] != "Parking lots")]
     gb = buildings[buildings["osm_id"].isin(set(gaps["osm_id"]))] if "osm_id" in buildings else buildings.iloc[0:0]
     if len(gb):
         gb.plot(ax=ax, facecolor="none", edgecolor=INK, lw=1.2, hatch="////")
@@ -103,8 +103,12 @@ def plan_map_figure(plan, path=None):
     for k, r in top.iterrows():
         ax.annotate(str(k + 1), (r.geometry.x, r.geometry.y), xytext=(0, 9), textcoords="offset points",
                     ha="center", fontsize=9, fontweight="bold", color=RED)
+    quiet = to_m(plan.quiet)
+    if len(quiet):
+        quiet.plot(ax=ax, facecolor="white", edgecolor=INK, markersize=70, lw=1.6, zorder=4)
     new = to_m(plan.new_spots)
-    new.plot(ax=ax, color=BLUE, markersize=150, marker="D", edgecolor="white", lw=1.2, zorder=5)
+    if len(new):
+        new.plot(ax=ax, color=BLUE, markersize=150, marker="D", edgecolor="white", lw=1.2, zorder=5)
     for _, r in new.iterrows():
         ax.annotate(f"Add 1: {r['near']}", (r.geometry.x, r.geometry.y), xytext=(-12, 16),
                     textcoords="offset points", ha="right", fontsize=9, fontweight="bold", color=BLUE,
@@ -121,14 +125,17 @@ def plan_map_figure(plan, path=None):
                label=f"Busiest {plan.top_k} receptacles (upgrade first)"),
         Line2D([], [], marker="o", ls="", color="#9aa0a6", markeredgecolor="white", markersize=6,
                label=f"Other receptacles ({len(ranked) - plan.top_k})"),
+        Line2D([], [], marker="o", ls="", markerfacecolor="white", markeredgecolor=INK, mew=1.6, markersize=8,
+               label=f"Quiet receptacles to review ({len(plan.quiet)})"),
         Patch(facecolor=BLUE, alpha=0.85, label="Pilot site"),
-        Line2D([], [], marker="D", ls="", color=BLUE, markeredgecolor="white", markersize=9,
-               label=f"Add {plan.add} receptacle"),
-        Patch(facecolor="none", edgecolor=INK, hatch="////", label="Gap: housing / event venue, ask Facilities"),
+        Patch(facecolor="none", edgecolor=INK, hatch="////", label="No outdoor bin nearby: ask Facilities"),
     ]
+    if len(new):
+        handles.append(Line2D([], [], marker="D", ls="", color=BLUE, markeredgecolor="white", markersize=9,
+                              label=f"Add {plan.add} receptacle"))
     ax.legend(handles=handles, loc="lower left", frameon=True, fontsize=9)
-    ax.set_title(f"{plan.top_k} of {len(ranked)} receptacles handle about {plan.top_k_share:.0%} of estimated foot traffic; "
-                 f"adding {plan.add} lifts academic-core coverage {plan.today_core:.0%} to {plan.after_core:.0%}",
+    ax.set_title(f"Rebalance by foot traffic: {plan.top_k} of {len(ranked)} receptacles handle about {plan.top_k_share:.0%} "
+                 f"of it; {len(plan.quiet)} quiet ones to review with the pilot's fill log",
                  loc="left", color=INK, fontsize=11.5)
     ax.text(0.0, -0.03, "Receptacles from Facilities' 2021 map (positions within ~10 to 20 m). Foot traffic is estimated "
             "from building size and use (PLACEHOLDER). Coverage is projected, not measured diversion. "
