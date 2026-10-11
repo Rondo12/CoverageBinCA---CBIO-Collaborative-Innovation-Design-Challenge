@@ -1,66 +1,71 @@
-# CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge
+# What's in the Bin? A Student-Run Plastic Pilot
 
-**Where should Fresno State put its bins?** A data-driven pilot for the BEAM Circular / CBIO Collaborative "Return to Earth" challenge, focused on single-use plastic packaging and food ware under California SB 54.
+**Fresno State · BEAM Circular / CBIO Collaborative Innovation Design Challenge, "Return to Earth" (Fall 2026)**
+Eric Pineda Ramirez and Ronnie Pabelonio
 
-**Part of our pitch: "What's in the Bin? A Student-Run Plastic Pilot."** The model shows most of campus already has *a* bin nearby, but most outdoor receptacles are trash only. Our algorithm ranks today's trash cans by estimated foot traffic and says where to add recycling first: the top 10 reach about 46% of estimated foot traffic vs about 9% for 10 bins at random spots. Getting back to 2018's recycling share means moving about 18 tons a month from trash to recycling (real hauling data). We test it with a one-semester, student-run pilot that tracks which single-use plastic items end up in the wrong bin, sends that tally to Dining Services, and feeds the measurements back into this model.
+Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Valley Disposal hauling data), and the hauler's photos show bagged trash inside recycling dumpsters. Most outdoor receptacles on campus are trash only, so this project asks a simple question: **if Facilities adds recycling beside some of today's trash cans, which ones first?**
 
-We estimate where waste-generating foot traffic happens on the main campus (buildings, dining, cafes, vending, parking), list the spots where a bin station could go (along walkways and near entrances, never inside buildings), and use an optimization model (a Maximal Covering Location Problem, built with PuLP) to choose the stations that cover the most of it. Places where people eat and drink get extra weight.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb)
 
-**What we claim, and what we don't.** Results are projected **coverage**: the share of *estimated* demand within reach of a bin station. We do not measure diversion. Every estimated number is labeled `PLACEHOLDER`, and every choice is logged with its reason in [`docs/decisions.md`](docs/decisions.md).
+## What we found
 
-| Notebook | What it does | Owner | Open |
-|---|---|---|---|
-| `notebooks/01_bin_optimizer.ipynb` | **Main notebook.** Diagnosis (recycling 2018 to 2022), today's receptacles from the 2021 map, the placement model, gaps, pilot plan | Eric | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb) |
-| `notebooks/02_model.ipynb` | Practice notebook: build the PuLP model on the example data | Ronnie | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/02_model.ipynb) |
+- **Recycling access, not bin access, is the gap.** About 90% of estimated foot traffic in the academic core already has *a* receptacle within 50 m, but most of those receptacles are trash only.
+- **Where the first recycling bins go matters.** Our ranking puts recycling within reach of about **46% of estimated foot traffic with 10 bins**, versus about **9% for 10 bins at random spots** (5x). With 20 bins: about 63% vs 18%.
+- **The size of the prize (real data).** In 2021 Fresno State hauled about 55 tons of trash and 14 tons of recycling a month. Moving about **18 tons a month** from trash to recycling would get back to 2018's 46%.
+- **Our four pilot sites** (Fresno State Library, University Dining Hall, McLane Hall, Science II) all rank in the top 10.
 
-Start with [`docs/data-contract.md`](docs/data-contract.md): it lists every file the notebooks share, its columns and units, and a small example dataset with known answers.
+## The pilot
 
-**Private files for the main notebook.** Facilities' files never go on GitHub. In Google Drive, make a folder named `CoverageBin private data` with `2018-2020 Tonnage Report.xlsx` and `RecepticlesMap-BW-lighter 2021.pdf`; the notebook's first cell copies them in.
+One semester (Spring 2027), run by students at almost no cost to Facilities:
+1. A new recycling bin beside the trash can, with clear "no bags in recycling" signs, at two of the four sites. The other two stay the same for comparison.
+2. A 5-minute weekly log per site (Google Form): fill levels, a contamination photo, and a tally of the single-use plastic items found in the wrong bin.
+3. The tally goes to Dining Services, so the item that shows up most can be swapped for a reusable or easier-to-recycle version.
+4. Measured numbers replace the model's estimates, and the model reruns (Summer 2027). Facilities decides on the rest of the list in Fall 2027.
 
-**Run the analysis on a laptop:** `python -m binopt.digitize` (2021 map to GPS points), `python -m binopt.scenarios` (all coverage scenarios), `python -m binopt.plan` (where to add recycling first, vs. random, and the size of the prize), `python -m binopt.figures` (images for the video). The model itself is `binopt/model.py`.
+## How it works
 
-**Rebuild the campus data** (on a laptop, from the repo folder): `.venv/bin/python -m binopt.build`. It rewrites `data/demand.csv`, `data/candidates.csv` and `data/distances.csv` from the OpenStreetMap snapshots and `binopt/config.py`, and prints checks to read. When Facilities sends files, follow [`docs/when-data-arrives.md`](docs/when-data-arrives.md).
+1. **Today's receptacles.** Facilities' 2021 receptacle map is a drawing, so `binopt/digitize.py` finds each marker by color and pins the drawing to GPS using 7 street corners that also appear in OpenStreetMap (positions good to about 10 to 20 m).
+2. **Estimated foot traffic.** Every building, food spot and parking lot gets a weight from OpenStreetMap: footprint × floors × a use factor (dining highest, classrooms medium, offices low). These weights are labeled `PLACEHOLDER` until the pilot measures real numbers.
+3. **Ranking.** Each place's foot traffic is credited to its nearest receptacle within 50 m (no double counting), and receptacles are sorted by their share (`binopt/rank.py`). Because shares don't overlap, the top *k* is the best set of *k* spots for new recycling. The random baseline is the expected value of *k* spots picked at random.
+4. **Coverage model.** A Maximal Covering Location Problem (Church and ReVelle, 1974) solved exactly with PuLP (`binopt/model.py`) checks how well today's layout reaches people and what moving bins would do. Its answer is why we add recycling instead of moving bins: moves pulled bins out of the busy core.
+5. **Tonnage.** `binopt/tonnage.py` reads the hauling report and sizes the prize in tons.
+
+Full method, assumptions and every decision with its reason: [`docs/methods.md`](docs/methods.md) and [`docs/decisions.md`](docs/decisions.md).
+
+**What we claim, and what we don't.** Reach and coverage are **projected** from estimated foot traffic, not measured recycling. Tonnage numbers are real. The pilot exists to measure what each new bin actually captures.
+
+## Run it
+
+**In Google Colab:** click the badge above, then **Runtime > Run all**. The first cell downloads the code and installs it. The hauling report and the 2021 map came from Fresno State Facilities and are not public, so the notebook reads them from a Google Drive folder named `CoverageBin private data`. Without those two files, the OpenStreetMap parts still run.
+
+**On a laptop:**
+```
+python -m venv .venv && source .venv/bin/activate
+pip install -e . -r requirements-dev.txt
+pytest                      # 34 checks, including hand-worked answers
+python -m binopt.plan       # ranking, random baseline, size of the prize
+python -m binopt.figures    # charts and the campus map
+```
 
 ## What's in the repo
 
-| Folder | Contents |
+| Path | Contents |
 |---|---|
-| `binopt/` | Python code for campus data and maps. All tunable assumptions are in `binopt/config.py`. `build.py` runs everything. |
-| `data/` | `demand.csv`, `candidates.csv`, `distances.csv`: the model's inputs, built from OpenStreetMap (estimates, PLACEHOLDER weights). |
-| `data/osm/` | Saved OpenStreetMap snapshots and the campus boundary (main campus, farm land excluded). |
-| `data/example/` | Tiny made-up dataset for testing the model. |
-| `data/private/` | Files from Facilities. **Never uploaded** (see below). |
-| `notebooks/` | Colab notebooks. |
-| `outputs/` | Results. Only `chosen_sites.csv`, `map.html` and `scenarios.csv` (coverage numbers only) are saved to GitHub. |
-| `docs/` | Data contract, decisions log, and the checklist for when Facilities data arrives. |
-| `scripts/` | One-time scripts (refresh the OpenStreetMap snapshots, rebuild the example data). |
-| `tests/` | Automated checks (`pytest`). |
+| `notebooks/01_bin_optimizer.ipynb` | The main notebook: diagnosis, today's layout, the model, the pilot |
+| `binopt/` | The Python package. All assumptions live in `binopt/config.py` |
+| `data/` | Model inputs built from OpenStreetMap (`demand.csv`, `candidates.csv`, `distances.csv`) and a small example dataset with hand-worked answers |
+| `outputs/scenarios.csv` | Coverage numbers for every scenario (no receptacle locations) |
+| `tests/` | Automated checks (`pytest`) |
+| `docs/` | Method and decisions log |
+| `scripts/` | Refresh the OpenStreetMap snapshots, rebuild the example data |
 
-## How we work
+## Data and privacy
 
-New to GitHub? This is everything you need.
+The repository is public. Files from Fresno State Facilities (the hauling report, the 2021 receptacle map, and anything built from them, such as receptacle positions) stay in `data/private/`, which git ignores.
 
-**One owner per file.** Each file has one person who edits it. Ronnie owns `notebooks/02_model.ipynb`. Eric owns the campus data, maps, `binopt/` and the other notebooks. If you want a change in someone else's file, ask them (or leave a comment on a pull request). This keeps us from overwriting each other's work.
+## Sources and credits
 
-**Open a notebook in Colab.** Click the **Open in Colab** badge in the table above. Colab opens a copy of the notebook from GitHub. Run the first cell (**Setup**): it downloads the project and installs the libraries. Then run the cells top to bottom (Shift + Enter runs one cell).
-
-**Save your changes back to GitHub from Colab.**
-1. In Colab: **File > Save a copy in GitHub**.
-2. Pick this repository, and pick a **branch**. Don't save straight to `main`; type a new branch name like `ronnie/model` so the change can be reviewed first.
-3. Write a short commit message (what you changed) and click OK.
-4. Colab saves the notebook only. Files the notebook writes (like `outputs/chosen_sites.csv`) must be downloaded and then uploaded on github.com: open the folder on GitHub, then **Add file > Upload files**, and choose the same branch.
-
-**Review and merge a pull request on github.com.** A pull request (PR) asks "please add the changes on my branch to `main`".
-1. Open the repo on github.com and click the **Pull requests** tab, then the PR.
-2. **Files changed** tab: read what changed. Click the **+** next to a line to leave a comment.
-3. Click **Review changes**, then pick **Approve** or **Request changes**, and submit.
-4. When it's approved, click **Merge pull request** (choose **Create a merge commit**), then **Confirm merge**.
-5. Don't delete the branch if the author says they're still working on it.
-
-## Data privacy
-
-This repository is **public**. Anything Facilities sends (bin locations, maps, spreadsheets) goes in `data/private/`, which is listed in `.gitignore` so git never uploads it. It stays there until Facilities says sharing is OK. Never commit personal emails or phone numbers. Before every commit, run `git status` and check that nothing from `data/private/` is listed.
-
-## Credits
-
-Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/). The snapshots in `data/osm/` were fetched on 2026-09-28. Anything derived from them (the campus boundary, `data/demand.csv`, `data/candidates.csv`, `data/distances.csv`, and the map) is shared under the same license.
+- Mid Valley Disposal tonnage report (Jan 2018 to Jun 2022), dumpster maps and site-visit photos, shared by Fresno State Facilities
+- Fresno State Facilities, 2021 receptacle map
+- Church, R. and ReVelle, C. (1974). The maximal covering location problem. *Papers of the Regional Science Association*, 32, 101 to 118
+- Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, [ODbL](https://opendatacommons.org/licenses/odbl/). Snapshots in `data/osm/` fetched on 2026-09-28; everything derived from them is shared under the same license.

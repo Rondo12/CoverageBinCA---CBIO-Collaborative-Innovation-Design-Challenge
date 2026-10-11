@@ -161,7 +161,7 @@ def load_current_bins(path=None, crs=None, verbose=True):
     if missing.all():
         raise ValueError(f"No row in {path.name} has a usable location. If Facilities sent only "
                          "descriptions (e.g. 'north door of the Library'), the bins have to be placed "
-                         "by hand on a map first; see docs/when-data-arrives.md.")
+                         "by hand on a map first.")
     if missing.any():
         say(f"  WARNING: dropped {missing.sum()} rows with no usable location: "
             f"{list(out.loc[missing, 'bin_id'])}")

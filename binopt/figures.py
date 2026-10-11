@@ -131,11 +131,11 @@ def plan_map_figure(plan, path=None):
     if len(new):
         handles.append(Line2D([], [], marker="D", ls="", color=BLUE, markeredgecolor="white", markersize=9,
                               label=f"Add {plan.add} receptacle"))
-    ax.legend(handles=handles, loc="lower left", frameon=True, fontsize=9)
+    ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.0, -0.01), ncol=2, frameon=False, fontsize=9)
     ax.set_title(f"Add recycling at the {plan.top_k} spots that reach the most people: about {plan.top_k_share:.0%} of "
                  f"estimated foot traffic, vs. {plan.random_k_share:.0%} for {plan.top_k} bins at random spots",
                  loc="left", color=INK, fontsize=11.5)
-    ax.text(0.0, -0.03, "Receptacles from Facilities' 2021 map (positions within ~10 to 20 m). Foot traffic is estimated "
+    ax.text(0.0, -0.17, "Receptacles from Facilities' 2021 map (positions within ~10 to 20 m). Foot traffic is estimated "
             "from building size and use (PLACEHOLDER). Coverage is projected, not measured diversion. "
             "Base map (c) OpenStreetMap contributors.", transform=ax.transAxes, fontsize=8, color=MUTED, va="top",
             wrap=True)
