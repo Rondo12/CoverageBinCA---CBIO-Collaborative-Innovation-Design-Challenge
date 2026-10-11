@@ -59,3 +59,25 @@ def yearly_summary(df):
 
 if __name__ == "__main__":
     print(yearly_summary(load_tonnage()).to_string(index=False))
+
+
+def size_of_prize(yearly, year=2021, targets=None):
+    """How many tons a month would have to move from trash to recycling to hit a target share?
+
+    Simple: keep the total tonnage of that year the same, and ask how much of the trash would need
+    to go into recycling instead for recycling to be, say, 46% (2018's level) or 65% (SB 54's
+    target for single-use packaging, used here only as a reference point).
+    Returns {label: {"share": target, "tons_per_month": t, "tons_per_year": 12 * t}} plus the
+    year's own numbers under "base".
+    """
+    if targets is None:
+        first = yearly.sort_values("year").iloc[0]
+        targets = {f"back to {int(first['year'])}": float(first["recycling_share"]), "SB 54 reference": 0.65}
+    row = yearly[yearly["year"] == year].iloc[0]
+    total = float(row["trash_tons"] + row["recycling_tons"])
+    out = {"base": {"year": year, "trash_tons": float(row["trash_tons"]), "recycling_tons": float(row["recycling_tons"]),
+                    "recycling_share": float(row["recycling_share"])}}
+    for label, share in targets.items():
+        t = max(0.0, share * total - float(row["recycling_tons"]))
+        out[label] = {"share": share, "tons_per_month": t, "tons_per_year": 12 * t}
+    return out

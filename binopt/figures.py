@@ -1,12 +1,14 @@
 """Still images for the video, the report and the notebook (matplotlib, no internet needed).
 
 1. tonnage.png   Trash vs. recycling hauled per month, 2018 to mid-2022, with the recycling share.
-2. plan_map.png  Campus map: receptacles that stay, the ones to move, where they go, and the
-                 gaps (housing, event venues) to ask Facilities about.
+2. plan_map.png  Campus map: the 10 trash cans to add recycling beside first (numbered), every
+                 other receptacle, the pilot buildings, and places with no outdoor bin nearby.
+3. curve.png     Share of estimated foot traffic with recycling within reach, as recycling bins
+                 are added: our ranking vs. the same number of bins at random spots.
 
 Both are built from Facilities' data, so they're saved in data/private/figures/.
 Colors: Fresno State's official palette. Blue #13284C = recycling / recommended, red #C41230 =
-trash / today's busiest receptacles, Cool Gray #CED1D4 for everything else. The two hues differ
+trash / the comparison, Cool Gray #CED1D4 for everything else. The two hues differ
 strongly in lightness too, and every series is also labeled in words, never color alone.
 """
 
@@ -25,6 +27,7 @@ OUT = ROOT / "data" / "private" / "figures"
 OSM = ROOT / "data" / "osm"
 
 BLUE, RED, INK, MUTED, GRID, GRAY = "#13284C", "#C41230", "#0b0b0b", "#52514e", "#e4e2dc", "#CED1D4"
+LIGHTBLUE = "#3E5F95"
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11, "axes.edgecolor": MUTED,
                      "axes.labelcolor": INK, "xtick.color": MUTED, "ytick.color": MUTED})
 
@@ -69,8 +72,8 @@ def tonnage_figure(monthly, yearly, path=None):
 
 def plan_map_figure(plan, path=None):
     """Campus base map from the OpenStreetMap snapshots, plus the plan:
-    every receptacle (gray), the busiest top-k numbered in red, the quiet ones to review (hollow),
-    the pilot buildings in blue, any added receptacle (blue diamond), and the places to ask
+    every receptacle (gray), the top-k trash cans to add recycling beside (numbered, blue),
+    the pilot buildings (light blue), any added receptacle (blue diamond), and the places to ask
     Facilities about (hatched)."""
     from binopt.plan import PILOT_SITES
     to_m = lambda df: gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df["lon"], df["lat"]),  # noqa: E731
@@ -88,7 +91,7 @@ def plan_map_figure(plan, path=None):
     buildings.plot(ax=ax, color="#dedbd3", edgecolor="#c4c0b6", lw=0.4)
     pilot_b = buildings[buildings["name"].isin(PILOT_SITES)]
     if len(pilot_b):
-        pilot_b.plot(ax=ax, color=BLUE, alpha=0.85, edgecolor=BLUE, lw=0.8)
+        pilot_b.plot(ax=ax, color=LIGHTBLUE, alpha=0.45, edgecolor=LIGHTBLUE, lw=0.8)
 
     gaps = plan.gaps[plan.gaps["group"].notna() & (plan.gaps["group"] != "Parking lots")]
     gb = buildings[buildings["osm_id"].isin(set(gaps["osm_id"]))] if "osm_id" in buildings else buildings.iloc[0:0]
@@ -99,13 +102,10 @@ def plan_map_figure(plan, path=None):
     top = to_m(ranked.head(plan.top_k)).reset_index(drop=True)
     rest = to_m(ranked.iloc[plan.top_k:])
     rest.plot(ax=ax, color="#9aa0a6", markersize=14, edgecolor="white", lw=0.4, zorder=3)
-    top.plot(ax=ax, color=RED, markersize=70, edgecolor="white", lw=0.8, zorder=4)
+    top.plot(ax=ax, color=BLUE, markersize=80, edgecolor="white", lw=0.8, zorder=4)
     for k, r in top.iterrows():
         ax.annotate(str(k + 1), (r.geometry.x, r.geometry.y), xytext=(0, 9), textcoords="offset points",
-                    ha="center", fontsize=9, fontweight="bold", color=RED)
-    quiet = to_m(plan.quiet)
-    if len(quiet):
-        quiet.plot(ax=ax, facecolor="white", edgecolor=INK, markersize=70, lw=1.6, zorder=4)
+                    ha="center", fontsize=9, fontweight="bold", color=BLUE)
     new = to_m(plan.new_spots)
     if len(new):
         new.plot(ax=ax, color=BLUE, markersize=150, marker="D", edgecolor="white", lw=1.2, zorder=5)
@@ -115,27 +115,25 @@ def plan_map_figure(plan, path=None):
                     bbox=dict(boxstyle="round,pad=0.25", fc="white", ec=BLUE, lw=0.6))
 
     names = "\n".join(f"{k + 1}. {(s.split(', ')[0] or 'unnamed area')}" for k, s in enumerate(ranked.head(plan.top_k)["serves"]))
-    ax.text(0.01, 0.99, f"Busiest {plan.top_k} receptacles\n" + names, transform=ax.transAxes, ha="left", va="top",
+    ax.text(0.99, 0.99, f"Add recycling here first\n(busiest {plan.top_k} trash cans)\n" + names, transform=ax.transAxes, ha="right", va="top",
             fontsize=8.5, color=INK, bbox=dict(boxstyle="round,pad=0.4", fc="white", ec=MUTED, lw=0.6))
 
     from matplotlib.lines import Line2D
     from matplotlib.patches import Patch
     handles = [
-        Line2D([], [], marker="o", ls="", color=RED, markeredgecolor="white", markersize=9,
-               label=f"Busiest {plan.top_k} receptacles (upgrade first)"),
+        Line2D([], [], marker="o", ls="", color=BLUE, markeredgecolor="white", markersize=9,
+               label=f"Add recycling here first (top {plan.top_k})"),
         Line2D([], [], marker="o", ls="", color="#9aa0a6", markeredgecolor="white", markersize=6,
                label=f"Other receptacles ({len(ranked) - plan.top_k})"),
-        Line2D([], [], marker="o", ls="", markerfacecolor="white", markeredgecolor=INK, mew=1.6, markersize=8,
-               label=f"Quiet receptacles to review ({len(plan.quiet)})"),
-        Patch(facecolor=BLUE, alpha=0.85, label="Pilot site"),
+        Patch(facecolor=LIGHTBLUE, alpha=0.45, label="Pilot site"),
         Patch(facecolor="none", edgecolor=INK, hatch="////", label="No outdoor bin nearby: ask Facilities"),
     ]
     if len(new):
         handles.append(Line2D([], [], marker="D", ls="", color=BLUE, markeredgecolor="white", markersize=9,
                               label=f"Add {plan.add} receptacle"))
     ax.legend(handles=handles, loc="lower left", frameon=True, fontsize=9)
-    ax.set_title(f"Rebalance by foot traffic: {plan.top_k} of {len(ranked)} receptacles handle about {plan.top_k_share:.0%} "
-                 f"of it; {len(plan.quiet)} quiet ones to review with the pilot's fill log",
+    ax.set_title(f"Add recycling at the {plan.top_k} spots that reach the most people: about {plan.top_k_share:.0%} of "
+                 f"estimated foot traffic, vs. {plan.random_k_share:.0%} for {plan.top_k} bins at random spots",
                  loc="left", color=INK, fontsize=11.5)
     ax.text(0.0, -0.03, "Receptacles from Facilities' 2021 map (positions within ~10 to 20 m). Foot traffic is estimated "
             "from building size and use (PLACEHOLDER). Coverage is projected, not measured diversion. "
@@ -151,10 +149,45 @@ def plan_map_figure(plan, path=None):
     return path
 
 
+def curve_figure(plan, path=None):
+    """Line chart: share of estimated foot traffic with recycling within reach as k recycling bins
+    are added beside trash cans. Our ranking (blue) vs. the same k at random spots (red, expected value)."""
+    c = plan.curve
+    fig, ax = plt.subplots(figsize=(10, 5.5))
+    ax.plot(c["k"], c["algorithm"] * 100, color=BLUE, lw=2.5)
+    ax.plot(c["k"], c["random"] * 100, color=RED, lw=2, ls="--")
+    last = c.iloc[-1]
+    ax.annotate("Our ranking", (last["k"], last["algorithm"] * 100), xytext=(8, 0), textcoords="offset points",
+                color=INK, va="center")
+    ax.annotate("Random spots (average)", (last["k"], last["random"] * 100), xytext=(8, 0), textcoords="offset points",
+                color=INK, va="center")
+    at = c[c["k"] == plan.top_k].iloc[0]
+    ax.scatter([plan.top_k, plan.top_k], [at["algorithm"] * 100, at["random"] * 100], color=[BLUE, RED], zorder=3)
+    ax.annotate(f"{plan.top_k} bins: {at['algorithm']:.0%} vs {at['random']:.0%} ({at['ratio']:.0f}x)",
+                (plan.top_k, at["algorithm"] * 100), xytext=(14, -26), textcoords="offset points", color=INK,
+                fontweight="bold")
+    ax.set_xlabel("Recycling bins added beside today's trash cans")
+    ax.set_ylabel("Estimated foot traffic with recycling\nwithin 50 m (%)")
+    ax.set_title("Where the first recycling bins go matters: our ranking vs. random placement", loc="left",
+                 color=INK, fontsize=12)
+    ax.set_ylim(0, 100); ax.set_xlim(0, c["k"].max() + 6); ax.grid(axis="y", color=GRID); ax.set_axisbelow(True)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    fig.text(0.01, -0.02, "Foot traffic is estimated from building size and use (PLACEHOLDER). Reach is projected, "
+             "not measured diversion; the pilot measures what each new bin actually captures.", color=MUTED, fontsize=9)
+    path = path or OUT / "curve.png"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(path, dpi=200, bbox_inches="tight", facecolor="white")
+    plt.close(fig)
+    return path
+
+
 if __name__ == "__main__":
     from binopt.plan import make_plan
     from binopt.tonnage import load_tonnage, yearly_summary
 
     m = load_tonnage()
     print(tonnage_figure(m, yearly_summary(m)))
-    print(plan_map_figure(make_plan()))
+    p = make_plan()
+    print(plan_map_figure(p))
+    print(curve_figure(p))
