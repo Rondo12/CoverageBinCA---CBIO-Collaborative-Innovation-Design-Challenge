@@ -3,24 +3,26 @@
 **Fresno State · BEAM Circular / CBIO Collaborative Innovation Design Challenge, "Return to Earth" (Fall 2026)**
 Eric Pineda Ramirez and Ronnie Pabelonio
 
-Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Valley Disposal hauling data), and the hauler's photos show bagged trash inside recycling dumpsters. Most outdoor receptacles on campus are trash only, so this project asks a simple question: **if Facilities adds recycling beside some of today's trash cans, which ones first?**
+Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Valley Disposal hauling data), and the hauler's photos show bagged trash inside recycling dumpsters. Nobody tracks which single-use plastic items end up in the wrong bin. We propose a one-semester, student-run pilot that measures exactly that, and gives Dining Services the data to swap the worst item.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb)
-
-## What we found
-
-- **Recycling access, not bin access, is the gap.** About 90% of estimated foot traffic in the academic core already has *a* receptacle within 50 m, but most of those receptacles are trash only.
-- **Where the first recycling bins go matters.** Our ranking puts recycling within reach of about **46% of estimated foot traffic with 10 bins**, versus about **9% for 10 bins at random spots** (5x). With 20 bins: about 63% vs 18%.
-- **The size of the prize (real data).** In 2021 Fresno State hauled about 55 tons of trash and 14 tons of recycling a month. Moving about **18 tons a month** from trash to recycling would get back to 2018's 46%.
-- **Our four pilot sites** (Fresno State Library, University Dining Hall, McLane Hall, Science II) all rank in the top 10.
 
 ## The pilot
 
 One semester (Spring 2027), run by students at almost no cost to Facilities:
-1. A new recycling bin beside the trash can, with clear "no bags in recycling" signs, at two of the four sites. The other two stay the same for comparison.
-2. A 5-minute weekly log per site (Google Form): fill levels, a contamination photo, and a tally of the single-use plastic items found in the wrong bin.
-3. The tally goes to Dining Services, so the item that shows up most can be swapped for a reusable or easier-to-recycle version.
-4. Measured numbers replace the model's estimates, and the model reruns (Summer 2027). Facilities decides on the rest of the list in Fall 2027.
+1. **A weekly plastic tally.** A 5-minute log per site (Google Form): fill levels, a contamination photo, and a tally of the single-use plastic items found in the wrong bin.
+2. **One change to test.** A recycling bin beside the trash can, with clear "no bags in recycling" signs, at two of the four sites. The other two stay the same for comparison.
+3. **The tally goes to Dining Services,** so the item that shows up most can be swapped for a reusable or easier-to-recycle version.
+4. **Measured numbers replace the model's estimates** (Summer 2027). In Fall 2027, Facilities adds recycling and signs where the pilot shows it works.
+
+## Where it runs, and why
+
+Our model ranks all 88 outdoor receptacles on Facilities' 2021 map by the estimated foot traffic each one serves. The four pilot sites (Fresno State Library, University Dining Hall, McLane Hall, Science II) all rank in the top 10 (#1, #4, #7, #10), so the pilot measures the spots that matter most.
+
+Supporting analysis (in the notebook):
+- About 90% of estimated foot traffic in the academic core already has *a* receptacle within 50 m. On our walks across campus, though, most outdoor receptacles we saw were trash only.
+- Recycling beside the 10 top-ranked trash cans would reach about 46% of estimated foot traffic, versus about 9% for 10 bins at random spots.
+- In 2021 Fresno State hauled about 55 tons of trash and 14 tons of recycling a month; about 18 tons a month moved from trash to recycling would get back to 2018's 46% share.
 
 ## How it works
 

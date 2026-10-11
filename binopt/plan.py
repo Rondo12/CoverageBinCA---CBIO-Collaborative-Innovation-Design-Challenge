@@ -1,7 +1,7 @@
 """One concrete recommendation Facilities can act on: PUT RECYCLING WHERE PEOPLE ARE.
 
 Simple version:
-    Most outdoor receptacles on campus are trash only. So the question is: if Facilities adds a
+    On our walks across campus, most outdoor receptacles we saw were trash only. So the question is: if Facilities adds a
     recycling bin beside some of today's trash cans, which ones first?
     1. RANK today's receptacles by the estimated foot traffic each one handles (binopt/rank.py).
     2. ADD RECYCLING beside the top k (default 10). Count how much estimated foot traffic then has
