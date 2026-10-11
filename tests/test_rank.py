@@ -42,3 +42,14 @@ def test_quiet_needs_zero_load_and_a_close_neighbor():
     q = quiet_candidates(ranked, demand, max_pair_m=30)
     assert list(q["bin_id"]) == ["B"]          # C is quiet but alone, so it stays
     assert q["near"].iloc[0] == "Library"
+
+
+def test_recycling_curve_beats_random_and_matches_by_hand():
+    from binopt.rank import recycling_curve
+    r = rank_receptacles(*tiny(), radius_m=50)          # shares 0.80, 0.15, 0.0 (total 0.95)
+    c = recycling_curve(r, ks=[1, 2, 3, 5])
+    assert c["k"].tolist() == [1, 2, 3, 3]              # k never exceeds the number of receptacles
+    assert c["algorithm"].tolist() == pytest.approx([0.80, 0.95, 0.95, 0.95])
+    assert c["random"].tolist() == pytest.approx([0.95 / 3, 0.95 * 2 / 3, 0.95, 0.95])
+    assert (c["algorithm"] >= c["random"] - 1e-12).all()  # ranking is never worse than random
+    assert c["ratio"].iloc[-1] == pytest.approx(1.0)      # all bins = same as random

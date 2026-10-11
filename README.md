@@ -2,7 +2,7 @@
 
 **Where should Fresno State put its bins?** A data-driven pilot for the BEAM Circular / CBIO Collaborative "Return to Earth" challenge, focused on single-use plastic packaging and food ware under California SB 54.
 
-**Part of our pitch: "What's in the Bin? A Student-Run Plastic Pilot."** The model shows Fresno State's receptacles are already mostly in the right places, so our main proposal is a one-semester, student-run pilot that tracks which single-use plastic items end up in the wrong bin, sends that tally to Dining Services, and feeds the measurements back into this model.
+**Part of our pitch: "What's in the Bin? A Student-Run Plastic Pilot."** The model shows most of campus already has *a* bin nearby, but most outdoor receptacles are trash only. Our algorithm ranks today's trash cans by estimated foot traffic and says where to add recycling first: the top 10 reach about 46% of estimated foot traffic vs about 9% for 10 bins at random spots. Getting back to 2018's recycling share means moving about 18 tons a month from trash to recycling (real hauling data). We test it with a one-semester, student-run pilot that tracks which single-use plastic items end up in the wrong bin, sends that tally to Dining Services, and feeds the measurements back into this model.
 
 We estimate where waste-generating foot traffic happens on the main campus (buildings, dining, cafes, vending, parking), list the spots where a bin station could go (along walkways and near entrances, never inside buildings), and use an optimization model (a Maximal Covering Location Problem, built with PuLP) to choose the stations that cover the most of it. Places where people eat and drink get extra weight.
 
@@ -17,7 +17,7 @@ Start with [`docs/data-contract.md`](docs/data-contract.md): it lists every file
 
 **Private files for the main notebook.** Facilities' files never go on GitHub. In Google Drive, make a folder named `CoverageBin private data` with `2018-2020 Tonnage Report.xlsx` and `RecepticlesMap-BW-lighter 2021.pdf`; the notebook's first cell copies them in.
 
-**Run the analysis on a laptop:** `python -m binopt.digitize` (2021 map to GPS points), `python -m binopt.scenarios` (all coverage scenarios), `python -m binopt.plan` (the move plan and the gaps), `python -m binopt.figures` (images for the video). The model itself is `binopt/model.py`.
+**Run the analysis on a laptop:** `python -m binopt.digitize` (2021 map to GPS points), `python -m binopt.scenarios` (all coverage scenarios), `python -m binopt.plan` (where to add recycling first, vs. random, and the size of the prize), `python -m binopt.figures` (images for the video). The model itself is `binopt/model.py`.
 
 **Rebuild the campus data** (on a laptop, from the repo folder): `.venv/bin/python -m binopt.build`. It rewrites `data/demand.csv`, `data/candidates.csv` and `data/distances.csv` from the OpenStreetMap snapshots and `binopt/config.py`, and prints checks to read. When Facilities sends files, follow [`docs/when-data-arrives.md`](docs/when-data-arrives.md).
 

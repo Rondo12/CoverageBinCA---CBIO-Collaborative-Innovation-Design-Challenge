@@ -3,8 +3,9 @@
 Simple version:
     Every place on campus (a building, food spot or parking lot) sends its people to the
     closest receptacle within reach. Add up what each receptacle receives, sort from busiest
-    to quietest, and you get a priority list: the receptacles to upgrade first (paired trash +
-    recycling, clear "no bags in recycling" signs).
+    to quietest, and you get a priority list. Most outdoor receptacles are trash only, so the
+    busiest ones are where a new recycling bin (with clear "no bags in recycling" signs) reaches
+    the most people. recycling_curve() compares that ranking with random placement.
 
     Analogy: a checkout line. Most shoppers end up at a few registers near the entrance, so those
     are the registers you staff and improve first.
@@ -74,3 +75,28 @@ def quiet_candidates(ranked, demand, max_pair_m=30):
     out["near"] = [named["name"].iloc[int(np.argmin(((nxy - q) ** 2).sum(1)))] for q in xy]
     q = out[(out["load"] == 0) & (out["pair_m"] <= max_pair_m)]
     return q.sort_values("pair_m").drop(columns="load").reset_index(drop=True)
+
+
+def recycling_curve(ranked, ks=range(1, 31)):
+    """Where should the NEXT recycling bins go? Compare the algorithm with random placement.
+
+    Simple: most outdoor bins on campus are trash only. Put a recycling bin beside the k trash
+    cans that reach the most people (the ranking above), and count how much estimated foot traffic
+    now has recycling within reach. Then compare with putting the same k recycling bins beside k
+    trash cans chosen at random.
+
+    Technical: with nearest-site crediting, each receptacle's share is the demand it serves, so
+    the best k receptacles (greedy = optimal here, because shares don't overlap) reach the sum of
+    the top-k shares. A random k-subset of n receptacles reaches k/n of the total served share in
+    expectation (linearity of expectation), so no simulation is needed.
+    Returns a DataFrame: k, algorithm, random, ratio (all shares of total estimated demand).
+    """
+    n = len(ranked)
+    total = float(ranked["share"].sum())
+    rows = []
+    for k in ks:
+        k = min(k, n)
+        algo = float(ranked["share"].head(k).sum())
+        rand = k / n * total
+        rows.append({"k": k, "algorithm": algo, "random": rand, "ratio": algo / rand if rand else float("nan")})
+    return pd.DataFrame(rows)

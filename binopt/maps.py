@@ -1,8 +1,8 @@
 """Interactive web map of the plan (Folium = a Python remote control for Leaflet web maps).
 
-Layers you can switch on and off: estimated demand, every receptacle, the busiest ones to
-upgrade first, the added receptacle, and the gaps (housing / event venues) to ask Facilities
-about. Street map and satellite backgrounds. Fresno State colors: red #C41230, blue #13284C.
+Layers you can switch on and off: estimated demand, every receptacle, the top 10 trash cans
+to add recycling beside first, quiet receptacles (report only, off by default), and places with
+no outdoor bin nearby (housing / event venues). Street map and satellite backgrounds. Fresno State colors: red #C41230, blue #13284C.
 
 It shows Facilities' receptacle layout, so it's saved privately: data/private/plan_map.html.
 In Colab, the notebook displays it inline.
@@ -42,16 +42,16 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
                               "on the 2021 map").add_to(gaps)
 
     rest = folium.FeatureGroup(name=f"Other receptacles ({len(plan.ranked) - plan.top_k})").add_to(m)
-    top = folium.FeatureGroup(name=f"Busiest {plan.top_k} receptacles (upgrade first)").add_to(m)
+    top = folium.FeatureGroup(name=f"Add recycling here first (top {plan.top_k})").add_to(m)
     for _, r in plan.ranked.iterrows():
         tip = f"#{r['rank']} {r['bin_id']}: about {r['share']:.1%} of estimated foot traffic" + (f" ({r['serves']})" if r["serves"] else "")
         if r["rank"] <= plan.top_k:
             folium.CircleMarker([r["lat"], r["lon"]], radius=9, color="white", weight=2, fill=True,
-                                fill_color=RED, fill_opacity=1, tooltip=tip).add_to(top)
+                                fill_color=BLUE, fill_opacity=1, tooltip="Add recycling here: " + tip).add_to(top)
         else:
             folium.CircleMarker([r["lat"], r["lon"]], radius=4, color="white", weight=1, fill=True,
                                 fill_color=GRAY, fill_opacity=1, tooltip=tip).add_to(rest)
-    qt = folium.FeatureGroup(name=f"Quiet receptacles to review ({len(plan.quiet)})").add_to(m)
+    qt = folium.FeatureGroup(name=f"Quiet receptacles (report only, {len(plan.quiet)})", show=False).add_to(m)
     for _, r in plan.quiet.iterrows():
         folium.CircleMarker([r["lat"], r["lon"]], radius=9, color="#0b0b0b", weight=3, fill=True, fill_color="white",
                             fill_opacity=1, tooltip=f"Review {r['bin_id']} near {r['near']}: no building's closest bin, "
@@ -64,8 +64,8 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
         folium.Circle([r["lat"], r["lon"]], radius=plan.radius_m, color=BLUE, weight=1,
                       fill=True, fill_opacity=0.10).add_to(new)
 
-    title = (f"Rebalance by foot traffic: {plan.top_k} of {len(plan.ranked)} receptacles handle about {plan.top_k_share:.0%} of it; "
-             f"{len(plan.quiet)} quiet ones to review. Academic core coverage today {plan.today_core:.0%}. PLACEHOLDER demand; not diversion.")
+    title = (f"Add recycling at the {plan.top_k} spots that reach the most people: about {plan.top_k_share:.0%} of estimated "
+             f"foot traffic vs {plan.random_k_share:.0%} at random spots. PLACEHOLDER demand; projected reach, not diversion.")
     m.get_root().html.add_child(folium.Element(
         f'<div style="position:fixed;top:10px;left:50px;right:220px;z-index:9999;background:white;padding:6px 10px;'
         f'border-left:5px solid {RED};border-radius:6px;font:14px sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.3)">{title}</div>'))
