@@ -4,9 +4,9 @@
 2. plan_map.png  Campus map: the 10 trash cans to add recycling beside first (numbered), every
                  other receptacle, the pilot buildings, and places with no outdoor bin nearby.
 3. curve.png     Share of estimated foot traffic with recycling within reach, as recycling bins
-                 are added: our ranking vs. the same number of bins at random spots.
+                 are added: our ranking vs. the same number beside trash cans picked at random.
 
-Both are built from Facilities' data, so they're saved in data/private/figures/.
+All three are built from Facilities' data, so they're saved in data/private/figures/.
 Colors: Fresno State's official palette. Blue #13284C = recycling / recommended, red #C41230 =
 trash / the comparison, Cool Gray #CED1D4 for everything else. The two hues differ
 strongly in lightness too, and every series is also labeled in words, never color alone.
@@ -133,7 +133,7 @@ def plan_map_figure(plan, path=None):
                               label=f"Add {plan.add} receptacle"))
     ax.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.0, -0.01), ncol=2, frameon=False, fontsize=9)
     ax.set_title(f"Add recycling at the {plan.top_k} spots that reach the most people: about {plan.top_k_share:.0%} of "
-                 f"estimated foot traffic, vs. {plan.random_k_share:.0%} for {plan.top_k} bins at random spots",
+                 f"estimated foot traffic, vs. {plan.random_k_share:.0%} beside {plan.top_k} random trash cans",
                  loc="left", color=INK, fontsize=11.5)
     ax.text(0.0, -0.17, "Receptacles from Facilities' 2021 map (positions within ~10 to 20 m). Foot traffic is estimated "
             "from building size and use (PLACEHOLDER). Coverage is projected, not measured diversion. "
@@ -151,7 +151,7 @@ def plan_map_figure(plan, path=None):
 
 def curve_figure(plan, path=None):
     """Line chart: share of estimated foot traffic with recycling within reach as k recycling bins
-    are added beside trash cans. Our ranking (blue) vs. the same k at random spots (red, expected value)."""
+    are added beside trash cans. Our ranking (blue) vs. the same k beside random trash cans (red, expected value)."""
     c = plan.curve
     fig, ax = plt.subplots(figsize=(10, 5.5))
     ax.plot(c["k"], c["algorithm"] * 100, color=BLUE, lw=2.5)
@@ -159,7 +159,7 @@ def curve_figure(plan, path=None):
     last = c.iloc[-1]
     ax.annotate("Our ranking", (last["k"], last["algorithm"] * 100), xytext=(8, 0), textcoords="offset points",
                 color=INK, va="center")
-    ax.annotate("Random spots (average)", (last["k"], last["random"] * 100), xytext=(8, 0), textcoords="offset points",
+    ax.annotate("Random trash cans (average)", (last["k"], last["random"] * 100), xytext=(8, 0), textcoords="offset points",
                 color=INK, va="center")
     at = c[c["k"] == plan.top_k].iloc[0]
     ax.scatter([plan.top_k, plan.top_k], [at["algorithm"] * 100, at["random"] * 100], color=[BLUE, RED], zorder=3)

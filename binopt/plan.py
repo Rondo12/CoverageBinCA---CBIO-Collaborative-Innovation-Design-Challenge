@@ -1,11 +1,11 @@
 """One concrete recommendation Facilities can act on: PUT RECYCLING WHERE PEOPLE ARE.
 
 Simple version:
-    On our walks across campus, most outdoor receptacles we saw were trash only. So the question is: if Facilities adds a
-    recycling bin beside some of today's trash cans, which ones first?
+    On our walks across campus, most outdoor receptacles we saw were trash only. So the question
+    is: if Facilities adds a recycling bin beside some of today's trash cans, which ones first?
     1. RANK today's receptacles by the estimated foot traffic each one handles (binopt/rank.py).
     2. ADD RECYCLING beside the top k (default 10). Count how much estimated foot traffic then has
-       recycling within reach, and compare with adding the same k bins at random spots.
+       recycling within reach, and compare with adding the same k bins beside trash cans picked at random.
     3. SIZE THE PRIZE from the real hauling data: how many tons a month would have to move from
        trash to recycling to get back to 2018's recycling share (binopt/tonnage.py).
     The pilot then measures what each new recycling bin actually captures.
@@ -44,7 +44,7 @@ class Plan:
     ranked: pd.DataFrame          # every receptacle, busiest first (bin_id, lat, lon, share, rank, serves)
     top_k: int
     top_k_share: float            # share of estimated foot traffic the top_k recycling additions reach
-    random_k_share: float         # same number of recycling bins at random spots (expected value)
+    random_k_share: float         # same number beside random trash cans (expected value)
     curve: pd.DataFrame           # k, algorithm, random, ratio
     prize: dict = field(default_factory=dict)   # tons a month to move from trash to recycling
     new_spots: pd.DataFrame = None              # coverage-model additions (empty when add=0)

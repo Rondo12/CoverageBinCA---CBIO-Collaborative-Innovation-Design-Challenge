@@ -2,7 +2,8 @@
 
 Layers you can switch on and off: estimated demand, every receptacle, the top 10 trash cans
 to add recycling beside first, quiet receptacles (report only, off by default), and places with
-no outdoor bin nearby (housing / event venues). Street map and satellite backgrounds. Fresno State colors: red #C41230, blue #13284C.
+no outdoor bin nearby (housing / event venues). Street map and satellite backgrounds.
+Fresno State colors: red #C41230, blue #13284C.
 
 It shows Facilities' receptacle layout, so it's saved privately: data/private/plan_map.html.
 In Colab, the notebook displays it inline.
@@ -65,7 +66,7 @@ def plan_map(plan, path=ROOT / "data" / "private" / "plan_map.html"):
                       fill=True, fill_opacity=0.10).add_to(new)
 
     title = (f"Add recycling at the {plan.top_k} spots that reach the most people: about {plan.top_k_share:.0%} of estimated "
-             f"foot traffic vs {plan.random_k_share:.0%} at random spots. PLACEHOLDER demand; projected reach, not diversion.")
+             f"foot traffic vs {plan.random_k_share:.0%} beside random trash cans. PLACEHOLDER demand; projected reach, not diversion.")
     m.get_root().html.add_child(folium.Element(
         f'<div style="position:fixed;top:10px;left:50px;right:220px;z-index:9999;background:white;padding:6px 10px;'
         f'border-left:5px solid {RED};border-radius:6px;font:14px sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.3)">{title}</div>'))

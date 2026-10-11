@@ -25,7 +25,7 @@ from binopt.boundary import LATLON, METERS, OSM_DIR, load_boundary
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-# Columns required by docs/data-contract.md, then extra columns that explain each weight.
+# Columns described in docs/methods.md, then extra columns that explain each weight.
 CONTRACT_COLUMNS = ["demand_id", "lat", "lon", "weight", "source", "use_type", "name"]
 EXTRA_COLUMNS = ["osm_id", "area_m2", "levels", "factor"]
 

@@ -1,5 +1,3 @@
-.claude/settings.local.json
-
 # --- What is this file? ---
 # Simple: a list of files git should pretend don't exist, so they never get uploaded.
 # Technical: each line is a pattern; matching untracked paths are skipped by `git add`.
@@ -23,10 +21,8 @@ __pycache__/
 data/private/*
 !data/private/README.md
 
-# Generated outputs: ignored, except the two files the team shares on purpose.
-# chosen_sites.csv = Ronnie's model output (the map reads it); map.html = the shareable map.
+# Generated outputs: ignored, except the coverage table we share on purpose
+# (scenarios.csv holds coverage numbers only, no receptacle locations).
 outputs/*
 !outputs/.gitkeep
-!outputs/chosen_sites.csv
-!outputs/map.html
 !outputs/scenarios.csv
