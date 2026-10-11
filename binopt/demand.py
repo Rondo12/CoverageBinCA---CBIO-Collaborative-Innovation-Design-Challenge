@@ -111,9 +111,9 @@ def food_drink_demand(boundary, osm_dir=OSM_DIR):
     # Some are mapped as building outlines; the spot itself is the point inside.
     f["geometry"] = f.representative_point()
     f["use_type"] = f["amenity"]
-    f["area_m2"] = None
-    f["levels"] = None
-    f["factor"] = None
+    f["area_m2"] = float("nan")   # numeric NaN, so stacking keeps number columns numeric
+    f["levels"] = float("nan")   # numeric NaN, so stacking keeps number columns numeric
+    f["factor"] = float("nan")   # numeric NaN, so stacking keeps number columns numeric
     f["weight"] = f["amenity"].map(config.FOOD_DRINK_WEIGHTS)
     f["source"] = "food_drink"
     return f

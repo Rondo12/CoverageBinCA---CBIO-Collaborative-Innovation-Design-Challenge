@@ -7,7 +7,7 @@ Simple version:
 Technical version:
     The expected answers in expected_chosen_sites.csv were worked out by hand. Here we confirm
     them by brute force: try every pair of sites (only 10 pairs for 5 sites) and score each
-    pair. This is NOT the optimization model (that's Ronnie's PuLP model in 02_model.ipynb);
+    pair. This is NOT the optimization model (that's binopt/model.py, checked in test_model.py);
     brute force only works because the example is tiny.
 """
 

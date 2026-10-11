@@ -213,7 +213,7 @@ MAP_2021_CONTROL_POINTS = {
 }
 
 # ---------------------------------------------------------------------------
-# Coverage settings (read by the model notebook, 02_model.ipynb, and by the map)
+# Coverage settings (read by the model, the scenarios and the maps)
 # ---------------------------------------------------------------------------
 
 # A demand point counts as "covered" if a chosen bin site is within this many meters
