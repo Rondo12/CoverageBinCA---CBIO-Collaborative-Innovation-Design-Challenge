@@ -1,13 +1,18 @@
-"""One concrete recommendation Facilities can act on.
+"""One concrete recommendation Facilities can act on: REBALANCE by foot traffic.
 
 Simple version:
     1. RANK today's receptacles by the estimated foot traffic each one handles. A handful carry
        most of it. Those are the ones to upgrade first (paired trash + recycling, clear signs),
        and the pilot runs at four of them.
-    2. FIND THE GAP: let the model ADD a small number of receptacles (default 1) where they reach
-       the most people nobody reaches today. Nothing is taken away from the busy core.
-    3. LIST the places still not served (student housing, event venues, parking). These are
-       questions for Facilities, not recommendations.
+    2. REVIEW THE QUIET ONES: receptacles that no building uses as its closest bin AND that have
+       another bin within 30 m. They're candidates to move or remove, decided by the pilot's
+       weekly fill log, not by estimates alone.
+    3. LIST the places with no outdoor receptacle within reach on the 2021 map (student housing,
+       event venues, parking, the Student Recreation Center). These are questions for Facilities,
+       not recommendations: the map shows outdoor receptacles only, and many buildings have
+       bins inside.
+    4. Optional: add = n lets the model ADD n receptacles where they'd reach the most uncovered
+       demand (default 0, because indoor bins may already serve those places).
 
 Why "add" and not "move": coverage only asks "is a bin within reach?", not "how full does it
 get?". Moving bins out of the busy core looks free to the model but could make the remaining
@@ -22,7 +27,7 @@ from dataclasses import dataclass
 import pandas as pd
 
 from binopt.model import covered_share, solve_mclp
-from binopt.rank import rank_receptacles, top_share
+from binopt.rank import quiet_candidates, rank_receptacles, top_share
 from binopt.scenarios import NOT_CORE, load_inputs
 
 PILOT_SITES = ["Fresno State Library", "McLane Hall", "Science II", "University Dining Hall"]
@@ -39,7 +44,8 @@ class Plan:
     ranked: pd.DataFrame          # every receptacle, busiest first (bin_id, lat, lon, share, rank, serves)
     top_k: int
     top_k_share: float            # share of estimated foot traffic handled by the top_k receptacles
-    new_spots: pd.DataFrame       # added receptacles: site_id, lat, lon, near (biggest place it reaches)
+    new_spots: pd.DataFrame       # added receptacles (empty when add=0): site_id, lat, lon, near
+    quiet: pd.DataFrame           # receptacles to review: bin_id, lat, lon, pair_m, near
     demand: pd.DataFrame          # every demand point + covered_today / covered_after / in_core / share
     gaps: pd.DataFrame            # non-core places uncovered today, biggest first
 
@@ -49,7 +55,7 @@ def covered_ids(distances, sites, radius_m):
     return set(near["demand_id"])
 
 
-def make_plan(radius_m=50, add=1, top_k=10):
+def make_plan(radius_m=50, add=0, top_k=10, quiet_pair_m=30):
     demand, sites, bins, _, dist_all = load_inputs()
     core = demand[~demand["use_type"].isin(NOT_CORE)]
     current = list(bins["bin_id"])
@@ -77,9 +83,12 @@ def make_plan(radius_m=50, add=1, top_k=10):
             # prefer a place in the academic core (that's what the model optimizes for)
             new.loc[i, "near"] = gained.sort_values(["in_core", "weight"], ascending=False)["name"].iloc[0]
 
-    gaps = d[~d["in_core"] & ~d["covered_today"]].copy()
+    # Questions for Facilities: places with no outdoor receptacle within reach on the 2021 map.
+    # Non-core places (housing, events, parking) plus sizable core buildings (1%+ of demand).
+    gaps = d[~d["covered_today"] & (~d["in_core"] | (d["share"] >= 0.01))].copy()
     gaps["group"] = gaps["use_type"].map({"dormitory": "Student housing", "event": "Event venues",
                                           "parking": "Parking lots"})
+    gaps.loc[gaps["in_core"], "group"] = "Core buildings (check indoor bins)"
     gaps = gaps.sort_values("weight", ascending=False)
 
     ranked = rank_receptacles(demand, bins, dist_all, radius_m)
@@ -90,7 +99,7 @@ def make_plan(radius_m=50, add=1, top_k=10):
         today_campus=covered_share(demand, dist_all, current, radius_m),
         after_campus=covered_share(demand, dist_all, chosen, radius_m),
         ranked=ranked, top_k=top_k, top_k_share=top_share(ranked, top_k),
-        new_spots=new, demand=d, gaps=gaps,
+        new_spots=new, quiet=quiet_candidates(ranked, demand, quiet_pair_m), demand=d, gaps=gaps,
     )
 
 
@@ -108,8 +117,8 @@ if __name__ == "__main__":
     print(f"Top {p.top_k} of {len(p.ranked)} receptacles handle {p.top_k_share:.1%} of estimated foot traffic")
     print(p.ranked.head(p.top_k)[["rank", "bin_id", "share", "serves"]].to_string(index=False))
     print("Pilot sites' receptacle ranks:", pilot_ranks(p))
-    print(f"Add {p.add} near {list(p.new_spots['near'])}: academic core {p.today_core:.1%} -> {p.after_core:.1%} "
-          f"(whole campus {p.today_campus:.1%} -> {p.after_campus:.1%})")
+    print(f"Quiet receptacles to review ({len(p.quiet)}):", list(zip(p.quiet['bin_id'], p.quiet['near'], p.quiet['pair_m'].round())))
+    print(f"Academic core coverage today: {p.today_core:.1%} (whole campus {p.today_campus:.1%})")
     print("\nGaps to ask Facilities about:")
     for grp, g in p.gaps.groupby("group", dropna=False):
         names = [n for n in g["name"].fillna("") if n]

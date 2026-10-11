@@ -46,3 +46,31 @@ def rank_receptacles(demand, bins, distances, radius_m=50):
 def top_share(ranked, k):
     """Share of all estimated foot traffic handled by the k busiest receptacles."""
     return float(ranked["share"].head(k).sum())
+
+
+def quiet_candidates(ranked, demand, max_pair_m=30):
+    """Receptacles to REVIEW (move or remove), using the pilot's fill log before acting.
+
+    Simple: a bin is "quiet" when no building has it as its closest bin AND another bin stands
+    within max_pair_m (default 30 m), so the spot stays served if it goes.
+    Caveat: foot traffic here is estimated from buildings only. A quiet bin may still serve a
+    walkway or a bus stop, which is exactly what the weekly fill log checks.
+    Returns: bin_id, lat, lon, pair_m (distance to the nearest other bin), near (closest named place).
+    """
+    import geopandas as gpd
+    import numpy as np
+
+    def to_xy(df):
+        g = gpd.GeoSeries(gpd.points_from_xy(df["lon"], df["lat"]), crs="EPSG:4326").to_crs("EPSG:32611")
+        return np.c_[g.x, g.y]
+
+    xy = to_xy(ranked)
+    d = np.sqrt(((xy[:, None] - xy[None]) ** 2).sum(-1))
+    np.fill_diagonal(d, np.inf)
+    out = ranked[["bin_id", "lat", "lon", "load"]].copy()
+    out["pair_m"] = d.min(1)
+    named = demand[demand["name"].notna() & (demand["name"] != "")]
+    nxy = to_xy(named)
+    out["near"] = [named["name"].iloc[int(np.argmin(((nxy - q) ** 2).sum(1)))] for q in xy]
+    q = out[(out["load"] == 0) & (out["pair_m"] <= max_pair_m)]
+    return q.sort_values("pair_m").drop(columns="load").reset_index(drop=True)
