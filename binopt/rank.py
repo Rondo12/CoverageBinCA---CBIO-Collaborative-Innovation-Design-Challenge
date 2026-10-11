@@ -3,8 +3,8 @@
 Simple version:
     Every place on campus (a building, food spot or parking lot) sends its people to the
     closest receptacle within reach. Add up what each receptacle receives, sort from busiest
-    to quietest, and you get a priority list. On our walks, most outdoor receptacles were trash only, so the
-    busiest ones are where a new recycling bin (with clear "no bags in recycling" signs) reaches
+    to quietest, and you get a priority list. On our walks, most outdoor receptacles were trash
+    only, so the busiest ones are where a new recycling bin (with clear "no bags in recycling" signs) reaches
     the most people. recycling_curve() compares that ranking with random placement.
 
     Analogy: a checkout line. Most shoppers end up at a few registers near the entrance, so those

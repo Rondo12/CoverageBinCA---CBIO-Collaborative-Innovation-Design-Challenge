@@ -57,10 +57,6 @@ def yearly_summary(df):
     return g.round(3).reset_index()
 
 
-if __name__ == "__main__":
-    print(yearly_summary(load_tonnage()).to_string(index=False))
-
-
 def size_of_prize(yearly, year=2021, targets=None):
     """How many tons a month would have to move from trash to recycling to hit a target share?
 
@@ -81,3 +77,7 @@ def size_of_prize(yearly, year=2021, targets=None):
         t = max(0.0, share * total - float(row["recycling_tons"]))
         out[label] = {"share": share, "tons_per_month": t, "tons_per_year": 12 * t}
     return out
+
+
+if __name__ == "__main__":
+    print(yearly_summary(load_tonnage()).to_string(index=False))

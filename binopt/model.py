@@ -22,7 +22,6 @@ Technical version:
 Every number this produces is PROJECTED COVERAGE under PLACEHOLDER weights, not diversion.
 """
 
-import pandas as pd
 import pulp
 
 

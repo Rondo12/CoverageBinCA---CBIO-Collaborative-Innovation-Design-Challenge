@@ -1,7 +1,7 @@
 """Run the model on Fresno State and compare against today's layout.
 
 Simple version:
-    Four questions, all with the same PLACEHOLDER demand weights and the same 'covered' rule:
+    Three questions, all with the same PLACEHOLDER demand weights and the same 'covered' rule:
     1. TODAY: how much demand do the 88 receptacles on the 2021 map cover?
     2. SAME BINS, BETTER SPOTS: if those 88 could go anywhere, how much could they cover?
     3. SMALL CHANGE: if Facilities moves only 5, 10 or 20 of them, how much does coverage rise?
@@ -14,7 +14,7 @@ Simple version:
 
 Run from the repo root:  python -m binopt.scenarios
 Writes outputs/scenarios.csv (only coverage numbers, nothing private) and, privately,
-data/private/scenario_sites.csv (which bins move where).
+data/private/scenario_moves.csv (which bins move where).
 """
 
 from pathlib import Path

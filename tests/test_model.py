@@ -1,4 +1,4 @@
-"""The model must match the hand-worked answers in data/example/ (docs/data-contract.md)."""
+"""The model must match the hand-worked answers in data/example/ (see docs/methods.md)."""
 
 from pathlib import Path
 

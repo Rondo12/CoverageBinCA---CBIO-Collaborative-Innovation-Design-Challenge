@@ -1,7 +1,7 @@
 """Checks on the real campus files: data/demand.csv, candidates.csv, distances.csv.
 
 Simple version:
-    Rebuild the files from the snapshots and check the rules in docs/data-contract.md:
+    Rebuild the files from the snapshots and check the rules in docs/methods.md:
     the right columns, every weight above zero, no bin site inside a building, IDs that match.
 
 Technical version:
@@ -69,7 +69,7 @@ def test_distances_link_and_stay_under_cutoff(built):
 
 
 def test_committed_files_follow_contract():
-    """The CSVs in data/ (what Ronnie's notebook reads) have the contract columns."""
+    """The CSVs in data/ (what the model reads) have the contract columns."""
     demand = pd.read_csv(DATA / "demand.csv")
     candidates = pd.read_csv(DATA / "candidates.csv")
     distances = pd.read_csv(DATA / "distances.csv")

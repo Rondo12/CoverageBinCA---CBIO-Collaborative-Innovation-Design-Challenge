@@ -62,7 +62,7 @@ OUT_OF_SCOPE = [
 #   weight_i = FOOD_DRINK_WEIGHTS[amenity_i]                       (food/drink points, extra)
 #   Only ratios matter to the model: doubling every weight gives the same chosen sites.
 
-# Floors to assume when OpenStreetMap doesn't record building:levels (122 of 135 buildings).
+# Floors to assume when OpenStreetMap doesn't record building:levels (97 of 107 buildings).
 # PLACEHOLDER: 1 undercounts multi-story buildings; add real floor counts when we have them.
 DEFAULT_LEVELS = 1
 

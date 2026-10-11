@@ -2,8 +2,8 @@
 
 Simple version:
     8 pretend "places people make waste" and 5 pretend bin spots, laid out on a small grid
-    near the middle of campus. The right answer is small enough to check by hand, so Ronnie
-    can test his model before running it on the real campus data.
+    near the middle of campus. The right answer is small enough to check by hand, so the
+    model can be tested before it runs on the real campus data.
 
 Technical version:
     Points are defined in meters (UTM zone 11N) relative to an origin, converted to lat/lon,
@@ -43,7 +43,7 @@ SITES = [
     ("S5", 300, 50, "entrance", "Example snack bar"),
 ]
 
-# Worked out by hand for p = 2 sites (see docs/data-contract.md, "Check your model").
+# Worked out by hand for p = 2 sites (checked in tests/test_example_data.py).
 # (radius_m, site_id, covered_weight)
 EXPECTED = [
     (30, "S1", 50), (30, "S5", 35),   # total 85
