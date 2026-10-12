@@ -7,6 +7,9 @@ Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Val
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb)
 
+[Google Fome] https://docs.google.com/forms/d/e/1FAIpQLSdniyxaJsIueUoeeq8BXDpIZOuk8H0s1ZG4AGfQ3AzdP8HmNQ/viewform?usp=dialog
+
+
 ## The pilot
 
 One semester (Spring 2027), run by students at almost no cost to Facilities:
