@@ -47,6 +47,25 @@ def load_tonnage(path=DEFAULT_FILE):
     return df.sort_values("date").reset_index(drop=True)
 
 
+def load_tonnage_csv(path):
+    """Any campus's hauling data in the simple template (templates/tonnage_template.csv):
+    one row per month with columns year, month, trash_tons, recycling_tons (green_tons optional).
+    Returns the same table as load_tonnage, so yearly_summary and size_of_prize work unchanged."""
+    df = pd.read_csv(path)
+    df.columns = [c.strip().lower() for c in df.columns]
+    missing = {"year", "month", "trash_tons", "recycling_tons"} - set(df.columns)
+    if missing:
+        raise ValueError(f"{Path(path).name} is missing columns {sorted(missing)}; "
+                         "see templates/tonnage_template.csv")
+    if "green_tons" not in df:
+        df["green_tons"] = None
+    df = df[["year", "month", "trash_tons", "recycling_tons", "green_tons"]].dropna(subset=["trash_tons", "recycling_tons"])
+    df[["year", "month"]] = df[["year", "month"]].astype(int)
+    df = df.drop_duplicates(["year", "month"])
+    df["date"] = pd.to_datetime(dict(year=df["year"], month=df["month"], day=1))
+    return df.sort_values("date").reset_index(drop=True)
+
+
 def yearly_summary(df):
     """Per year: months of data, average tons per month, and recycling share."""
     g = df.groupby("year").agg(months=("month", "count"), trash_tons=("trash_tons", "mean"),

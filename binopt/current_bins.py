@@ -40,7 +40,8 @@ ID_NAMES = ["binid", "id", "assetid", "asset", "assetnumber", "bin", "binnumber"
 # it might count containers (3 containers can be 1 station), so a person has to decide.
 UNIT_NAMES = ["units", "stations", "stationcount", "numstations"]
 
-# Fresno State is near lat 36.81, lon -119.75. Used to sanity-check the coordinates.
+# Fresno State is near lat 36.81, lon -119.75. Used to sanity-check the coordinates
+# (other campuses pass their own center; see binopt/anycampus.py).
 CAMPUS_LAT, CAMPUS_LON = 36.81, -119.75
 
 
@@ -94,11 +95,12 @@ def read_any(path):
     return df
 
 
-def load_current_bins(path=None, crs=None, verbose=True):
+def load_current_bins(path=None, crs=None, verbose=True, center=None):
     """Return current bins as a table with columns bin_id, lat, lon, units.
 
     path = the file (default: find_file()). crs = projection of x/y columns, if not lat/lon
-    (default: config.CURRENT_BINS_CRS). No file -> an empty table and a message.
+    (default: config.CURRENT_BINS_CRS). center = (lat, lon) of the campus, for the "too far" check
+    (default: Fresno State). No file -> an empty table and a message.
     """
     say = print if verbose else (lambda *a, **k: None)
     path = Path(path) if path is not None else find_file()
@@ -166,7 +168,8 @@ def load_current_bins(path=None, crs=None, verbose=True):
         say(f"  WARNING: dropped {missing.sum()} rows with no usable location: "
             f"{list(out.loc[missing, 'bin_id'])}")
         out = out[~missing]
-    far = (out["lat"] - CAMPUS_LAT).abs().gt(0.05) | (out["lon"] - CAMPUS_LON).abs().gt(0.05)
+    c_lat, c_lon = center if center is not None else (CAMPUS_LAT, CAMPUS_LON)
+    far = (out["lat"] - c_lat).abs().gt(0.05) | (out["lon"] - c_lon).abs().gt(0.05)
     if far.any():
         say(f"  WARNING: {far.sum()} bins are more than ~5 km from campus; check them: "
             f"{list(out.loc[far, 'bin_id'])[:10]}")
