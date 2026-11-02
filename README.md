@@ -3,24 +3,32 @@
 **Fresno State · BEAM Circular / CBIO Collaborative Innovation Design Challenge, "Return to Earth" (Fall 2026)**
 Eric Pineda Ramirez and Ronnie Pabelonio
 
-Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Valley Disposal hauling data), and the hauler's photos show bagged trash inside recycling dumpsters. Nobody tracks which single-use plastic items end up in the wrong bin. We propose a one-semester, student-run pilot that measures exactly that, and gives Dining Services the data to swap the worst item.
+Fresno State's recycling share fell from **46% in 2018 to 20% in 2021** (Mid Valley Disposal hauling data), and the hauler's photos show bagged trash inside recycling dumpsters. As far as we could find, nobody tracks which single-use plastic items end up in the wrong bin. We propose a one-semester, student-run pilot that measures exactly that, and gives Dining Services the data to swap the worst item.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/01_bin_optimizer.ipynb)
 
-[Google Form] https://docs.google.com/forms/d/e/1FAIpQLSdniyxaJsIueUoeeq8BXDpIZOuk8H0s1ZG4AGfQ3AzdP8HmNQ/viewform?usp=dialog
+**[Weekly log form (Google Form)](https://docs.google.com/forms/d/e/1FAIpQLSdniyxaJsIueUoeeq8BXDpIZOuk8H0s1ZG4AGfQ3AzdP8HmNQ/viewform?usp=dialog)**, built by [`scripts/create_weekly_log_form.gs`](scripts/create_weekly_log_form.gs)
 
 
 ## The pilot
 
 One semester (Spring 2027), run by students at almost no cost to Facilities:
-1. **A weekly plastic tally.** A 5-minute log per site (Google Form): fill levels, a contamination photo, and a tally of the single-use plastic items found in the wrong bin.
-2. **One change to test.** A recycling bin beside the trash can, with clear "no bags in recycling" signs, at two of the four sites. The other two stay the same for comparison.
-3. **The tally goes to Dining Services,** so the item that shows up most can be swapped for a reusable or easier-to-recycle version.
-4. **Measured numbers replace the model's estimates** (Summer 2027). In Fall 2027, Facilities adds recycling and signs where the pilot shows it works.
+1. **A weekly plastic count.** A 5-minute log per site (Google Form): fill levels, a photo, and **counts** of the visible single-use plastic items in the wrong bin (recyclable plastic in the trash, and bags or trash in the recycling). Answers land in a Google Sheet automatically.
+2. **A baseline first.** For the first three weeks, nothing changes at any site; we just count.
+3. **One change to test.** Then at two of the four sites, we pair trash and recycling side by side (adding a recycling bin where there isn't one), with clear "no bags in recycling" signs. The other two stay the same for comparison.
+4. **The counts go to Dining Services,** so the item that shows up most can be swapped: reusable first, compostable only where food waste is already composted.
+5. **Measured numbers replace the model's estimates** (Summer 2027). In Fall 2027, Facilities adds recycling and signs where the pilot shows it works.
+
+**Goals (targets, not results), by the end of spring 2027:**
+- Recyclable plastic in the trash cut in half at the test sites, compared with their first three weeks. The comparison sites show whether a change comes from the paired bins or just the time of semester.
+- Dining commits to swapping one single-use item; by fall 2027, we count how many fewer of that item campus buys.
+- Facilities makes one decision using the pilot's data.
+
+**Who runs it:** Eric and Ronnie lead it, with student volunteers for the weekly logs. Before we graduate, we hand it to a named student group, with the form, the model and every decision documented here.
 
 ## Where it runs, and why
 
-Our model ranks all 88 outdoor receptacles on Facilities' 2021 map by the estimated foot traffic each one serves. The four pilot sites (Fresno State Library, University Dining Hall, McLane Hall, Science II) all rank in the top 10 (#1, #4, #7, #10), so the pilot measures the spots that matter most.
+We picked three pilot sites because Mid Valley photographed bagged trash in their recycling dumpsters in 2018 and 2019 (Fresno State Library, McLane Hall, Science II), plus the University Dining Hall, where single-use food ware is handed out. Our model backs that choice up: it ranks all 88 outdoor receptacles on Facilities' 2021 map by the estimated foot traffic each one serves, and all four sites rank in the top 10 (#1, #4, #7, #10).
 
 Supporting analysis (in the notebook):
 - About 90% of estimated foot traffic in the academic core already has *a* receptacle within 50 m. On our walks across campus, though, most outdoor receptacles we saw were trash only.
