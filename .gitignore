@@ -26,3 +26,8 @@ data/private/*
 outputs/*
 !outputs/.gitkeep
 !outputs/scenarios.csv
+
+# Campuses downloaded with binopt.anycampus (rebuildable any time; not committed)
+data/campuses/
+cache/
+

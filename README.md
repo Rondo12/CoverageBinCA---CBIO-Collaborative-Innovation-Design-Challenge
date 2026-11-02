@@ -39,7 +39,21 @@ Full method, assumptions and every decision with its reason: [`docs/methods.md`]
 
 **What we claim, and what we don't.** Reach and coverage are **projected** from estimated foot traffic, not measured recycling. Tonnage numbers are real. The pilot exists to measure what each new bin actually captures.
 
-## Run it
+## Run it for your campus
+
+Any campus can run the same model for free, in Google Colab, with no coding:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rondo12/CoverageBinCA---CBIO-Collaborative-Innovation-Design-Challenge/blob/main/notebooks/02_any_campus.ipynb)
+
+1. Click the badge and type your campus name, for example `University of the Pacific, Stockton, California`.
+2. **Runtime > Run all.** In a few minutes the notebook finds the campus on OpenStreetMap, estimates where waste-generating foot traffic is, and shows the spots where a small number of bin stations would reach the most people.
+3. **Optional:** upload a list of your bins (`templates/bins_template.csv`: one row per bin with its latitude and longitude) to rank your own bins by the foot traffic each one serves. Add your hauler's monthly tons (`templates/tonnage_template.csv`) to track your recycling share.
+
+Tested on Fresno State and University of the Pacific. Distances use each campus's own map projection, so results hold anywhere. Foot traffic is an estimate from building size and use: treat results as a starting point for a pilot like ours, which measures the real thing.
+
+On a laptop: `python -m binopt.anycampus "University of the Pacific, Stockton, California"` (add `--bins my_bins.csv` to rank your bins).
+
+## Run it (Fresno State)
 
 **In Google Colab:** click the badge above, then **Runtime > Run all**. The first cell downloads the code and installs it. The hauling report and the 2021 map came from Fresno State Facilities and are not public. Without them, the notebook still runs top to bottom: it runs the placement model on the public OpenStreetMap data and skips the steps built on Facilities' files. Team members with the files set `USE_PRIVATE_DATA = True` in the first cell, which reads them from a Google Drive folder named `CoverageBin private data`.
 
@@ -48,7 +62,7 @@ Full method, assumptions and every decision with its reason: [`docs/methods.md`]
 python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -e . -r requirements-dev.txt
-pytest                      # 34 checks, including hand-worked answers
+pytest                      # 38 checks, including hand-worked answers
 python -m binopt.build      # rebuild the public campus data from OpenStreetMap
 python -m binopt.plan       # ranking, random baseline, size of the prize (needs the private files)
 python -m binopt.figures    # charts and the campus map (needs the private files)
@@ -59,6 +73,8 @@ python -m binopt.figures    # charts and the campus map (needs the private files
 | Path | Contents |
 |---|---|
 | `notebooks/01_bin_optimizer.ipynb` | The main notebook: diagnosis, today's layout, the model, the pilot |
+| `notebooks/02_any_campus.ipynb` | Run the model on any campus: type its name, get a foot-traffic map and suggested bin spots |
+| `templates/` | Fill-in templates for your own bin list and hauling data |
 | `binopt/` | The Python package. All assumptions live in `binopt/config.py` |
 | `data/` | Model inputs built from OpenStreetMap (`demand.csv`, `candidates.csv`, `distances.csv`) and a small example dataset with hand-worked answers |
 | `outputs/scenarios.csv` | Coverage numbers for every scenario (no receptacle locations) |
