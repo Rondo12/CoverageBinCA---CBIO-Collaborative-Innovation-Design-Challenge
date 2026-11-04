@@ -63,9 +63,10 @@ LAYERS = {
     "entrances": {"entrance": True},
 }
 # Public Overpass servers, tried in order. The main one is sometimes busy; the others are mirrors.
-OVERPASS_URLS = ["https://overpass-api.de/api/interpreter",
-                 "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
-                 "https://overpass.kumi.systems/api/interpreter"]
+# Base addresses only: osmnx 2.x adds "/interpreter" (and "/status") itself.
+OVERPASS_URLS = ["https://overpass-api.de/api",
+                 "https://maps.mail.ru/osm/tools/overpass/api",
+                 "https://overpass.kumi.systems/api"]
 KEEP_COLUMNS = ["name", "building", "building:levels", "amenity", "landuse", "highway",
                 "entrance", "cuisine", "vending", "parking", "access", "wheelchair",
                 "footway", "shop", "leisure"]
@@ -142,6 +143,9 @@ def fetch_campus(name, out_dir=None, verbose=True):
         gdf = _download(ox, search, tags, say)
         n = _save_layer(gdf, out_dir / f"{layer}.geojson")
         say(f"  {layer:<11} {n:5d} features")
+        if layer == "buildings" and n == 0:
+            say("  Note: OpenStreetMap has no buildings mapped here, so foot traffic comes only from "
+                "parking and food spots. Check the campus name, or treat these results as rough.")
     (out_dir / "FETCHED.txt").write_text(
         f"OpenStreetMap snapshot of '{label}' fetched {date.today().isoformat()} via Overpass API (osmnx).\n"
         "Data (c) OpenStreetMap contributors, ODbL: https://www.openstreetmap.org/copyright\n")
@@ -156,10 +160,10 @@ def _download(ox, polygon, tags, say):
         try:
             return ox.features_from_polygon(polygon, tags)
         except Exception as e:
-            if "No matching features" in str(e) or "InsufficientResponse" in type(e).__name__:
+            if "No matching features" in str(e):
                 return None   # the layer is simply empty here (e.g. no farm land)
-            last = e
-            say(f"  ({url.split('/')[2]} didn't answer, trying the next server)")
+            last = e   # anything else (busy, error page, timeout) means try the next server
+            say(f"  ({url.split('/')[2]} didn't answer: {type(e).__name__}; trying the next server)")
     raise ConnectionError(f"No OpenStreetMap server answered; try again in a minute. Last error: {last}")
 
 
