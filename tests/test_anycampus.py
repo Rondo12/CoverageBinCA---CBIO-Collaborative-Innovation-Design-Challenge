@@ -41,3 +41,9 @@ def test_tonnage_template_reads_and_sizes_the_prize():
     y = yearly_summary(m)
     p = size_of_prize(y, year=2024, targets={"half": 0.5})
     assert p["half"]["tons_per_month"] == pytest.approx(0.5 * (52.3 + 49.8 + 55.0 + 14.1 + 13.6 + 15.2) / 3 - (14.1 + 13.6 + 15.2) / 3, abs=0.01)
+
+
+def test_overpass_urls_are_base_addresses():
+    # osmnx 2.x adds "/interpreter" itself; a full address would request .../interpreter/interpreter
+    for url in anycampus.OVERPASS_URLS:
+        assert url.endswith("/api") and "interpreter" not in url
